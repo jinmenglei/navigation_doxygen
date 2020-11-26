@@ -1,0 +1,6 @@
+<map id="nav_core::RecoveryBehavior" name="nav_core::RecoveryBehavior">
+<area shape="rect" id="node1" title="Provides an interface for recovery behaviors used in navigation. All recovery behaviors written as pl..." alt="" coords="196,5,379,127"/>
+<area shape="rect" id="node2" href="$classclear__costmap__recovery_1_1_clear_costmap_recovery.html" title="A recovery behavior that reverts the navigation stack&#39;s costmaps to the static map outside of a user&#45;..." alt="" coords="5,204,183,487"/>
+<area shape="rect" id="node3" href="$classmove__slow__and__clear_1_1_move_slow_and_clear.html" title=" " alt="" coords="207,175,368,516"/>
+<area shape="rect" id="node4" href="$classrotate__recovery_1_1_rotate_recovery.html" title="A recovery behavior that rotates the robot in&#45;place to attempt to clear out space." alt="" coords="392,226,601,465"/>
+</map>

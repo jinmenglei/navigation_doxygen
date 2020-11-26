@@ -1,0 +1,4 @@
+<map id="dwa_local_planner::DWAPlannerROS" name="dwa_local_planner::DWAPlannerROS">
+<area shape="rect" id="node1" title="ROS Wrapper for the DWAPlanner that adheres to the BaseLocalPlanner interface and can be used as a pl..." alt="" coords="5,204,236,633"/>
+<area shape="rect" id="node2" href="$classnav__core_1_1_base_local_planner.html" title="Provides an interface for local planners used in navigation. All local planners written as plugins fo..." alt="" coords="18,5,223,156"/>
+</map>

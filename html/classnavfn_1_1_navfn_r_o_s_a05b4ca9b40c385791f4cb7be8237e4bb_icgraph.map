@@ -1,0 +1,5 @@
+<map id="navfn::NavfnROS::publishPlan" name="navfn::NavfnROS::publishPlan">
+<area shape="rect" id="node1" title="Publish a path for visualization purposes." alt="" coords="456,42,649,69"/>
+<area shape="rect" id="node2" href="$classnavfn_1_1_navfn_r_o_s.html#ad645a775f99aa2a120bb0b7f6cd08fd5" title="Compute a plan to a goal after the potential for a start point has already been computed (Note: You s..." alt="" coords="237,5,408,47"/>
+<area shape="rect" id="node3" href="$classnavfn_1_1_navfn_r_o_s.html#a1925183250dd36115daadd91b14656aa" title="Given a goal pose in the world, compute a plan." alt="" coords="5,42,189,69"/>
+</map>

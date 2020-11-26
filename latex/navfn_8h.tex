@@ -1,0 +1,139 @@
+\hypertarget{navfn_8h}{}\doxysection{E\+:/github/navigation/navfn/include/navfn/navfn.h File Reference}
+\label{navfn_8h}\index{E:/github/navigation/navfn/include/navfn/navfn.h@{E:/github/navigation/navfn/include/navfn/navfn.h}}
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for navfn.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{navfn_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{navfn_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnavfn_1_1_nav_fn}{navfn\+::\+Nav\+Fn}}
+\begin{DoxyCompactList}\small\item\em Navigation function class. Holds buffers for costmap, navfn map. Maps are pixel-\/based. Origin is upper left, x is right, y is down. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacenavfn}{navfn}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{navfn_8h_a08d08a154e8e694883ae1162d2edf938}{C\+O\+S\+T\+\_\+\+U\+N\+K\+N\+O\+W\+N\+\_\+\+R\+OS}}~255
+\item 
+\#define \mbox{\hyperlink{navfn_8h_afe3f51fbc354670e6c61f8e6f9c9b949}{C\+O\+S\+T\+\_\+\+O\+BS}}~254
+\item 
+\#define \mbox{\hyperlink{navfn_8h_a8945359447256feae1e51609e9a9ce50}{C\+O\+S\+T\+\_\+\+O\+B\+S\+\_\+\+R\+OS}}~253
+\item 
+\#define \mbox{\hyperlink{navfn_8h_a5039fec8588b6e3b45e5d0f98dbffe24}{C\+O\+S\+T\+\_\+\+N\+E\+U\+T\+R\+AL}}~50
+\item 
+\#define \mbox{\hyperlink{navfn_8h_a11548876fdd7ca7181d143df88578847}{C\+O\+S\+T\+\_\+\+F\+A\+C\+T\+OR}}~0.\+8
+\item 
+\#define \mbox{\hyperlink{navfn_8h_a137fdfc9b1a4312004400270e5f999ea}{C\+O\+S\+T\+T\+Y\+PE}}~unsigned char
+\item 
+\#define \mbox{\hyperlink{navfn_8h_a1ba71eeabfe9ba85c91393f562db6a33}{P\+O\+T\+\_\+\+H\+I\+GH}}~1.\+0e10
+\item 
+\#define \mbox{\hyperlink{navfn_8h_acc292a3d616d167e6b5f3e33cd9dad54}{P\+R\+I\+O\+R\+I\+T\+Y\+B\+U\+F\+S\+I\+ZE}}~10000
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacenavfn_a43e1cf99d005f4c0b40ce27c85ac3a0f}{navfn\+::create\+\_\+nav\+\_\+plan\+\_\+astar}} (\mbox{\hyperlink{navfn_8h_a137fdfc9b1a4312004400270e5f999ea}{C\+O\+S\+T\+T\+Y\+PE}} $\ast$costmap, int nx, int ny, int $\ast$\mbox{\hyperlink{navtest_8cpp_a924427d23a7d971370018f8d3dc452cf}{goal}}, int $\ast$\mbox{\hyperlink{navtest_8cpp_a035d2eadd3e54f4a028144044585cd71}{start}}, float $\ast$plan, int nplan)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{navfn_8h_a11548876fdd7ca7181d143df88578847}\label{navfn_8h_a11548876fdd7ca7181d143df88578847}} 
+\index{navfn.h@{navfn.h}!COST\_FACTOR@{COST\_FACTOR}}
+\index{COST\_FACTOR@{COST\_FACTOR}!navfn.h@{navfn.h}}
+\doxysubsubsection{\texorpdfstring{COST\_FACTOR}{COST\_FACTOR}}
+{\footnotesize\ttfamily \#define C\+O\+S\+T\+\_\+\+F\+A\+C\+T\+OR~0.\+8}
+
+
+
+Definition at line 65 of file navfn.\+h.
+
+\mbox{\Hypertarget{navfn_8h_a5039fec8588b6e3b45e5d0f98dbffe24}\label{navfn_8h_a5039fec8588b6e3b45e5d0f98dbffe24}} 
+\index{navfn.h@{navfn.h}!COST\_NEUTRAL@{COST\_NEUTRAL}}
+\index{COST\_NEUTRAL@{COST\_NEUTRAL}!navfn.h@{navfn.h}}
+\doxysubsubsection{\texorpdfstring{COST\_NEUTRAL}{COST\_NEUTRAL}}
+{\footnotesize\ttfamily \#define C\+O\+S\+T\+\_\+\+N\+E\+U\+T\+R\+AL~50}
+
+
+
+Definition at line 64 of file navfn.\+h.
+
+\mbox{\Hypertarget{navfn_8h_afe3f51fbc354670e6c61f8e6f9c9b949}\label{navfn_8h_afe3f51fbc354670e6c61f8e6f9c9b949}} 
+\index{navfn.h@{navfn.h}!COST\_OBS@{COST\_OBS}}
+\index{COST\_OBS@{COST\_OBS}!navfn.h@{navfn.h}}
+\doxysubsubsection{\texorpdfstring{COST\_OBS}{COST\_OBS}}
+{\footnotesize\ttfamily \#define C\+O\+S\+T\+\_\+\+O\+BS~254}
+
+
+
+Definition at line 51 of file navfn.\+h.
+
+\mbox{\Hypertarget{navfn_8h_a8945359447256feae1e51609e9a9ce50}\label{navfn_8h_a8945359447256feae1e51609e9a9ce50}} 
+\index{navfn.h@{navfn.h}!COST\_OBS\_ROS@{COST\_OBS\_ROS}}
+\index{COST\_OBS\_ROS@{COST\_OBS\_ROS}!navfn.h@{navfn.h}}
+\doxysubsubsection{\texorpdfstring{COST\_OBS\_ROS}{COST\_OBS\_ROS}}
+{\footnotesize\ttfamily \#define C\+O\+S\+T\+\_\+\+O\+B\+S\+\_\+\+R\+OS~253}
+
+
+
+Definition at line 52 of file navfn.\+h.
+
+\mbox{\Hypertarget{navfn_8h_a08d08a154e8e694883ae1162d2edf938}\label{navfn_8h_a08d08a154e8e694883ae1162d2edf938}} 
+\index{navfn.h@{navfn.h}!COST\_UNKNOWN\_ROS@{COST\_UNKNOWN\_ROS}}
+\index{COST\_UNKNOWN\_ROS@{COST\_UNKNOWN\_ROS}!navfn.h@{navfn.h}}
+\doxysubsubsection{\texorpdfstring{COST\_UNKNOWN\_ROS}{COST\_UNKNOWN\_ROS}}
+{\footnotesize\ttfamily \#define C\+O\+S\+T\+\_\+\+U\+N\+K\+N\+O\+W\+N\+\_\+\+R\+OS~255}
+
+
+
+Definition at line 50 of file navfn.\+h.
+
+\mbox{\Hypertarget{navfn_8h_a137fdfc9b1a4312004400270e5f999ea}\label{navfn_8h_a137fdfc9b1a4312004400270e5f999ea}} 
+\index{navfn.h@{navfn.h}!COSTTYPE@{COSTTYPE}}
+\index{COSTTYPE@{COSTTYPE}!navfn.h@{navfn.h}}
+\doxysubsubsection{\texorpdfstring{COSTTYPE}{COSTTYPE}}
+{\footnotesize\ttfamily \#define C\+O\+S\+T\+T\+Y\+PE~unsigned char}
+
+
+
+Definition at line 71 of file navfn.\+h.
+
+\mbox{\Hypertarget{navfn_8h_a1ba71eeabfe9ba85c91393f562db6a33}\label{navfn_8h_a1ba71eeabfe9ba85c91393f562db6a33}} 
+\index{navfn.h@{navfn.h}!POT\_HIGH@{POT\_HIGH}}
+\index{POT\_HIGH@{POT\_HIGH}!navfn.h@{navfn.h}}
+\doxysubsubsection{\texorpdfstring{POT\_HIGH}{POT\_HIGH}}
+{\footnotesize\ttfamily \#define P\+O\+T\+\_\+\+H\+I\+GH~1.\+0e10}
+
+
+
+Definition at line 75 of file navfn.\+h.
+
+\mbox{\Hypertarget{navfn_8h_acc292a3d616d167e6b5f3e33cd9dad54}\label{navfn_8h_acc292a3d616d167e6b5f3e33cd9dad54}} 
+\index{navfn.h@{navfn.h}!PRIORITYBUFSIZE@{PRIORITYBUFSIZE}}
+\index{PRIORITYBUFSIZE@{PRIORITYBUFSIZE}!navfn.h@{navfn.h}}
+\doxysubsubsection{\texorpdfstring{PRIORITYBUFSIZE}{PRIORITYBUFSIZE}}
+{\footnotesize\ttfamily \#define P\+R\+I\+O\+R\+I\+T\+Y\+B\+U\+F\+S\+I\+ZE~10000}
+
+
+
+Definition at line 78 of file navfn.\+h.
+

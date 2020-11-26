@@ -1,0 +1,10 @@
+<map id="navfn::NavfnROS::getPlanFromPotential" name="navfn::NavfnROS::getPlanFromPotential">
+<area shape="rect" id="node1" title="Compute a plan to a goal after the potential for a start point has already been computed (Note: You s..." alt="" coords="5,96,176,137"/>
+<area shape="rect" id="node2" href="$classcostmap__2d_1_1_costmap2_d.html#a615a4186649d8970111f8a356906b320" title="Accessor for the x size of the costmap in cells." alt="" coords="239,12,408,53"/>
+<area shape="rect" id="node3" href="$classnavfn_1_1_navfn_r_o_s.html#afa5d363d19a0451e2f0f1b4bdf9f878f" title=" " alt="" coords="224,78,423,105"/>
+<area shape="rect" id="node7" href="$classnavfn_1_1_navfn_r_o_s.html#a05b4ca9b40c385791f4cb7be8237e4bb" title="Publish a path for visualization purposes." alt="" coords="227,129,420,155"/>
+<area shape="rect" id="node8" href="$classcostmap__2d_1_1_costmap2_d.html#a9a2c824d4cd3bcad3ac3435d81982986" title="Convert from world coordinates to map coordinates." alt="" coords="239,180,408,221"/>
+<area shape="rect" id="node4" href="$classcostmap__2d_1_1_costmap2_d.html#a9aae81be964f5fff675f9a10c3bf2e82" title="Accessor for the x origin of the costmap." alt="" coords="471,5,640,47"/>
+<area shape="rect" id="node5" href="$classcostmap__2d_1_1_costmap2_d.html#a686124b010e121eb87629ff17a032d7f" title="Accessor for the y origin of the costmap." alt="" coords="471,71,640,112"/>
+<area shape="rect" id="node6" href="$classcostmap__2d_1_1_costmap2_d.html#ade55f512e27c62cec28a3de5ca775759" title="Accessor for the resolution of the costmap." alt="" coords="471,136,640,177"/>
+</map>

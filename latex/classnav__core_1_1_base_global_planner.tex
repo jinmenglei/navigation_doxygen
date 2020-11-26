@@ -1,0 +1,180 @@
+\hypertarget{classnav__core_1_1_base_global_planner}{}\doxysection{nav\+\_\+core\+::Base\+Global\+Planner Class Reference}
+\label{classnav__core_1_1_base_global_planner}\index{nav\_core::BaseGlobalPlanner@{nav\_core::BaseGlobalPlanner}}
+
+
+Provides an interface for global planners used in navigation. All global planners written as plugins for the navigation stack must adhere to this interface.  
+
+
+
+
+{\ttfamily \#include $<$base\+\_\+global\+\_\+planner.\+h$>$}
+
+
+
+Inheritance diagram for nav\+\_\+core\+::Base\+Global\+Planner\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnav__core_1_1_base_global_planner__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for nav\+\_\+core\+::Base\+Global\+Planner\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classnav__core_1_1_base_global_planner__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classnav__core_1_1_base_global_planner_ae34a7c7cf96ebdfaf6b33f24a646156c}{make\+Plan}} (const geometry\+\_\+msgs\+::\+Pose\+Stamped \&\mbox{\hyperlink{navtest_8cpp_a035d2eadd3e54f4a028144044585cd71}{start}}, const geometry\+\_\+msgs\+::\+Pose\+Stamped \&\mbox{\hyperlink{navtest_8cpp_a924427d23a7d971370018f8d3dc452cf}{goal}}, std\+::vector$<$ geometry\+\_\+msgs\+::\+Pose\+Stamped $>$ \&plan)=0
+\begin{DoxyCompactList}\small\item\em Given a goal pose in the world, compute a plan. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classnav__core_1_1_base_global_planner_afbc2b0f16bdd55a8b619f9fb5b7aa8da}{make\+Plan}} (const geometry\+\_\+msgs\+::\+Pose\+Stamped \&\mbox{\hyperlink{navtest_8cpp_a035d2eadd3e54f4a028144044585cd71}{start}}, const geometry\+\_\+msgs\+::\+Pose\+Stamped \&\mbox{\hyperlink{navtest_8cpp_a924427d23a7d971370018f8d3dc452cf}{goal}}, std\+::vector$<$ geometry\+\_\+msgs\+::\+Pose\+Stamped $>$ \&plan, double \&cost)
+\begin{DoxyCompactList}\small\item\em Given a goal pose in the world, compute a plan. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classnav__core_1_1_base_global_planner_a485461ff314103dac95744f771107c43}{initialize}} (std\+::string name, \mbox{\hyperlink{classcostmap__2d_1_1_costmap2_d_r_o_s}{costmap\+\_\+2d\+::\+Costmap2\+D\+R\+OS}} $\ast$costmap\+\_\+ros)=0
+\begin{DoxyCompactList}\small\item\em Initialization function for the \mbox{\hyperlink{classnav__core_1_1_base_global_planner}{Base\+Global\+Planner}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classnav__core_1_1_base_global_planner_a98120c1d76f7a5badb74adef9694a06d}{$\sim$\+Base\+Global\+Planner}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnav__core_1_1_base_global_planner_a9a5877f3f1c7c09dca8ddb735487ef61}{Base\+Global\+Planner}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides an interface for global planners used in navigation. All global planners written as plugins for the navigation stack must adhere to this interface. 
+
+Definition at line 48 of file base\+\_\+global\+\_\+planner.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnav__core_1_1_base_global_planner_a98120c1d76f7a5badb74adef9694a06d}\label{classnav__core_1_1_base_global_planner_a98120c1d76f7a5badb74adef9694a06d}} 
+\index{nav\_core::BaseGlobalPlanner@{nav\_core::BaseGlobalPlanner}!````~BaseGlobalPlanner@{$\sim$BaseGlobalPlanner}}
+\index{````~BaseGlobalPlanner@{$\sim$BaseGlobalPlanner}!nav\_core::BaseGlobalPlanner@{nav\_core::BaseGlobalPlanner}}
+\doxysubsubsection{\texorpdfstring{$\sim$BaseGlobalPlanner()}{~BaseGlobalPlanner()}}
+{\footnotesize\ttfamily virtual nav\+\_\+core\+::\+Base\+Global\+Planner\+::$\sim$\+Base\+Global\+Planner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Virtual destructor for the interface. 
+
+
+
+Definition at line 86 of file base\+\_\+global\+\_\+planner.\+h.
+
+\mbox{\Hypertarget{classnav__core_1_1_base_global_planner_a9a5877f3f1c7c09dca8ddb735487ef61}\label{classnav__core_1_1_base_global_planner_a9a5877f3f1c7c09dca8ddb735487ef61}} 
+\index{nav\_core::BaseGlobalPlanner@{nav\_core::BaseGlobalPlanner}!BaseGlobalPlanner@{BaseGlobalPlanner}}
+\index{BaseGlobalPlanner@{BaseGlobalPlanner}!nav\_core::BaseGlobalPlanner@{nav\_core::BaseGlobalPlanner}}
+\doxysubsubsection{\texorpdfstring{BaseGlobalPlanner()}{BaseGlobalPlanner()}}
+{\footnotesize\ttfamily nav\+\_\+core\+::\+Base\+Global\+Planner\+::\+Base\+Global\+Planner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 89 of file base\+\_\+global\+\_\+planner.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classnav__core_1_1_base_global_planner_a485461ff314103dac95744f771107c43}\label{classnav__core_1_1_base_global_planner_a485461ff314103dac95744f771107c43}} 
+\index{nav\_core::BaseGlobalPlanner@{nav\_core::BaseGlobalPlanner}!initialize@{initialize}}
+\index{initialize@{initialize}!nav\_core::BaseGlobalPlanner@{nav\_core::BaseGlobalPlanner}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily virtual void nav\+\_\+core\+::\+Base\+Global\+Planner\+::initialize (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{\mbox{\hyperlink{classcostmap__2d_1_1_costmap2_d_r_o_s}{costmap\+\_\+2d\+::\+Costmap2\+D\+R\+OS}} $\ast$}]{costmap\+\_\+ros }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Initialization function for the \mbox{\hyperlink{classnav__core_1_1_base_global_planner}{Base\+Global\+Planner}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of this planner \\
+\hline
+{\em costmap\+\_\+ros} & A pointer to the R\+OS wrapper of the costmap to use for planning \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classnavfn_1_1_navfn_r_o_s_a7f1e06b4e3b390aaaa3e4733a0668c4d}{navfn\+::\+Navfn\+R\+OS}}, \mbox{\hyperlink{classglobal__planner_1_1_global_planner_a280ebb6723d46b462eb66ec73a2fe266}{global\+\_\+planner\+::\+Global\+Planner}}, and \mbox{\hyperlink{classcarrot__planner_1_1_carrot_planner_a83b1bb77b4ef4a2719dcc29bf90d077e}{carrot\+\_\+planner\+::\+Carrot\+Planner}}.
+
+\mbox{\Hypertarget{classnav__core_1_1_base_global_planner_ae34a7c7cf96ebdfaf6b33f24a646156c}\label{classnav__core_1_1_base_global_planner_ae34a7c7cf96ebdfaf6b33f24a646156c}} 
+\index{nav\_core::BaseGlobalPlanner@{nav\_core::BaseGlobalPlanner}!makePlan@{makePlan}}
+\index{makePlan@{makePlan}!nav\_core::BaseGlobalPlanner@{nav\_core::BaseGlobalPlanner}}
+\doxysubsubsection{\texorpdfstring{makePlan()}{makePlan()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool nav\+\_\+core\+::\+Base\+Global\+Planner\+::make\+Plan (\begin{DoxyParamCaption}\item[{const geometry\+\_\+msgs\+::\+Pose\+Stamped \&}]{start,  }\item[{const geometry\+\_\+msgs\+::\+Pose\+Stamped \&}]{goal,  }\item[{std\+::vector$<$ geometry\+\_\+msgs\+::\+Pose\+Stamped $>$ \&}]{plan }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Given a goal pose in the world, compute a plan. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & The start pose \\
+\hline
+{\em goal} & The goal pose \\
+\hline
+{\em plan} & The plan... filled by the planner \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if a valid plan was found, false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classnavfn_1_1_navfn_r_o_s_aa8cec6d49a902ace7e71ffc7125b29a9}{navfn\+::\+Navfn\+R\+OS}}, \mbox{\hyperlink{classglobal__planner_1_1_global_planner_abb7f40f6a851f88e6b7668a38571712a}{global\+\_\+planner\+::\+Global\+Planner}}, and \mbox{\hyperlink{classcarrot__planner_1_1_carrot_planner_a59c64d61f2e992d08b32438116614ab5}{carrot\+\_\+planner\+::\+Carrot\+Planner}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnav__core_1_1_base_global_planner_ae34a7c7cf96ebdfaf6b33f24a646156c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classnav__core_1_1_base_global_planner_afbc2b0f16bdd55a8b619f9fb5b7aa8da}\label{classnav__core_1_1_base_global_planner_afbc2b0f16bdd55a8b619f9fb5b7aa8da}} 
+\index{nav\_core::BaseGlobalPlanner@{nav\_core::BaseGlobalPlanner}!makePlan@{makePlan}}
+\index{makePlan@{makePlan}!nav\_core::BaseGlobalPlanner@{nav\_core::BaseGlobalPlanner}}
+\doxysubsubsection{\texorpdfstring{makePlan()}{makePlan()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual bool nav\+\_\+core\+::\+Base\+Global\+Planner\+::make\+Plan (\begin{DoxyParamCaption}\item[{const geometry\+\_\+msgs\+::\+Pose\+Stamped \&}]{start,  }\item[{const geometry\+\_\+msgs\+::\+Pose\+Stamped \&}]{goal,  }\item[{std\+::vector$<$ geometry\+\_\+msgs\+::\+Pose\+Stamped $>$ \&}]{plan,  }\item[{double \&}]{cost }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Given a goal pose in the world, compute a plan. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & The start pose \\
+\hline
+{\em goal} & The goal pose \\
+\hline
+{\em plan} & The plan... filled by the planner \\
+\hline
+{\em cost} & The plans calculated cost \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if a valid plan was found, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 68 of file base\+\_\+global\+\_\+planner.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnav__core_1_1_base_global_planner_afbc2b0f16bdd55a8b619f9fb5b7aa8da_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/github/navigation/nav\+\_\+core/include/nav\+\_\+core/\mbox{\hyperlink{base__global__planner_8h}{base\+\_\+global\+\_\+planner.\+h}}\end{DoxyCompactItemize}

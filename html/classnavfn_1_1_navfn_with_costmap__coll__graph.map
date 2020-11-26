@@ -1,0 +1,10 @@
+<map id="navfn::NavfnWithCostmap" name="navfn::NavfnWithCostmap">
+<area shape="rect" id="node1" title=" " alt="" coords="267,1613,437,1735"/>
+<area shape="rect" id="node2" href="$classnavfn_1_1_navfn_r_o_s.html" title="Provides a ROS wrapper for the navfn planner which runs a fast, interpolated navigation function on a..." alt="" coords="103,497,270,971"/>
+<area shape="rect" id="node3" href="$classnav__core_1_1_base_global_planner.html" title="Provides an interface for global planners used in navigation. All global planners written as plugins ..." alt="" coords="5,152,197,288"/>
+<area shape="rect" id="node4" title=" " alt="" coords="621,181,675,259"/>
+<area shape="rect" id="node6" href="$classcostmap__2d_1_1_costmap2_d_r_o_s.html" title="A ROS wrapper for a 2D Costmap. Handles subscribing to topics that provide observations about obstacl..." alt="" coords="423,1033,636,1551"/>
+<area shape="rect" id="node7" href="$classcostmap__2d_1_1_layered_costmap.html" title="Instantiates different layer plugins and aggregates them into one score." alt="" coords="561,549,759,919"/>
+<area shape="rect" id="node8" href="$classcostmap__2d_1_1_costmap2_d_publisher.html" title="A tool to periodically publish visualization data from a Costmap2D." alt="" coords="314,563,537,905"/>
+<area shape="rect" id="node5" href="$classcostmap__2d_1_1_costmap2_d.html" title="A 2D costmap provides a mapping between points in the world and their associated &quot;costs&quot;." alt="" coords="222,5,391,435"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="base_local_planner::OscillationCostFunction::resetOscillationFlags" name="base_local_planner::OscillationCostFunction::resetOscillationFlags">
+<area shape="rect" id="node1" title="Reset the oscillation flags for the local planner." alt="" coords="767,108,935,164"/>
+<area shape="rect" id="node2" href="$classdwa__local__planner_1_1_d_w_a_planner.html#a1200e7b997f2acd8c3b912bed37e69d5" title="Check if a trajectory is legal for a position/velocity pair." alt="" coords="516,13,713,54"/>
+<area shape="rect" id="node4" href="$classdwa__local__planner_1_1_d_w_a_planner.html#ab2c1143a3a54638d0dc38f9b6fa16e53" title="Constructor for the planner." alt="" coords="525,78,705,119"/>
+<area shape="rect" id="node5" href="$classbase__local__planner_1_1_oscillation_cost_function.html#aa6224a4812d149fcf71dc2131b92cb96" title=" " alt="" coords="511,144,719,200"/>
+<area shape="rect" id="node8" href="$classdwa__local__planner_1_1_d_w_a_planner.html#ac0ab6d668b0b9e867ca2ba3ec2f235bf" title=" " alt="" coords="540,225,689,266"/>
+<area shape="rect" id="node3" href="$classdwa__local__planner_1_1_d_w_a_planner_r_o_s.html#a700178e32159b614d328326b6ba5f8b0" title="Given the current position, orientation, and velocity of the robot, compute velocity commands to send..." alt="" coords="232,5,463,61"/>
+<area shape="rect" id="node6" href="$classbase__local__planner_1_1_oscillation_cost_function.html#a2cd60c5b611d43697f3345e3c356f48f" title=" " alt="" coords="263,144,431,200"/>
+<area shape="rect" id="node7" href="$classdwa__local__planner_1_1_d_w_a_planner.html#acf862f4cbfd701bacf1eb359cd05892f" title="Given the current position and velocity of the robot, find the best trajectory to exectue." alt="" coords="5,151,184,193"/>
+</map>

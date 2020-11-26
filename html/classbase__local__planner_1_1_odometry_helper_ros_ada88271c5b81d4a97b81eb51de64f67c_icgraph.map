@@ -1,0 +1,8 @@
+<map id="base_local_planner::OdometryHelperRos::getOdom" name="base_local_planner::OdometryHelperRos::getOdom">
+<area shape="rect" id="node1" title=" " alt="" coords="591,85,737,141"/>
+<area shape="rect" id="node2" href="$classbase__local__planner_1_1_trajectory_planner_r_o_s.html#adb2d96332da31a154db84930754409af" title="Given the current position, orientation, and velocity of the robot, compute velocity commands to send..." alt="" coords="317,5,510,61"/>
+<area shape="rect" id="node3" href="$classbase__local__planner_1_1_latched_stop_rotate_controller.html#a5bd9394ca5cabf2a35526dcb193e36be" title=" " alt="" coords="284,85,543,141"/>
+<area shape="rect" id="node5" href="$classbase__local__planner_1_1_latched_stop_rotate_controller.html#a296b387b74afe1c430f0dc6efb2f2ae8" title=" " alt="" coords="315,165,511,221"/>
+<area shape="rect" id="node4" href="$classdwa__local__planner_1_1_d_w_a_planner_r_o_s.html#a700178e32159b614d328326b6ba5f8b0" title="Given the current position, orientation, and velocity of the robot, compute velocity commands to send..." alt="" coords="5,85,236,141"/>
+<area shape="rect" id="node6" href="$classdwa__local__planner_1_1_d_w_a_planner_r_o_s.html#a847c1877d967acd515d7ddf1ac246941" title="Check if the goal pose has been achieved." alt="" coords="10,173,231,214"/>
+</map>

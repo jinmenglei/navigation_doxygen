@@ -1,0 +1,6 @@
+<map id="move_base::MoveBase::getRobotPose" name="move_base::MoveBase::getRobotPose">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,160,112"/>
+<area shape="rect" id="node2" href="$classcostmap__2d_1_1_costmap2_d_r_o_s.html#a9636b0058777ed8473ca99cd55a491f6" title="Returns the global frame of the costmap." alt="" coords="208,5,405,47"/>
+<area shape="rect" id="node3" href="$classcostmap__2d_1_1_costmap2_d_r_o_s.html#a25a9d0682d5997a6e8b3f548f095a2dd" title="Returns costmap name." alt="" coords="208,71,405,112"/>
+<area shape="rect" id="node4" href="$classcostmap__2d_1_1_costmap2_d_r_o_s.html#aa96116a5847c4cbbe872e7ace18dc67c" title="Returns the delay in transform (tf) data that is tolerable in seconds." alt="" coords="208,136,405,177"/>
+</map>

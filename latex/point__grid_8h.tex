@@ -1,0 +1,35 @@
+\hypertarget{point__grid_8h}{}\doxysection{E\+:/github/navigation/base\+\_\+local\+\_\+planner/include/base\+\_\+local\+\_\+planner/point\+\_\+grid.h File Reference}
+\label{point__grid_8h}\index{E:/github/navigation/base\_local\_planner/include/base\_local\_planner/point\_grid.h@{E:/github/navigation/base\_local\_planner/include/base\_local\_planner/point\_grid.h}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$cfloat$>$}\newline
+{\ttfamily \#include $<$geometry\+\_\+msgs/\+Point.\+h$>$}\newline
+{\ttfamily \#include $<$costmap\+\_\+2d/observation.\+h$>$}\newline
+{\ttfamily \#include $<$base\+\_\+local\+\_\+planner/world\+\_\+model.\+h$>$}\newline
+{\ttfamily \#include $<$sensor\+\_\+msgs/\+Point\+Cloud2.\+h$>$}\newline
+Include dependency graph for point\+\_\+grid.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{point__grid_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{point__grid_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classbase__local__planner_1_1_point_grid}{base\+\_\+local\+\_\+planner\+::\+Point\+Grid}}
+\begin{DoxyCompactList}\small\item\em A class that implements the \mbox{\hyperlink{classbase__local__planner_1_1_world_model}{World\+Model}} interface to provide free-\/space collision checks for the trajectory controller. This class stores points binned into a grid and performs point-\/in-\/polygon checks when necessary to determine the legality of a footprint at a given position/orientation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacebase__local__planner}{base\+\_\+local\+\_\+planner}}
+\end{DoxyCompactItemize}

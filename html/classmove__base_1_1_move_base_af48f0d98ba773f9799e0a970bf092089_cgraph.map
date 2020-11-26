@@ -1,0 +1,10 @@
+<map id="move_base::MoveBase::makePlan" name="move_base::MoveBase::makePlan">
+<area shape="rect" id="node1" title="Make a new global plan." alt="" coords="5,71,160,112"/>
+<area shape="rect" id="node2" href="$classcostmap__2d_1_1_costmap2_d_r_o_s.html#ac1005008ad19c3734f0b5eafac2ff8ce" title="Return a pointer to the &quot;master&quot; costmap which receives updates from all the layers." alt="" coords="208,5,405,47"/>
+<area shape="rect" id="node4" href="$classcostmap__2d_1_1_costmap2_d.html#a0d03ac474a496bee0780d4b7f5b4a2f1" title=" " alt="" coords="222,71,391,112"/>
+<area shape="rect" id="node5" href="$classmove__base_1_1_move_base.html#ab267e8cd4697812fde4df300cb5902ac" title=" " alt="" coords="229,136,384,177"/>
+<area shape="rect" id="node3" href="$classcostmap__2d_1_1_layered_costmap.html#ae0c5b98322d3f62761418b895e2884b3" title=" " alt="" coords="453,5,652,47"/>
+<area shape="rect" id="node6" href="$classcostmap__2d_1_1_costmap2_d_r_o_s.html#a9636b0058777ed8473ca99cd55a491f6" title="Returns the global frame of the costmap." alt="" coords="454,71,651,112"/>
+<area shape="rect" id="node7" href="$classcostmap__2d_1_1_costmap2_d_r_o_s.html#a25a9d0682d5997a6e8b3f548f095a2dd" title="Returns costmap name." alt="" coords="454,136,651,177"/>
+<area shape="rect" id="node8" href="$classcostmap__2d_1_1_costmap2_d_r_o_s.html#aa96116a5847c4cbbe872e7ace18dc67c" title="Returns the delay in transform (tf) data that is tolerable in seconds." alt="" coords="454,201,651,243"/>
+</map>

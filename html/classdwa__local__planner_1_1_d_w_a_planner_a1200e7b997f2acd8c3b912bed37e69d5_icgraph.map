@@ -1,0 +1,4 @@
+<map id="dwa_local_planner::DWAPlanner::checkTrajectory" name="dwa_local_planner::DWAPlanner::checkTrajectory">
+<area shape="rect" id="node1" title="Check if a trajectory is legal for a position/velocity pair." alt="" coords="284,13,481,54"/>
+<area shape="rect" id="node2" href="$classdwa__local__planner_1_1_d_w_a_planner_r_o_s.html#a700178e32159b614d328326b6ba5f8b0" title="Given the current position, orientation, and velocity of the robot, compute velocity commands to send..." alt="" coords="5,5,236,61"/>
+</map>

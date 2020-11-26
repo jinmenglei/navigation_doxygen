@@ -1,0 +1,4 @@
+<map id="clear_costmap_recovery::ClearCostmapRecovery" name="clear_costmap_recovery::ClearCostmapRecovery">
+<area shape="rect" id="node1" title="A recovery behavior that reverts the navigation stack&#39;s costmaps to the static map outside of a user&#45;..." alt="" coords="8,175,185,457"/>
+<area shape="rect" id="node2" href="$classnav__core_1_1_recovery_behavior.html" title="Provides an interface for recovery behaviors used in navigation. All recovery behaviors written as pl..." alt="" coords="5,5,188,127"/>
+</map>

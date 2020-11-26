@@ -1,0 +1,6 @@
+<map id="base_local_planner::FootprintHelper::getFootprintCells" name="base_local_planner::FootprintHelper::getFootprintCells">
+<area shape="rect" id="node1" title="Used to get the cells that make up the footprint of the robot." alt="" coords="437,45,632,101"/>
+<area shape="rect" id="node2" href="$classbase__local__planner_1_1_footprint_helper_test.html#a76bf4841d7d0069d3911b2f5169f5ca0" title=" " alt="" coords="247,5,389,61"/>
+<area shape="rect" id="node3" href="$classbase__local__planner_1_1_trajectory_planner.html#a0fa1222899b6f8d630924f7de5e32a66" title="Given the current position, orientation, and velocity of the robot, return a trajectory to follow." alt="" coords="251,85,385,141"/>
+<area shape="rect" id="node4" href="$classbase__local__planner_1_1_trajectory_planner_r_o_s.html#adb2d96332da31a154db84930754409af" title="Given the current position, orientation, and velocity of the robot, compute velocity commands to send..." alt="" coords="5,85,199,141"/>
+</map>

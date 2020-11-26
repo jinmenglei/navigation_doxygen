@@ -1,0 +1,5 @@
+<map id="nav_core::BaseLocalPlanner" name="nav_core::BaseLocalPlanner">
+<area shape="rect" id="node1" title="Provides an interface for local planners used in navigation. All local planners written as plugins fo..." alt="" coords="127,5,332,156"/>
+<area shape="rect" id="node2" href="$classbase__local__planner_1_1_trajectory_planner_r_o_s.html" title="A ROS wrapper for the trajectory controller that queries the param server to construct a controller." alt="" coords="5,204,211,663"/>
+<area shape="rect" id="node3" href="$classdwa__local__planner_1_1_d_w_a_planner_r_o_s.html" title="ROS Wrapper for the DWAPlanner that adheres to the BaseLocalPlanner interface and can be used as a pl..." alt="" coords="235,219,466,648"/>
+</map>

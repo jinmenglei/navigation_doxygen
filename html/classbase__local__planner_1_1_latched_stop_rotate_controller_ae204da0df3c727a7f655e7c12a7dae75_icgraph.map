@@ -1,0 +1,5 @@
+<map id="base_local_planner::LatchedStopRotateController::stopWithAccLimits" name="base_local_planner::LatchedStopRotateController::stopWithAccLimits">
+<area shape="rect" id="node1" title="Stop the robot taking into account acceleration limits." alt="" coords="591,5,787,61"/>
+<area shape="rect" id="node2" href="$classbase__local__planner_1_1_latched_stop_rotate_controller.html#a5bd9394ca5cabf2a35526dcb193e36be" title=" " alt="" coords="284,5,543,61"/>
+<area shape="rect" id="node3" href="$classdwa__local__planner_1_1_d_w_a_planner_r_o_s.html#a700178e32159b614d328326b6ba5f8b0" title="Given the current position, orientation, and velocity of the robot, compute velocity commands to send..." alt="" coords="5,5,236,61"/>
+</map>

@@ -1,0 +1,201 @@
+\hypertarget{pf__kdtree_8h}{}\doxysection{E\+:/github/navigation/amcl/include/amcl/pf/pf\+\_\+kdtree.h File Reference}
+\label{pf__kdtree_8h}\index{E:/github/navigation/amcl/include/amcl/pf/pf\_kdtree.h@{E:/github/navigation/amcl/include/amcl/pf/pf\_kdtree.h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pf__kdtree_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structpf__kdtree__node}{pf\+\_\+kdtree\+\_\+node}}
+\item 
+struct \mbox{\hyperlink{structpf__kdtree__t}{pf\+\_\+kdtree\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structpf__kdtree__node}{pf\+\_\+kdtree\+\_\+node}} \mbox{\hyperlink{pf__kdtree_8h_a05fb8223798c8ce1e5d56e4bf6756ee2}{pf\+\_\+kdtree\+\_\+node\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structpf__kdtree__t}{pf\+\_\+kdtree\+\_\+t}} $\ast$ \mbox{\hyperlink{pf__kdtree_8h_aaf8d3a461e5d387a34b43b2865f439a0}{pf\+\_\+kdtree\+\_\+alloc}} (int max\+\_\+size)
+\item 
+void \mbox{\hyperlink{pf__kdtree_8h_ac1f471ee15033bbe30a96abe56f1e072}{pf\+\_\+kdtree\+\_\+free}} (\mbox{\hyperlink{structpf__kdtree__t}{pf\+\_\+kdtree\+\_\+t}} $\ast$self)
+\item 
+void \mbox{\hyperlink{pf__kdtree_8h_afc558bc7d59167c6d5ebcd23b06c5129}{pf\+\_\+kdtree\+\_\+clear}} (\mbox{\hyperlink{structpf__kdtree__t}{pf\+\_\+kdtree\+\_\+t}} $\ast$self)
+\item 
+void \mbox{\hyperlink{pf__kdtree_8h_a25bb0665463cacfc166b50be94079940}{pf\+\_\+kdtree\+\_\+insert}} (\mbox{\hyperlink{structpf__kdtree__t}{pf\+\_\+kdtree\+\_\+t}} $\ast$self, \mbox{\hyperlink{structpf__vector__t}{pf\+\_\+vector\+\_\+t}} pose, double value)
+\item 
+void \mbox{\hyperlink{pf__kdtree_8h_a8757b78853ad243c2b823b8560c1027a}{pf\+\_\+kdtree\+\_\+cluster}} (\mbox{\hyperlink{structpf__kdtree__t}{pf\+\_\+kdtree\+\_\+t}} $\ast$self)
+\item 
+double \mbox{\hyperlink{pf__kdtree_8h_a0f854496ce2d903ba3cc0efd7577afce}{pf\+\_\+kdtree\+\_\+get\+\_\+prob}} (\mbox{\hyperlink{structpf__kdtree__t}{pf\+\_\+kdtree\+\_\+t}} $\ast$self, \mbox{\hyperlink{structpf__vector__t}{pf\+\_\+vector\+\_\+t}} pose)
+\item 
+int \mbox{\hyperlink{pf__kdtree_8h_a84700cffabc8cd46af8145cb215fbc56}{pf\+\_\+kdtree\+\_\+get\+\_\+cluster}} (\mbox{\hyperlink{structpf__kdtree__t}{pf\+\_\+kdtree\+\_\+t}} $\ast$self, \mbox{\hyperlink{structpf__vector__t}{pf\+\_\+vector\+\_\+t}} pose)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{pf__kdtree_8h_a05fb8223798c8ce1e5d56e4bf6756ee2}\label{pf__kdtree_8h_a05fb8223798c8ce1e5d56e4bf6756ee2}} 
+\index{pf\_kdtree.h@{pf\_kdtree.h}!pf\_kdtree\_node\_t@{pf\_kdtree\_node\_t}}
+\index{pf\_kdtree\_node\_t@{pf\_kdtree\_node\_t}!pf\_kdtree.h@{pf\_kdtree.h}}
+\doxysubsubsection{\texorpdfstring{pf\_kdtree\_node\_t}{pf\_kdtree\_node\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structpf__kdtree__node}{pf\+\_\+kdtree\+\_\+node}} \mbox{\hyperlink{pf__kdtree_8h_a05fb8223798c8ce1e5d56e4bf6756ee2}{pf\+\_\+kdtree\+\_\+node\+\_\+t}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{pf__kdtree_8h_aaf8d3a461e5d387a34b43b2865f439a0}\label{pf__kdtree_8h_aaf8d3a461e5d387a34b43b2865f439a0}} 
+\index{pf\_kdtree.h@{pf\_kdtree.h}!pf\_kdtree\_alloc@{pf\_kdtree\_alloc}}
+\index{pf\_kdtree\_alloc@{pf\_kdtree\_alloc}!pf\_kdtree.h@{pf\_kdtree.h}}
+\doxysubsubsection{\texorpdfstring{pf\_kdtree\_alloc()}{pf\_kdtree\_alloc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpf__kdtree__t}{pf\+\_\+kdtree\+\_\+t}}$\ast$ pf\+\_\+kdtree\+\_\+alloc (\begin{DoxyParamCaption}\item[{int}]{max\+\_\+size }\end{DoxyParamCaption})}
+
+
+
+Definition at line 66 of file pf\+\_\+kdtree.\+c.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pf__kdtree_8h_aaf8d3a461e5d387a34b43b2865f439a0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{pf__kdtree_8h_afc558bc7d59167c6d5ebcd23b06c5129}\label{pf__kdtree_8h_afc558bc7d59167c6d5ebcd23b06c5129}} 
+\index{pf\_kdtree.h@{pf\_kdtree.h}!pf\_kdtree\_clear@{pf\_kdtree\_clear}}
+\index{pf\_kdtree\_clear@{pf\_kdtree\_clear}!pf\_kdtree.h@{pf\_kdtree.h}}
+\doxysubsubsection{\texorpdfstring{pf\_kdtree\_clear()}{pf\_kdtree\_clear()}}
+{\footnotesize\ttfamily void pf\+\_\+kdtree\+\_\+clear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpf__kdtree__t}{pf\+\_\+kdtree\+\_\+t}} $\ast$}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 100 of file pf\+\_\+kdtree.\+c.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pf__kdtree_8h_afc558bc7d59167c6d5ebcd23b06c5129_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{pf__kdtree_8h_a8757b78853ad243c2b823b8560c1027a}\label{pf__kdtree_8h_a8757b78853ad243c2b823b8560c1027a}} 
+\index{pf\_kdtree.h@{pf\_kdtree.h}!pf\_kdtree\_cluster@{pf\_kdtree\_cluster}}
+\index{pf\_kdtree\_cluster@{pf\_kdtree\_cluster}!pf\_kdtree.h@{pf\_kdtree.h}}
+\doxysubsubsection{\texorpdfstring{pf\_kdtree\_cluster()}{pf\_kdtree\_cluster()}}
+{\footnotesize\ttfamily void pf\+\_\+kdtree\+\_\+cluster (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpf__kdtree__t}{pf\+\_\+kdtree\+\_\+t}} $\ast$}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 358 of file pf\+\_\+kdtree.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pf__kdtree_8h_a8757b78853ad243c2b823b8560c1027a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pf__kdtree_8h_a8757b78853ad243c2b823b8560c1027a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{pf__kdtree_8h_ac1f471ee15033bbe30a96abe56f1e072}\label{pf__kdtree_8h_ac1f471ee15033bbe30a96abe56f1e072}} 
+\index{pf\_kdtree.h@{pf\_kdtree.h}!pf\_kdtree\_free@{pf\_kdtree\_free}}
+\index{pf\_kdtree\_free@{pf\_kdtree\_free}!pf\_kdtree.h@{pf\_kdtree.h}}
+\doxysubsubsection{\texorpdfstring{pf\_kdtree\_free()}{pf\_kdtree\_free()}}
+{\footnotesize\ttfamily void pf\+\_\+kdtree\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpf__kdtree__t}{pf\+\_\+kdtree\+\_\+t}} $\ast$}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 90 of file pf\+\_\+kdtree.\+c.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pf__kdtree_8h_ac1f471ee15033bbe30a96abe56f1e072_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{pf__kdtree_8h_a84700cffabc8cd46af8145cb215fbc56}\label{pf__kdtree_8h_a84700cffabc8cd46af8145cb215fbc56}} 
+\index{pf\_kdtree.h@{pf\_kdtree.h}!pf\_kdtree\_get\_cluster@{pf\_kdtree\_get\_cluster}}
+\index{pf\_kdtree\_get\_cluster@{pf\_kdtree\_get\_cluster}!pf\_kdtree.h@{pf\_kdtree.h}}
+\doxysubsubsection{\texorpdfstring{pf\_kdtree\_get\_cluster()}{pf\_kdtree\_get\_cluster()}}
+{\footnotesize\ttfamily int pf\+\_\+kdtree\+\_\+get\+\_\+cluster (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpf__kdtree__t}{pf\+\_\+kdtree\+\_\+t}} $\ast$}]{self,  }\item[{\mbox{\hyperlink{structpf__vector__t}{pf\+\_\+vector\+\_\+t}}}]{pose }\end{DoxyParamCaption})}
+
+
+
+Definition at line 168 of file pf\+\_\+kdtree.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pf__kdtree_8h_a84700cffabc8cd46af8145cb215fbc56_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pf__kdtree_8h_a84700cffabc8cd46af8145cb215fbc56_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{pf__kdtree_8h_a0f854496ce2d903ba3cc0efd7577afce}\label{pf__kdtree_8h_a0f854496ce2d903ba3cc0efd7577afce}} 
+\index{pf\_kdtree.h@{pf\_kdtree.h}!pf\_kdtree\_get\_prob@{pf\_kdtree\_get\_prob}}
+\index{pf\_kdtree\_get\_prob@{pf\_kdtree\_get\_prob}!pf\_kdtree.h@{pf\_kdtree.h}}
+\doxysubsubsection{\texorpdfstring{pf\_kdtree\_get\_prob()}{pf\_kdtree\_get\_prob()}}
+{\footnotesize\ttfamily double pf\+\_\+kdtree\+\_\+get\+\_\+prob (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpf__kdtree__t}{pf\+\_\+kdtree\+\_\+t}} $\ast$}]{self,  }\item[{\mbox{\hyperlink{structpf__vector__t}{pf\+\_\+vector\+\_\+t}}}]{pose }\end{DoxyParamCaption})}
+
+
+
+Definition at line 150 of file pf\+\_\+kdtree.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pf__kdtree_8h_a0f854496ce2d903ba3cc0efd7577afce_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{pf__kdtree_8h_a25bb0665463cacfc166b50be94079940}\label{pf__kdtree_8h_a25bb0665463cacfc166b50be94079940}} 
+\index{pf\_kdtree.h@{pf\_kdtree.h}!pf\_kdtree\_insert@{pf\_kdtree\_insert}}
+\index{pf\_kdtree\_insert@{pf\_kdtree\_insert}!pf\_kdtree.h@{pf\_kdtree.h}}
+\doxysubsubsection{\texorpdfstring{pf\_kdtree\_insert()}{pf\_kdtree\_insert()}}
+{\footnotesize\ttfamily void pf\+\_\+kdtree\+\_\+insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpf__kdtree__t}{pf\+\_\+kdtree\+\_\+t}} $\ast$}]{self,  }\item[{\mbox{\hyperlink{structpf__vector__t}{pf\+\_\+vector\+\_\+t}}}]{pose,  }\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+Definition at line 112 of file pf\+\_\+kdtree.\+c.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pf__kdtree_8h_a25bb0665463cacfc166b50be94079940_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pf__kdtree_8h_a25bb0665463cacfc166b50be94079940_icgraph}
+\end{center}
+\end{figure}

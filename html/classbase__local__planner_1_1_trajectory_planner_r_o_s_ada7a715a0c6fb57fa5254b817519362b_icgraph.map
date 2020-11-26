@@ -1,0 +1,6 @@
+<map id="base_local_planner::TrajectoryPlannerROS::sign" name="base_local_planner::TrajectoryPlannerROS::sign">
+<area shape="rect" id="node1" title=" " alt="" coords="453,53,644,94"/>
+<area shape="rect" id="node2" href="$classbase__local__planner_1_1_trajectory_planner_r_o_s.html#a668b3cdefa51616c2fdf44b5ae2299b6" title="Once a goal position is reached... rotate to the goal orientation." alt="" coords="247,5,405,61"/>
+<area shape="rect" id="node4" href="$classbase__local__planner_1_1_trajectory_planner_r_o_s.html#ab82e06f9bf7a71996678689b83d5d1e3" title="Stop the robot taking into account acceleration limits." alt="" coords="247,85,405,141"/>
+<area shape="rect" id="node3" href="$classbase__local__planner_1_1_trajectory_planner_r_o_s.html#adb2d96332da31a154db84930754409af" title="Given the current position, orientation, and velocity of the robot, compute velocity commands to send..." alt="" coords="5,45,199,101"/>
+</map>

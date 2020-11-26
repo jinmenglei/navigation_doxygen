@@ -1,0 +1,4 @@
+<map id="navfn::NavfnROS::getPlanFromPotential" name="navfn::NavfnROS::getPlanFromPotential">
+<area shape="rect" id="node1" title="Compute a plan to a goal after the potential for a start point has already been computed (Note: You s..." alt="" coords="237,5,408,47"/>
+<area shape="rect" id="node2" href="$classnavfn_1_1_navfn_r_o_s.html#a1925183250dd36115daadd91b14656aa" title="Given a goal pose in the world, compute a plan." alt="" coords="5,13,189,39"/>
+</map>

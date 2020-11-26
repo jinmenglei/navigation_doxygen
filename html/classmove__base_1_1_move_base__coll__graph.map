@@ -1,0 +1,8 @@
+<map id="move_base::MoveBase" name="move_base::MoveBase">
+<area shape="rect" id="node1" title="A class that uses the actionlib::ActionServer interface that moves the robot base to a goal location." alt="" coords="5,1555,216,1969"/>
+<area shape="rect" id="node2" title=" " alt="" coords="273,181,327,259"/>
+<area shape="rect" id="node3" href="$classcostmap__2d_1_1_costmap2_d_r_o_s.html" title="A ROS wrapper for a 2D Costmap. Handles subscribing to topics that provide observations about obstacl..." alt="" coords="196,945,409,1463"/>
+<area shape="rect" id="node4" href="$classcostmap__2d_1_1_layered_costmap.html" title="Instantiates different layer plugins and aggregates them into one score." alt="" coords="613,497,811,868"/>
+<area shape="rect" id="node6" href="$classcostmap__2d_1_1_costmap2_d_publisher.html" title="A tool to periodically publish visualization data from a Costmap2D." alt="" coords="366,512,589,853"/>
+<area shape="rect" id="node5" href="$classcostmap__2d_1_1_costmap2_d.html" title="A 2D costmap provides a mapping between points in the world and their associated &quot;costs&quot;." alt="" coords="567,5,737,435"/>
+</map>

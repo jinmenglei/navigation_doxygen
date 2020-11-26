@@ -1,0 +1,55 @@
+\hypertarget{namespacenavfn}{}\doxysection{navfn Namespace Reference}
+\label{namespacenavfn}\index{navfn@{navfn}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnavfn_1_1_nav_fn}{Nav\+Fn}}
+\begin{DoxyCompactList}\small\item\em Navigation function class. Holds buffers for costmap, navfn map. Maps are pixel-\/based. Origin is upper left, x is right, y is down. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classnavfn_1_1_navfn_r_o_s}{Navfn\+R\+OS}}
+\begin{DoxyCompactList}\small\item\em Provides a R\+OS wrapper for the navfn planner which runs a fast, interpolated navigation function on a costmap. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classnavfn_1_1_navfn_with_costmap}{Navfn\+With\+Costmap}}
+\item 
+class \mbox{\hyperlink{classnavfn_1_1_nav_win}{Nav\+Win}}
+\item 
+struct \mbox{\hyperlink{structnavfn_1_1_potarr_point}{Potarr\+Point}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacenavfn_a43e1cf99d005f4c0b40ce27c85ac3a0f}{create\+\_\+nav\+\_\+plan\+\_\+astar}} (\mbox{\hyperlink{navfn_8h_a137fdfc9b1a4312004400270e5f999ea}{C\+O\+S\+T\+T\+Y\+PE}} $\ast$costmap, int nx, int ny, int $\ast$\mbox{\hyperlink{navtest_8cpp_a924427d23a7d971370018f8d3dc452cf}{goal}}, int $\ast$\mbox{\hyperlink{navtest_8cpp_a035d2eadd3e54f4a028144044585cd71}{start}}, float $\ast$plan, int nplan)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacenavfn_a43e1cf99d005f4c0b40ce27c85ac3a0f}\label{namespacenavfn_a43e1cf99d005f4c0b40ce27c85ac3a0f}} 
+\index{navfn@{navfn}!create\_nav\_plan\_astar@{create\_nav\_plan\_astar}}
+\index{create\_nav\_plan\_astar@{create\_nav\_plan\_astar}!navfn@{navfn}}
+\doxysubsubsection{\texorpdfstring{create\_nav\_plan\_astar()}{create\_nav\_plan\_astar()}}
+{\footnotesize\ttfamily int navfn\+::create\+\_\+nav\+\_\+plan\+\_\+astar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{navfn_8h_a137fdfc9b1a4312004400270e5f999ea}{C\+O\+S\+T\+T\+Y\+PE}} $\ast$}]{costmap,  }\item[{int}]{nx,  }\item[{int}]{ny,  }\item[{int $\ast$}]{goal,  }\item[{int $\ast$}]{start,  }\item[{float $\ast$}]{plan,  }\item[{int}]{nplan }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Navigation function call.
+\param costmap Cost map array, of type COSTTYPE; origin is upper left
+\end{DoxyVerb}
+ N\+O\+TE\+: will be modified to have a border of obstacle costs 
+\begin{DoxyParams}{Parameters}
+{\em nx} & Width of map in cells \\
+\hline
+{\em ny} & Height of map in cells \\
+\hline
+{\em goal} & X,Y position of goal cell \\
+\hline
+{\em start} & X,Y position of start cell\\
+\hline
+\end{DoxyParams}
+Returns length of plan if found, and fills an array with x,y interpolated positions at about 1/2 cell resolution; else returns 0. 
+
+Definition at line 58 of file navfn.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenavfn_a43e1cf99d005f4c0b40ce27c85ac3a0f_cgraph}
+\end{center}
+\end{figure}

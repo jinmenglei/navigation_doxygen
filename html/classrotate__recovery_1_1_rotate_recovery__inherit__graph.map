@@ -1,0 +1,4 @@
+<map id="rotate_recovery::RotateRecovery" name="rotate_recovery::RotateRecovery">
+<area shape="rect" id="node1" title="A recovery behavior that rotates the robot in&#45;place to attempt to clear out space." alt="" coords="5,175,215,413"/>
+<area shape="rect" id="node2" href="$classnav__core_1_1_recovery_behavior.html" title="Provides an interface for recovery behaviors used in navigation. All recovery behaviors written as pl..." alt="" coords="19,5,201,127"/>
+</map>

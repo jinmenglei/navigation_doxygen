@@ -1,0 +1,203 @@
+\hypertarget{classbase__local__planner_1_1_simple_scored_sampling_planner}{}\doxysection{base\+\_\+local\+\_\+planner\+::Simple\+Scored\+Sampling\+Planner Class Reference}
+\label{classbase__local__planner_1_1_simple_scored_sampling_planner}\index{base\_local\_planner::SimpleScoredSamplingPlanner@{base\_local\_planner::SimpleScoredSamplingPlanner}}
+
+
+Generates a local plan using the given generator and cost functions. Assumes less cost are best, and negative costs indicate infinite costs.  
+
+
+
+
+{\ttfamily \#include $<$simple\+\_\+scored\+\_\+sampling\+\_\+planner.\+h$>$}
+
+
+
+Inheritance diagram for base\+\_\+local\+\_\+planner\+::Simple\+Scored\+Sampling\+Planner\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classbase__local__planner_1_1_simple_scored_sampling_planner__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for base\+\_\+local\+\_\+planner\+::Simple\+Scored\+Sampling\+Planner\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classbase__local__planner_1_1_simple_scored_sampling_planner__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbase__local__planner_1_1_simple_scored_sampling_planner_a4dffffbf7e5d4c1e4d5865918c1c1657}{$\sim$\+Simple\+Scored\+Sampling\+Planner}} ()
+\item 
+\mbox{\hyperlink{classbase__local__planner_1_1_simple_scored_sampling_planner_ac8bab73a6a79cdd949422a8bed79f78d}{Simple\+Scored\+Sampling\+Planner}} ()
+\item 
+\mbox{\hyperlink{classbase__local__planner_1_1_simple_scored_sampling_planner_a4e587086b74e151e38c6a81905924772}{Simple\+Scored\+Sampling\+Planner}} (std\+::vector$<$ \mbox{\hyperlink{classbase__local__planner_1_1_trajectory_sample_generator}{Trajectory\+Sample\+Generator}} $\ast$ $>$ gen\+\_\+list, std\+::vector$<$ \mbox{\hyperlink{classbase__local__planner_1_1_trajectory_cost_function}{Trajectory\+Cost\+Function}} $\ast$ $>$ \&critics, int max\+\_\+samples=-\/1)
+\item 
+double \mbox{\hyperlink{classbase__local__planner_1_1_simple_scored_sampling_planner_ac11a2d2fbf69d6ed55f720c5ebe1b541}{score\+Trajectory}} (\mbox{\hyperlink{classbase__local__planner_1_1_trajectory}{Trajectory}} \&traj, double best\+\_\+traj\+\_\+cost)
+\item 
+bool \mbox{\hyperlink{classbase__local__planner_1_1_simple_scored_sampling_planner_ad1a365b0504879a2e57f1a9d713acdc4}{find\+Best\+Trajectory}} (\mbox{\hyperlink{classbase__local__planner_1_1_trajectory}{Trajectory}} \&traj, std\+::vector$<$ \mbox{\hyperlink{classbase__local__planner_1_1_trajectory}{Trajectory}} $>$ $\ast$all\+\_\+explored=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classbase__local__planner_1_1_trajectory_sample_generator}{Trajectory\+Sample\+Generator}} $\ast$ $>$ \mbox{\hyperlink{classbase__local__planner_1_1_simple_scored_sampling_planner_a0e8aa59b1ee780643bf69a1a5c244f73}{gen\+\_\+list\+\_\+}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classbase__local__planner_1_1_trajectory_cost_function}{Trajectory\+Cost\+Function}} $\ast$ $>$ \mbox{\hyperlink{classbase__local__planner_1_1_simple_scored_sampling_planner_a4fb36e288fad8bb6a817faa12df4d35c}{critics\+\_\+}}
+\item 
+int \mbox{\hyperlink{classbase__local__planner_1_1_simple_scored_sampling_planner_a0ab97bd66287f1d2258ce5f7a70e83ea}{max\+\_\+samples\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Generates a local plan using the given generator and cost functions. Assumes less cost are best, and negative costs indicate infinite costs. 
+
+This is supposed to be a simple and robust implementation of the \mbox{\hyperlink{classbase__local__planner_1_1_trajectory_search}{Trajectory\+Search}} interface. More efficient search may well be possible using search heuristics, parallel search, etc. 
+
+Definition at line 58 of file simple\+\_\+scored\+\_\+sampling\+\_\+planner.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbase__local__planner_1_1_simple_scored_sampling_planner_a4dffffbf7e5d4c1e4d5865918c1c1657}\label{classbase__local__planner_1_1_simple_scored_sampling_planner_a4dffffbf7e5d4c1e4d5865918c1c1657}} 
+\index{base\_local\_planner::SimpleScoredSamplingPlanner@{base\_local\_planner::SimpleScoredSamplingPlanner}!````~SimpleScoredSamplingPlanner@{$\sim$SimpleScoredSamplingPlanner}}
+\index{````~SimpleScoredSamplingPlanner@{$\sim$SimpleScoredSamplingPlanner}!base\_local\_planner::SimpleScoredSamplingPlanner@{base\_local\_planner::SimpleScoredSamplingPlanner}}
+\doxysubsubsection{\texorpdfstring{$\sim$SimpleScoredSamplingPlanner()}{~SimpleScoredSamplingPlanner()}}
+{\footnotesize\ttfamily base\+\_\+local\+\_\+planner\+::\+Simple\+Scored\+Sampling\+Planner\+::$\sim$\+Simple\+Scored\+Sampling\+Planner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 61 of file simple\+\_\+scored\+\_\+sampling\+\_\+planner.\+h.
+
+\mbox{\Hypertarget{classbase__local__planner_1_1_simple_scored_sampling_planner_ac8bab73a6a79cdd949422a8bed79f78d}\label{classbase__local__planner_1_1_simple_scored_sampling_planner_ac8bab73a6a79cdd949422a8bed79f78d}} 
+\index{base\_local\_planner::SimpleScoredSamplingPlanner@{base\_local\_planner::SimpleScoredSamplingPlanner}!SimpleScoredSamplingPlanner@{SimpleScoredSamplingPlanner}}
+\index{SimpleScoredSamplingPlanner@{SimpleScoredSamplingPlanner}!base\_local\_planner::SimpleScoredSamplingPlanner@{base\_local\_planner::SimpleScoredSamplingPlanner}}
+\doxysubsubsection{\texorpdfstring{SimpleScoredSamplingPlanner()}{SimpleScoredSamplingPlanner()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily base\+\_\+local\+\_\+planner\+::\+Simple\+Scored\+Sampling\+Planner\+::\+Simple\+Scored\+Sampling\+Planner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 63 of file simple\+\_\+scored\+\_\+sampling\+\_\+planner.\+h.
+
+\mbox{\Hypertarget{classbase__local__planner_1_1_simple_scored_sampling_planner_a4e587086b74e151e38c6a81905924772}\label{classbase__local__planner_1_1_simple_scored_sampling_planner_a4e587086b74e151e38c6a81905924772}} 
+\index{base\_local\_planner::SimpleScoredSamplingPlanner@{base\_local\_planner::SimpleScoredSamplingPlanner}!SimpleScoredSamplingPlanner@{SimpleScoredSamplingPlanner}}
+\index{SimpleScoredSamplingPlanner@{SimpleScoredSamplingPlanner}!base\_local\_planner::SimpleScoredSamplingPlanner@{base\_local\_planner::SimpleScoredSamplingPlanner}}
+\doxysubsubsection{\texorpdfstring{SimpleScoredSamplingPlanner()}{SimpleScoredSamplingPlanner()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily base\+\_\+local\+\_\+planner\+::\+Simple\+Scored\+Sampling\+Planner\+::\+Simple\+Scored\+Sampling\+Planner (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classbase__local__planner_1_1_trajectory_sample_generator}{Trajectory\+Sample\+Generator}} $\ast$ $>$}]{gen\+\_\+list,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classbase__local__planner_1_1_trajectory_cost_function}{Trajectory\+Cost\+Function}} $\ast$ $>$ \&}]{critics,  }\item[{int}]{max\+\_\+samples = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Takes a list of generators and critics. Critics return costs $>$ 0, or negative costs for invalid trajectories. Generators other than the first are fallback generators, meaning they only get to generate if the previous generator did not find a valid trajectory. Will use every generator until it stops returning trajectories or count reaches max\+\_\+samples. Then resets count and tries for the next in the list. passing max\+\_\+samples = -\/1 (default)\+: Each Sampling planner will continue to call generator until generator runs out of samples (or forever if that never happens) 
+
+Definition at line 44 of file simple\+\_\+scored\+\_\+sampling\+\_\+planner.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbase__local__planner_1_1_simple_scored_sampling_planner_ad1a365b0504879a2e57f1a9d713acdc4}\label{classbase__local__planner_1_1_simple_scored_sampling_planner_ad1a365b0504879a2e57f1a9d713acdc4}} 
+\index{base\_local\_planner::SimpleScoredSamplingPlanner@{base\_local\_planner::SimpleScoredSamplingPlanner}!findBestTrajectory@{findBestTrajectory}}
+\index{findBestTrajectory@{findBestTrajectory}!base\_local\_planner::SimpleScoredSamplingPlanner@{base\_local\_planner::SimpleScoredSamplingPlanner}}
+\doxysubsubsection{\texorpdfstring{findBestTrajectory()}{findBestTrajectory()}}
+{\footnotesize\ttfamily bool base\+\_\+local\+\_\+planner\+::\+Simple\+Scored\+Sampling\+Planner\+::find\+Best\+Trajectory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbase__local__planner_1_1_trajectory}{Trajectory}} \&}]{traj,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classbase__local__planner_1_1_trajectory}{Trajectory}} $>$ $\ast$}]{all\+\_\+explored = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Calls generator until generator has no more samples or max\+\_\+samples is reached. For each generated traj, calls critics in turn. If any critic returns negative value, that value is assumed as costs, else the costs are the sum of all critics result. Returns true and sets the traj parameter to the first trajectory with minimal non-\/negative costs if sampling yields trajectories with non-\/negative costs, else returns false.
+
+
+\begin{DoxyParams}{Parameters}
+{\em traj} & The container to write the result to \\
+\hline
+{\em all\+\_\+explored} & pass N\+U\+LL or a container to collect all trajectories for debugging (has a penalty) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classbase__local__planner_1_1_trajectory_search_a75fd0f1e0c72b6ba6f6edabe569e8271}{base\+\_\+local\+\_\+planner\+::\+Trajectory\+Search}}.
+
+
+
+Definition at line 81 of file simple\+\_\+scored\+\_\+sampling\+\_\+planner.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbase__local__planner_1_1_simple_scored_sampling_planner_ad1a365b0504879a2e57f1a9d713acdc4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbase__local__planner_1_1_simple_scored_sampling_planner_ad1a365b0504879a2e57f1a9d713acdc4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbase__local__planner_1_1_simple_scored_sampling_planner_ac11a2d2fbf69d6ed55f720c5ebe1b541}\label{classbase__local__planner_1_1_simple_scored_sampling_planner_ac11a2d2fbf69d6ed55f720c5ebe1b541}} 
+\index{base\_local\_planner::SimpleScoredSamplingPlanner@{base\_local\_planner::SimpleScoredSamplingPlanner}!scoreTrajectory@{scoreTrajectory}}
+\index{scoreTrajectory@{scoreTrajectory}!base\_local\_planner::SimpleScoredSamplingPlanner@{base\_local\_planner::SimpleScoredSamplingPlanner}}
+\doxysubsubsection{\texorpdfstring{scoreTrajectory()}{scoreTrajectory()}}
+{\footnotesize\ttfamily double base\+\_\+local\+\_\+planner\+::\+Simple\+Scored\+Sampling\+Planner\+::score\+Trajectory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbase__local__planner_1_1_trajectory}{Trajectory}} \&}]{traj,  }\item[{double}]{best\+\_\+traj\+\_\+cost }\end{DoxyParamCaption})}
+
+runs all scoring functions over the trajectory creating a weigthed sum of positive costs, aborting as soon as a negative cost are found or costs greater than positive best\+\_\+traj\+\_\+cost accumulated 
+
+Definition at line 50 of file simple\+\_\+scored\+\_\+sampling\+\_\+planner.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbase__local__planner_1_1_simple_scored_sampling_planner_ac11a2d2fbf69d6ed55f720c5ebe1b541_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbase__local__planner_1_1_simple_scored_sampling_planner_ac11a2d2fbf69d6ed55f720c5ebe1b541_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classbase__local__planner_1_1_simple_scored_sampling_planner_a4fb36e288fad8bb6a817faa12df4d35c}\label{classbase__local__planner_1_1_simple_scored_sampling_planner_a4fb36e288fad8bb6a817faa12df4d35c}} 
+\index{base\_local\_planner::SimpleScoredSamplingPlanner@{base\_local\_planner::SimpleScoredSamplingPlanner}!critics\_@{critics\_}}
+\index{critics\_@{critics\_}!base\_local\_planner::SimpleScoredSamplingPlanner@{base\_local\_planner::SimpleScoredSamplingPlanner}}
+\doxysubsubsection{\texorpdfstring{critics\_}{critics\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classbase__local__planner_1_1_trajectory_cost_function}{Trajectory\+Cost\+Function}}$\ast$$>$ base\+\_\+local\+\_\+planner\+::\+Simple\+Scored\+Sampling\+Planner\+::critics\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 99 of file simple\+\_\+scored\+\_\+sampling\+\_\+planner.\+h.
+
+\mbox{\Hypertarget{classbase__local__planner_1_1_simple_scored_sampling_planner_a0e8aa59b1ee780643bf69a1a5c244f73}\label{classbase__local__planner_1_1_simple_scored_sampling_planner_a0e8aa59b1ee780643bf69a1a5c244f73}} 
+\index{base\_local\_planner::SimpleScoredSamplingPlanner@{base\_local\_planner::SimpleScoredSamplingPlanner}!gen\_list\_@{gen\_list\_}}
+\index{gen\_list\_@{gen\_list\_}!base\_local\_planner::SimpleScoredSamplingPlanner@{base\_local\_planner::SimpleScoredSamplingPlanner}}
+\doxysubsubsection{\texorpdfstring{gen\_list\_}{gen\_list\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classbase__local__planner_1_1_trajectory_sample_generator}{Trajectory\+Sample\+Generator}}$\ast$$>$ base\+\_\+local\+\_\+planner\+::\+Simple\+Scored\+Sampling\+Planner\+::gen\+\_\+list\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 98 of file simple\+\_\+scored\+\_\+sampling\+\_\+planner.\+h.
+
+\mbox{\Hypertarget{classbase__local__planner_1_1_simple_scored_sampling_planner_a0ab97bd66287f1d2258ce5f7a70e83ea}\label{classbase__local__planner_1_1_simple_scored_sampling_planner_a0ab97bd66287f1d2258ce5f7a70e83ea}} 
+\index{base\_local\_planner::SimpleScoredSamplingPlanner@{base\_local\_planner::SimpleScoredSamplingPlanner}!max\_samples\_@{max\_samples\_}}
+\index{max\_samples\_@{max\_samples\_}!base\_local\_planner::SimpleScoredSamplingPlanner@{base\_local\_planner::SimpleScoredSamplingPlanner}}
+\doxysubsubsection{\texorpdfstring{max\_samples\_}{max\_samples\_}}
+{\footnotesize\ttfamily int base\+\_\+local\+\_\+planner\+::\+Simple\+Scored\+Sampling\+Planner\+::max\+\_\+samples\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 101 of file simple\+\_\+scored\+\_\+sampling\+\_\+planner.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/github/navigation/base\+\_\+local\+\_\+planner/include/base\+\_\+local\+\_\+planner/\mbox{\hyperlink{simple__scored__sampling__planner_8h}{simple\+\_\+scored\+\_\+sampling\+\_\+planner.\+h}}\item 
+E\+:/github/navigation/base\+\_\+local\+\_\+planner/src/\mbox{\hyperlink{simple__scored__sampling__planner_8cpp}{simple\+\_\+scored\+\_\+sampling\+\_\+planner.\+cpp}}\end{DoxyCompactItemize}

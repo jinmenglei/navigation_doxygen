@@ -1,0 +1,7 @@
+<map id="base_local_planner::SimpleScoredSamplingPlanner::scoreTrajectory" name="base_local_planner::SimpleScoredSamplingPlanner::scoreTrajectory">
+<area shape="rect" id="node1" title=" " alt="" coords="541,43,751,99"/>
+<area shape="rect" id="node2" href="$classdwa__local__planner_1_1_d_w_a_planner.html#a1200e7b997f2acd8c3b912bed37e69d5" title="Check if a trajectory is legal for a position/velocity pair." alt="" coords="290,13,487,54"/>
+<area shape="rect" id="node4" href="$classbase__local__planner_1_1_simple_scored_sampling_planner.html#ad1a365b0504879a2e57f1a9d713acdc4" title=" " alt="" coords="284,79,493,135"/>
+<area shape="rect" id="node3" href="$classdwa__local__planner_1_1_d_w_a_planner_r_o_s.html#a700178e32159b614d328326b6ba5f8b0" title="Given the current position, orientation, and velocity of the robot, compute velocity commands to send..." alt="" coords="5,5,236,61"/>
+<area shape="rect" id="node5" href="$classdwa__local__planner_1_1_d_w_a_planner.html#acf862f4cbfd701bacf1eb359cd05892f" title="Given the current position and velocity of the robot, find the best trajectory to exectue." alt="" coords="31,86,210,127"/>
+</map>

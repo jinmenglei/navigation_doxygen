@@ -1,0 +1,6 @@
+<map id="base_local_planner::Trajectory::getEndpoint" name="base_local_planner::Trajectory::getEndpoint">
+<area shape="rect" id="node1" title="Get the last point of the trajectory." alt="" coords="609,13,773,54"/>
+<area shape="rect" id="node2" href="$classbase__local__planner_1_1_trajectory_planner.html#a44c8434c9df68efb24eef36fc670ae7c" title="Create the trajectories we wish to explore, score them, and return the best option." alt="" coords="428,5,561,61"/>
+<area shape="rect" id="node3" href="$classbase__local__planner_1_1_trajectory_planner.html#a0fa1222899b6f8d630924f7de5e32a66" title="Given the current position, orientation, and velocity of the robot, return a trajectory to follow." alt="" coords="247,5,380,61"/>
+<area shape="rect" id="node4" href="$classbase__local__planner_1_1_trajectory_planner_r_o_s.html#adb2d96332da31a154db84930754409af" title="Given the current position, orientation, and velocity of the robot, compute velocity commands to send..." alt="" coords="5,5,199,61"/>
+</map>

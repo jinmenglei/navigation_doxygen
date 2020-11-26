@@ -1,0 +1,6 @@
+<map id="base_local_planner::WorldModel" name="base_local_planner::WorldModel">
+<area shape="rect" id="node1" title="An interface the trajectory controller uses to interact with the world regardless of the underlying w..." alt="" coords="174,5,307,156"/>
+<area shape="rect" id="node2" href="$classbase__local__planner_1_1_costmap_model.html" title="A class that implements the WorldModel interface to provide grid based collision checks for the traje..." alt="" coords="5,321,143,516"/>
+<area shape="rect" id="node3" href="$classbase__local__planner_1_1_point_grid.html" title="A class that implements the WorldModel interface to provide free&#45;space collision checks for the traje..." alt="" coords="167,241,314,597"/>
+<area shape="rect" id="node4" href="$classbase__local__planner_1_1_voxel_grid_model.html" title="A class that implements the WorldModel interface to provide grid based collision checks for the traje..." alt="" coords="339,204,543,633"/>
+</map>

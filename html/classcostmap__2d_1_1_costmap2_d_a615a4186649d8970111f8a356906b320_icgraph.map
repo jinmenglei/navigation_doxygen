@@ -1,0 +1,52 @@
+<map id="costmap_2d::Costmap2D::getSizeInCellsX" name="costmap_2d::Costmap2D::getSizeInCellsX">
+<area shape="rect" id="node1" title="Accessor for the x size of the costmap in cells." alt="" coords="817,988,987,1029"/>
+<area shape="rect" id="node2" href="$classcostmap__2d_1_1_costmap_tester.html#a73e0c2048004f4c99a2cc868aed060b3" title=" " alt="" coords="293,64,482,105"/>
+<area shape="rect" id="node4" href="$classcostmap__2d_1_1_costmap_layer.html#a2d7de3edced6d1c27a678ab0ebc10f50" title=" " alt="" coords="565,60,751,101"/>
+<area shape="rect" id="node5" href="$classcostmap__2d_1_1_costmap_tester.html#abaef05f8bb941945e031a4f5c70d9402" title=" " alt="" coords="563,125,753,166"/>
+<area shape="rect" id="node6" href="$classnavfn_1_1_navfn_r_o_s.html#a01635a5d9947ae1b51ce70603db0c843" title="Computes the full navigation function for the map given a point in the world to start from." alt="" coords="570,190,746,232"/>
+<area shape="rect" id="node7" href="$classcostmap__2d_1_1_costmap2_d_publisher.html#a56d27ca488f09b70a8698b2491d036e7" title="Constructor for the Costmap2DPublisher." alt="" coords="5,1060,228,1101"/>
+<area shape="rect" id="node8" href="$testing__helper_8h.html#af4d497e66d7195f0a4b02ce26603c5c8" title=" " alt="" coords="611,556,705,583"/>
+<area shape="rect" id="node11" href="$classnavfn_1_1_navfn_r_o_s.html#ad645a775f99aa2a120bb0b7f6cd08fd5" title="Compute a plan to a goal after the potential for a start point has already been computed (Note: You s..." alt="" coords="573,373,743,414"/>
+<area shape="rect" id="node12" href="$classnavfn_1_1_navfn_r_o_s.html#a1925183250dd36115daadd91b14656aa" title="Given a goal pose in the world, compute a plan." alt="" coords="295,380,479,407"/>
+<area shape="rect" id="node13" href="$classcostmap__2d_1_1_static_layer.html#aa9d8d26c675b2ecebeb1f2ba2a7ccfd6" title="Callback to update the costmap&#39;s map from the map_server." alt="" coords="575,256,741,297"/>
+<area shape="rect" id="node14" href="$classcostmap__2d_1_1_static_layer.html#a05ac3b3a903d45c76d076fed8ae220f6" title="This is called at the end of initialize(). Override to implement subclass&#45;specific initialization." alt="" coords="304,285,471,326"/>
+<area shape="rect" id="node17" href="$classglobal__planner_1_1_global_planner.html#af3ade8f9f487fe2ddd109f0845a6ffb2" title=" " alt="" coords="561,608,755,649"/>
+<area shape="rect" id="node18" href="$classnavfn_1_1_navfn_r_o_s.html#a935ac2d5a76a101a3521cb078ee4ba4d" title="Initialization function for the NavFnROS object." alt="" coords="571,674,745,700"/>
+<area shape="rect" id="node19" href="$classglobal__planner_1_1_global_planner.html#a4f6bfa5acf58670c01a5b8c684a2f20c" title="Given a goal pose in the world, compute a plan." alt="" coords="290,1062,485,1104"/>
+<area shape="rect" id="node20" href="$classcostmap__2d_1_1_costmap_layer.html#a9260d210630b6522cad87397506f9696" title="Implement this to make this layer match the size of the parent costmap." alt="" coords="565,490,751,532"/>
+<area shape="rect" id="node23" href="$classcostmap__2d_1_1_inflation_layer.html#a740c5ab2d838eb17f8fbfa16001feff5" title="Implement this to make this layer match the size of the parent costmap." alt="" coords="569,776,747,817"/>
+<area shape="rect" id="node25" href="$classcostmap__2d_1_1_static_layer.html#a3c8a9c7ea061ad416e09d2f1f18cdc8a" title="Implement this to make this layer match the size of the parent costmap." alt="" coords="575,893,741,934"/>
+<area shape="rect" id="node26" href="$classcostmap__2d_1_1_costmap2_d_publisher.html#a2bb9ed054a418a59554668a9d1bc723a" title="Prepare grid_ message for publication." alt="" coords="547,958,769,1000"/>
+<area shape="rect" id="node28" href="$classcostmap__2d_1_1_costmap2_d_publisher.html#a47e5b5d93113f39786112919a6981953" title="Publishes the visualization data over ROS." alt="" coords="276,868,499,909"/>
+<area shape="rect" id="node30" href="$testing__helper_8h.html#a31015063213528e542a953d8470fc6b5" title=" " alt="" coords="622,724,694,751"/>
+<area shape="rect" id="node32" href="$classbase__local__planner_1_1_map_grid_visualizer.html#abc768f1e16ce0cdf87dec9f25a60ee64" title="Build and publish a PointCloud if the publish_cost_grid_pc parameter was true. Only include points fo..." alt="" coords="590,1192,726,1248"/>
+<area shape="rect" id="node35" href="$classglobal__planner_1_1_global_planner.html#a91c22ec25e6e8232ef2d73e6738f3857" title=" " alt="" coords="561,1076,755,1117"/>
+<area shape="rect" id="node36" href="$classcostmap__2d_1_1_costmap2_d_r_o_s.html#af0370b7b97c5d8cfcc961abb8d190f21" title="Reset each individual layer." alt="" coords="559,1273,757,1314"/>
+<area shape="rect" id="node38" href="$classbase__local__planner_1_1_map_grid.html#ab73fe99a7ad21b36a3178e26296945d5" title="Update what cell is considered the next local goal." alt="" coords="577,1338,739,1380"/>
+<area shape="rect" id="node40" href="$classbase__local__planner_1_1_map_grid.html#a8e3227190b9f67376ee2890f493079d5" title="Update what cells are considered path based on the global plan." alt="" coords="573,1404,743,1445"/>
+<area shape="rect" id="node41" href="$testing__helper_8h.html#aaec85d539af36b85e87b565dc1bfbccd" title=" " alt="" coords="618,1470,698,1496"/>
+<area shape="rect" id="node42" href="$module__tests_8cpp.html#a4d5daedd5dde37cf984f593d5c719e92" title=" " alt="" coords="631,1520,685,1547"/>
+<area shape="rect" id="node43" href="$namespacebase__local__planner.html#a962893e66167d44e22bd284e83e4383e" title="Transforms the global plan of the robot from the planner frame to the frame of the costmap,..." alt="" coords="314,1525,461,1566"/>
+<area shape="rect" id="node44" href="$classcostmap__2d_1_1_inflation_layer.html#a2d5d3eef9b0e8c91dfde79c0e40a65af" title="Actually update the underlying costmap, only within the bounds calculated during UpdateBounds()." alt="" coords="569,1622,747,1664"/>
+<area shape="rect" id="node45" href="$classcostmap__2d_1_1_layered_costmap.html#ab598d6442277ba8299ba3c7b952662d6" title="Update the underlying costmap with new data. If you want to update the map outside of the update loop..." alt="" coords="559,1688,757,1729"/>
+<area shape="rect" id="node46" href="$classcostmap__2d_1_1_costmap_layer.html#ab76205b8052d66f0096e5942a3ed1530" title=" " alt="" coords="565,1753,751,1794"/>
+<area shape="rect" id="node47" href="$classcostmap__2d_1_1_costmap_layer.html#acd9d236d8d16c8b4a004ae3b1709aa92" title=" " alt="" coords="565,1818,751,1860"/>
+<area shape="rect" id="node48" href="$classcostmap__2d_1_1_costmap_layer.html#ac01cf9ead24877e522dece2254c87632" title=" " alt="" coords="565,1884,751,1925"/>
+<area shape="rect" id="node49" href="$classcostmap__2d_1_1_costmap_layer.html#adc52dfe36cea8be621d560231e861dbd" title=" " alt="" coords="565,1949,751,1990"/>
+<area shape="rect" id="node50" href="$inflation__tests_8cpp.html#ace7be2b076b1bec8a1091d5f74632e28" title=" " alt="" coords="589,2015,727,2042"/>
+<area shape="rect" id="node3" href="$costmap__tester_8cpp.html#ab6234649e9137a2ece384ae5e9ea9263" title=" " alt="" coords="89,71,144,98"/>
+<area shape="rect" id="node9" href="$inflation__tests_8cpp.html#a7944d546ff12543615d752c882c1ae12" title=" " alt="" coords="360,563,415,590"/>
+<area shape="rect" id="node10" href="$clear__tester_8cpp.html#ae52f25afda509d6ef50c32f8feaae444" title=" " alt="" coords="331,643,444,670"/>
+<area shape="rect" id="node15" href="$classcostmap__2d_1_1_static_layer.html#a4b70375c6f9b105dd2fa765657cc46f8" title="Restart publishers if they&#39;ve been stopped." alt="" coords="33,253,200,294"/>
+<area shape="rect" id="node16" href="$classcostmap__2d_1_1_static_layer.html#a80083e19e7d50881f3d46c79e324dd93" title=" " alt="" coords="33,318,200,360"/>
+<area shape="rect" id="node21" href="$classcostmap__2d_1_1_voxel_layer.html#a0528c59b3cbe4c1b81748284ae0a3dc5" title="Implement this to make this layer match the size of the parent costmap." alt="" coords="304,432,471,473"/>
+<area shape="rect" id="node22" href="$classcostmap__2d_1_1_obstacle_layer.html#a370822e3b19d717ef04311b7b967f496" title="This is called at the end of initialize(). Override to implement subclass&#45;specific initialization." alt="" coords="295,497,480,538"/>
+<area shape="rect" id="node24" href="$classcostmap__2d_1_1_inflation_layer.html#a70aa2e82f43d319111403b8f97f37ade" title="This is called at the end of initialize(). Override to implement subclass&#45;specific initialization." alt="" coords="299,776,476,817"/>
+<area shape="rect" id="node27" href="$classcostmap__2d_1_1_costmap2_d_publisher.html#aee87acfd9d19093239ec59a88e3e4add" title="Publish the latest full costmap to the new subscriber." alt="" coords="276,972,499,1013"/>
+<area shape="rect" id="node29" href="$classcostmap__2d_1_1_costmap2_d_r_o_s.html#a82872c177faeaaf9c5e0c93039329391" title=" " alt="" coords="18,868,215,909"/>
+<area shape="rect" id="node31" href="$inflation__tests_8cpp.html#ad0876c1fbe3e36f9dbcfddcd309a2838" title=" " alt="" coords="360,724,415,751"/>
+<area shape="rect" id="node33" href="$classbase__local__planner_1_1_trajectory_planner_r_o_s.html#adb2d96332da31a154db84930754409af" title="Given the current position, orientation, and velocity of the robot, compute velocity commands to send..." alt="" coords="20,1391,213,1447"/>
+<area shape="rect" id="node34" href="$classdwa__local__planner_1_1_d_w_a_planner.html#acf862f4cbfd701bacf1eb359cd05892f" title="Given the current position and velocity of the robot, find the best trajectory to exectue." alt="" coords="298,1249,477,1290"/>
+<area shape="rect" id="node37" href="$classmove__base_1_1_move_base.html#aa38fbbcfa91d3ee562fedd16a43bd098" title="A service call that clears the costmaps of obstacles." alt="" coords="308,1314,467,1356"/>
+<area shape="rect" id="node39" href="$classbase__local__planner_1_1_trajectory_planner.html#a0fa1222899b6f8d630924f7de5e32a66" title="Given the current position, orientation, and velocity of the robot, return a trajectory to follow." alt="" coords="321,1391,454,1447"/>
+</map>

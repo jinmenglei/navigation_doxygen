@@ -1,0 +1,8 @@
+<map id="costmap_2d::StaticLayer" name="costmap_2d::StaticLayer">
+<area shape="rect" id="node1" title=" " alt="" coords="5,1624,172,2024"/>
+<area shape="rect" id="node2" href="$classcostmap__2d_1_1_costmap_layer.html" title=" " alt="" coords="139,1292,324,1575"/>
+<area shape="rect" id="node3" href="$classcostmap__2d_1_1_layer.html" title=" " alt="" coords="152,931,311,1243"/>
+<area shape="rect" id="node4" href="$classcostmap__2d_1_1_layered_costmap.html" title="Instantiates different layer plugins and aggregates them into one score." alt="" coords="164,497,363,868"/>
+<area shape="rect" id="node5" title=" " alt="" coords="61,181,116,259"/>
+<area shape="rect" id="node6" href="$classcostmap__2d_1_1_costmap2_d.html" title="A 2D costmap provides a mapping between points in the world and their associated &quot;costs&quot;." alt="" coords="260,5,429,435"/>
+</map>

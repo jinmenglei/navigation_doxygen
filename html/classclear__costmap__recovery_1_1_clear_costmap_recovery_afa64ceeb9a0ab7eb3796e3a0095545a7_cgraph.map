@@ -1,0 +1,7 @@
+<map id="clear_costmap_recovery::ClearCostmapRecovery::clear" name="clear_costmap_recovery::ClearCostmapRecovery::clear">
+<area shape="rect" id="node1" title=" " alt="" coords="5,112,171,168"/>
+<area shape="rect" id="node2" href="$classclear__costmap__recovery_1_1_clear_costmap_recovery.html#a0155fa0d47c9b12477c64d32bc167039" title=" " alt="" coords="235,5,401,61"/>
+<area shape="rect" id="node3" href="$classcostmap__2d_1_1_costmap2_d_r_o_s.html#a0231809e3f9cbf8616cbe69705f6fdf5" title=" " alt="" coords="219,86,417,127"/>
+<area shape="rect" id="node4" href="$classcostmap__2d_1_1_layered_costmap.html#aac454be50f1e5a7933667ca4793bfe23" title=" " alt="" coords="219,151,417,193"/>
+<area shape="rect" id="node5" href="$classcostmap__2d_1_1_costmap2_d_r_o_s.html#adcf3512b555a02dbbe2f57e784defce9" title="Get the pose of the robot in the global frame of the costmap." alt="" coords="219,217,417,258"/>
+</map>

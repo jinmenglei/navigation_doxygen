@@ -1,0 +1,4 @@
+<map id="base_local_planner::LatchedStopRotateController::isGoalReached" name="base_local_planner::LatchedStopRotateController::isGoalReached">
+<area shape="rect" id="node1" title=" " alt="" coords="275,5,471,61"/>
+<area shape="rect" id="node2" href="$classdwa__local__planner_1_1_d_w_a_planner_r_o_s.html#a847c1877d967acd515d7ddf1ac246941" title="Check if the goal pose has been achieved." alt="" coords="5,13,227,54"/>
+</map>

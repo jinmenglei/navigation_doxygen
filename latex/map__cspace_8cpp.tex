@@ -1,0 +1,116 @@
+\hypertarget{map__cspace_8cpp}{}\doxysection{E\+:/github/navigation/amcl/src/amcl/map/map\+\_\+cspace.cpp File Reference}
+\label{map__cspace_8cpp}\index{E:/github/navigation/amcl/src/amcl/map/map\_cspace.cpp@{E:/github/navigation/amcl/src/amcl/map/map\_cspace.cpp}}
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}amcl/map/map.\+h\char`\"{}}\newline
+Include dependency graph for map\+\_\+cspace.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map__cspace_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_cell_data}{Cell\+Data}}
+\item 
+class \mbox{\hyperlink{class_cached_distance_map}{Cached\+Distance\+Map}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{map__cspace_8cpp_a19c44c0680f5e1f23a261fad06dfaedd}{operator$<$}} (const \mbox{\hyperlink{class_cell_data}{Cell\+Data}} \&a, const \mbox{\hyperlink{class_cell_data}{Cell\+Data}} \&b)
+\item 
+\mbox{\hyperlink{class_cached_distance_map}{Cached\+Distance\+Map}} $\ast$ \mbox{\hyperlink{map__cspace_8cpp_a66cf0ddd53f475cf732ac14d1456cab2}{get\+\_\+distance\+\_\+map}} (double scale, double max\+\_\+dist)
+\item 
+void \mbox{\hyperlink{map__cspace_8cpp_a494ed82d2dc7c22daa80385f65351656}{enqueue}} (\mbox{\hyperlink{structmap__t}{map\+\_\+t}} $\ast$map, int i, int j, int src\+\_\+i, int src\+\_\+j, std\+::priority\+\_\+queue$<$ \mbox{\hyperlink{class_cell_data}{Cell\+Data}} $>$ \&Q, \mbox{\hyperlink{class_cached_distance_map}{Cached\+Distance\+Map}} $\ast$cdm, unsigned char $\ast$marked)
+\item 
+void \mbox{\hyperlink{map__cspace_8cpp_a7a2e9876667cad69c3b70881c1aaf1ac}{map\+\_\+update\+\_\+cspace}} (\mbox{\hyperlink{structmap__t}{map\+\_\+t}} $\ast$map, double max\+\_\+occ\+\_\+dist)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{map__cspace_8cpp_a494ed82d2dc7c22daa80385f65351656}\label{map__cspace_8cpp_a494ed82d2dc7c22daa80385f65351656}} 
+\index{map\_cspace.cpp@{map\_cspace.cpp}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!map\_cspace.cpp@{map\_cspace.cpp}}
+\doxysubsubsection{\texorpdfstring{enqueue()}{enqueue()}}
+{\footnotesize\ttfamily void enqueue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmap__t}{map\+\_\+t}} $\ast$}]{map,  }\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{src\+\_\+i,  }\item[{int}]{src\+\_\+j,  }\item[{std\+::priority\+\_\+queue$<$ \mbox{\hyperlink{class_cell_data}{Cell\+Data}} $>$ \&}]{Q,  }\item[{\mbox{\hyperlink{class_cached_distance_map}{Cached\+Distance\+Map}} $\ast$}]{cdm,  }\item[{unsigned char $\ast$}]{marked }\end{DoxyParamCaption})}
+
+
+
+Definition at line 89 of file map\+\_\+cspace.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{map__cspace_8cpp_a494ed82d2dc7c22daa80385f65351656_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map__cspace_8cpp_a494ed82d2dc7c22daa80385f65351656_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{map__cspace_8cpp_a66cf0ddd53f475cf732ac14d1456cab2}\label{map__cspace_8cpp_a66cf0ddd53f475cf732ac14d1456cab2}} 
+\index{map\_cspace.cpp@{map\_cspace.cpp}!get\_distance\_map@{get\_distance\_map}}
+\index{get\_distance\_map@{get\_distance\_map}!map\_cspace.cpp@{map\_cspace.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_distance\_map()}{get\_distance\_map()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cached_distance_map}{Cached\+Distance\+Map}}$\ast$ get\+\_\+distance\+\_\+map (\begin{DoxyParamCaption}\item[{double}]{scale,  }\item[{double}]{max\+\_\+dist }\end{DoxyParamCaption})}
+
+
+
+Definition at line 75 of file map\+\_\+cspace.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map__cspace_8cpp_a66cf0ddd53f475cf732ac14d1456cab2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{map__cspace_8cpp_a7a2e9876667cad69c3b70881c1aaf1ac}\label{map__cspace_8cpp_a7a2e9876667cad69c3b70881c1aaf1ac}} 
+\index{map\_cspace.cpp@{map\_cspace.cpp}!map\_update\_cspace@{map\_update\_cspace}}
+\index{map\_update\_cspace@{map\_update\_cspace}!map\_cspace.cpp@{map\_cspace.cpp}}
+\doxysubsubsection{\texorpdfstring{map\_update\_cspace()}{map\_update\_cspace()}}
+{\footnotesize\ttfamily void map\+\_\+update\+\_\+cspace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmap__t}{map\+\_\+t}} $\ast$}]{map,  }\item[{double}]{max\+\_\+occ\+\_\+dist }\end{DoxyParamCaption})}
+
+
+
+Definition at line 120 of file map\+\_\+cspace.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map__cspace_8cpp_a7a2e9876667cad69c3b70881c1aaf1ac_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map__cspace_8cpp_a7a2e9876667cad69c3b70881c1aaf1ac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{map__cspace_8cpp_a19c44c0680f5e1f23a261fad06dfaedd}\label{map__cspace_8cpp_a19c44c0680f5e1f23a261fad06dfaedd}} 
+\index{map\_cspace.cpp@{map\_cspace.cpp}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!map\_cspace.cpp@{map\_cspace.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cell_data}{Cell\+Data}} \&}]{a,  }\item[{const \mbox{\hyperlink{class_cell_data}{Cell\+Data}} \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Definition at line 69 of file map\+\_\+cspace.\+cpp.
+

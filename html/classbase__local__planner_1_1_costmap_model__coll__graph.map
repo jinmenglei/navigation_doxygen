@@ -1,0 +1,5 @@
+<map id="base_local_planner::CostmapModel" name="base_local_planner::CostmapModel">
+<area shape="rect" id="node1" title="A class that implements the WorldModel interface to provide grid based collision checks for the traje..." alt="" coords="91,497,229,692"/>
+<area shape="rect" id="node2" href="$classbase__local__planner_1_1_world_model.html" title="An interface the trajectory controller uses to interact with the world regardless of the underlying w..." alt="" coords="5,145,139,295"/>
+<area shape="rect" id="node3" href="$classcostmap__2d_1_1_costmap2_d.html" title="A 2D costmap provides a mapping between points in the world and their associated &quot;costs&quot;." alt="" coords="163,5,333,435"/>
+</map>

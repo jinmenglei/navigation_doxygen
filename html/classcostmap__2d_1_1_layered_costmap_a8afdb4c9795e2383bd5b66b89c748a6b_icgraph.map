@@ -1,0 +1,9 @@
+<map id="costmap_2d::LayeredCostmap::addPlugin" name="costmap_2d::LayeredCostmap::addPlugin">
+<area shape="rect" id="node1" title=" " alt="" coords="353,74,552,115"/>
+<area shape="rect" id="node2" href="$testing__helper_8h.html#aa81f91d17d5a8d5687fe6f66e3227165" title=" " alt="" coords="147,5,266,32"/>
+<area shape="rect" id="node4" href="$testing__helper_8h.html#afa235ecd500d751f54fd5cf8f32c550d" title=" " alt="" coords="143,56,270,83"/>
+<area shape="rect" id="node5" href="$testing__helper_8h.html#a44d779d80cd1879d61ab1e32e179a806" title=" " alt="" coords="152,107,261,133"/>
+<area shape="rect" id="node7" href="$classcostmap__2d_1_1_costmap2_d_r_o_s.html#a8e6acdb79ef3eb738e8f4d9a5197a9ed" title="Constructor for the wrapper." alt="" coords="108,158,305,199"/>
+<area shape="rect" id="node3" href="$inflation__tests_8cpp.html#ad4ae0b82faed5db2b710a038b9cf895f" title=" " alt="" coords="5,31,60,57"/>
+<area shape="rect" id="node6" href="$inflation__tests_8cpp.html#a790b8d46b7472f667bc70b1ac2b485e1" title=" " alt="" coords="5,107,60,133"/>
+</map>

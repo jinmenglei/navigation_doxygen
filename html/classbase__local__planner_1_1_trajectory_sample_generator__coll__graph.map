@@ -1,0 +1,3 @@
+<map id="base_local_planner::TrajectorySampleGenerator" name="base_local_planner::TrajectorySampleGenerator">
+<area shape="rect" id="node1" title="Provides an interface for navigation trajectory generators." alt="" coords="5,5,213,141"/>
+</map>

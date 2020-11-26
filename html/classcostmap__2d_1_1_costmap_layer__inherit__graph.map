@@ -1,0 +1,8 @@
+<map id="costmap_2d::CostmapLayer" name="costmap_2d::CostmapLayer">
+<area shape="rect" id="node1" title=" " alt="" coords="119,483,304,765"/>
+<area shape="rect" id="node4" href="$classcostmap__2d_1_1_obstacle_layer.html" title=" " alt="" coords="5,813,209,1404"/>
+<area shape="rect" id="node6" href="$classcostmap__2d_1_1_static_layer.html" title=" " alt="" coords="233,909,400,1309"/>
+<area shape="rect" id="node2" href="$classcostmap__2d_1_1_layer.html" title=" " alt="" coords="39,49,197,391"/>
+<area shape="rect" id="node3" href="$classcostmap__2d_1_1_costmap2_d.html" title="A 2D costmap provides a mapping between points in the world and their associated &quot;costs&quot;." alt="" coords="221,5,391,435"/>
+<area shape="rect" id="node5" href="$classcostmap__2d_1_1_voxel_layer.html" title=" " alt="" coords="11,1452,203,1911"/>
+</map>

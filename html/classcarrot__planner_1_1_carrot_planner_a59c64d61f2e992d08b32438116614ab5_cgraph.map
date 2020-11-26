@@ -1,0 +1,9 @@
+<map id="carrot_planner::CarrotPlanner::makePlan" name="carrot_planner::CarrotPlanner::makePlan">
+<area shape="rect" id="node1" title="Given a goal pose in the world, compute a plan." alt="" coords="5,136,196,177"/>
+<area shape="rect" id="node2" href="$classcarrot__planner_1_1_carrot_planner.html#afb2445d0a140b7f9a47a4bed3ee3a63d" title="Checks the legality of the robot footprint at a position and orientation using the world model." alt="" coords="247,71,438,112"/>
+<area shape="rect" id="node5" href="$classcostmap__2d_1_1_costmap2_d_r_o_s.html#ac1005008ad19c3734f0b5eafac2ff8ce" title="Return a pointer to the &quot;master&quot; costmap which receives updates from all the layers." alt="" coords="244,136,441,177"/>
+<area shape="rect" id="node7" href="$classcostmap__2d_1_1_costmap2_d_r_o_s.html#a9636b0058777ed8473ca99cd55a491f6" title="Returns the global frame of the costmap." alt="" coords="244,201,441,243"/>
+<area shape="rect" id="node3" href="$classbase__local__planner_1_1_world_model.html#a36d4c808bc441e2b87b0ac038099993a" title="Subclass will implement this method to check a footprint at a given position and orientation for lega..." alt="" coords="499,5,679,47"/>
+<area shape="rect" id="node4" href="$classcostmap__2d_1_1_costmap2_d_r_o_s.html#abcbf07556dfffe382f41b0204715a101" title="Return the current footprint of the robot as a vector of points." alt="" coords="490,71,687,112"/>
+<area shape="rect" id="node6" href="$classcostmap__2d_1_1_layered_costmap.html#ae0c5b98322d3f62761418b895e2884b3" title=" " alt="" coords="489,136,688,177"/>
+</map>

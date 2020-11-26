@@ -1,0 +1,6 @@
+<map id="base_local_planner::TrajectoryPlanner::reconfigure" name="base_local_planner::TrajectoryPlanner::reconfigure">
+<area shape="rect" id="node1" title="Reconfigures the trajectory planner." alt="" coords="625,5,759,61"/>
+<area shape="rect" id="node2" href="$classbase__local__planner_1_1_trajectory_planner_r_o_s.html#a9fa1e0775ebaf2cc0d46d65011b68630" title="Callback to update the local planner&#39;s parameters based on dynamic reconfigure." alt="" coords="419,5,577,61"/>
+<area shape="rect" id="node3" href="$classbase__local__planner_1_1_trajectory_planner_r_o_s.html#a9a758c9bd9cb0202ed06c07c5aa49c03" title="Constructs the ros wrapper." alt="" coords="212,5,371,61"/>
+<area shape="rect" id="node4" href="$classbase__local__planner_1_1_trajectory_planner_r_o_s.html#a0ea81ba7bfd31aaa999477ae8f9e0d0f" title="Constructs the ros wrapper." alt="" coords="5,5,164,61"/>
+</map>

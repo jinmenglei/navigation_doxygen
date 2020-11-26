@@ -1,0 +1,12 @@
+<map id="costmap_2d::InflationLayer::onFootprintChanged" name="costmap_2d::InflationLayer::onFootprintChanged">
+<area shape="rect" id="node1" title="LayeredCostmap calls this whenever the footprint there changes (via LayeredCostmap::setFootprint())...." alt="" coords="5,169,183,211"/>
+<area shape="rect" id="node2" href="$classcostmap__2d_1_1_inflation_layer.html#af8596c7a8c0ffc98da47cfc99854cdd0" title=" " alt="" coords="241,71,419,112"/>
+<area shape="rect" id="node5" href="$classcostmap__2d_1_1_inflation_layer.html#a05a6dbb2bb36948cdc9404f7480c5261" title=" " alt="" coords="241,136,419,177"/>
+<area shape="rect" id="node9" href="$classcostmap__2d_1_1_layered_costmap.html#a5d39338c55ccd02b1577ffb84320272b" title="Returns the latest footprint stored with setFootprint()." alt="" coords="231,201,429,243"/>
+<area shape="rect" id="node10" href="$classcostmap__2d_1_1_layered_costmap.html#a55a92cecc3689caf8b1e9e077788c54b" title="The radius of a circle centered at the origin of the robot which is just within all points and edges ..." alt="" coords="231,267,429,308"/>
+<area shape="rect" id="node3" href="$classcostmap__2d_1_1_costmap2_d.html#abffbb5c7d49fae947d70c4e6d0fbeae9" title="Given distance in the world... convert it to cells." alt="" coords="492,5,661,47"/>
+<area shape="rect" id="node4" href="$classcostmap__2d_1_1_layered_costmap.html#ae0c5b98322d3f62761418b895e2884b3" title=" " alt="" coords="477,71,676,112"/>
+<area shape="rect" id="node6" href="$classcostmap__2d_1_1_inflation_layer.html#aded99a51737669d85ccc3f1b932061e5" title="Given a distance, compute a cost." alt="" coords="488,136,665,177"/>
+<area shape="rect" id="node8" href="$classcostmap__2d_1_1_inflation_layer.html#a8ca7ac87199c293c06fa5d068c855138" title=" " alt="" coords="488,201,665,243"/>
+<area shape="rect" id="node7" href="$costmap__math_8h.html#a98aba4ec7ccaf3b54f2a312e2db8ba98" title=" " alt="" coords="724,143,795,170"/>
+</map>

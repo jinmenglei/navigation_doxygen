@@ -1,0 +1,9 @@
+<map id="move_slow_and_clear::MoveSlowAndClear" name="move_slow_and_clear::MoveSlowAndClear">
+<area shape="rect" id="node1" title=" " alt="" coords="19,1525,217,1940"/>
+<area shape="rect" id="node2" href="$classnav__core_1_1_recovery_behavior.html" title="Provides an interface for recovery behaviors used in navigation. All recovery behaviors written as pl..." alt="" coords="5,1129,188,1250"/>
+<area shape="rect" id="node3" href="$classcostmap__2d_1_1_costmap2_d_r_o_s.html" title="A ROS wrapper for a 2D Costmap. Handles subscribing to topics that provide observations about obstacl..." alt="" coords="213,931,426,1448"/>
+<area shape="rect" id="node4" href="$classcostmap__2d_1_1_layered_costmap.html" title="Instantiates different layer plugins and aggregates them into one score." alt="" coords="455,497,653,868"/>
+<area shape="rect" id="node5" title=" " alt="" coords="191,181,245,259"/>
+<area shape="rect" id="node7" href="$classcostmap__2d_1_1_costmap2_d_publisher.html" title="A tool to periodically publish visualization data from a Costmap2D." alt="" coords="208,512,431,853"/>
+<area shape="rect" id="node6" href="$classcostmap__2d_1_1_costmap2_d.html" title="A 2D costmap provides a mapping between points in the world and their associated &quot;costs&quot;." alt="" coords="421,5,591,435"/>
+</map>

@@ -1,0 +1,64 @@
+\hypertarget{image__loader_8h}{}\doxysection{E\+:/github/navigation/map\+\_\+server/include/map\+\_\+server/image\+\_\+loader.h File Reference}
+\label{image__loader_8h}\index{E:/github/navigation/map\_server/include/map\_server/image\_loader.h@{E:/github/navigation/map\_server/include/map\_server/image\_loader.h}}
+{\ttfamily \#include \char`\"{}nav\+\_\+msgs/\+Get\+Map.\+h\char`\"{}}\newline
+Include dependency graph for image\+\_\+loader.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{image__loader_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{image__loader_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacemap__server}{map\+\_\+server}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{image__loader_8h_aa17ca8c572605df6a7d49a362f6d7534}{Map\+Mode}} \{ \mbox{\hyperlink{image__loader_8h_aa17ca8c572605df6a7d49a362f6d7534ab64af7e0a4e27abbf70b948e37034594}{T\+R\+I\+N\+A\+RY}}, 
+\mbox{\hyperlink{image__loader_8h_aa17ca8c572605df6a7d49a362f6d7534a593be05a10070b4e7e0856e20590eaaf}{S\+C\+A\+LE}}, 
+\mbox{\hyperlink{image__loader_8h_aa17ca8c572605df6a7d49a362f6d7534abdeded99fe7d3f2773014a9a2cfb73d7}{R\+AW}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacemap__server_a9a1424290b6d4d4806dfb7621cab693d}{map\+\_\+server\+::load\+Map\+From\+File}} (nav\+\_\+msgs\+::\+Get\+Map\+::\+Response $\ast$resp, const char $\ast$fname, double res, bool negate, double occ\+\_\+th, double free\+\_\+th, double $\ast$origin, \mbox{\hyperlink{image__loader_8h_aa17ca8c572605df6a7d49a362f6d7534}{Map\+Mode}} mode=\mbox{\hyperlink{image__loader_8h_aa17ca8c572605df6a7d49a362f6d7534ab64af7e0a4e27abbf70b948e37034594}{T\+R\+I\+N\+A\+RY}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{image__loader_8h_aa17ca8c572605df6a7d49a362f6d7534}\label{image__loader_8h_aa17ca8c572605df6a7d49a362f6d7534}} 
+\index{image\_loader.h@{image\_loader.h}!MapMode@{MapMode}}
+\index{MapMode@{MapMode}!image\_loader.h@{image\_loader.h}}
+\doxysubsubsection{\texorpdfstring{MapMode}{MapMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{image__loader_8h_aa17ca8c572605df6a7d49a362f6d7534}{Map\+Mode}}}
+
+Map mode Default\+: T\+R\+I\+N\+A\+RY -\/ value $>$= occ\+\_\+th -\/ Occupied (100) value $<$= free\+\_\+th -\/ Free (0) otherwise -\/ Unknown S\+C\+A\+LE -\/ alpha $<$ 1.\+0 -\/ Unknown value $>$= occ\+\_\+th -\/ Occupied (100) value $<$= free\+\_\+th -\/ Free (0) otherwise -\/ f( (free\+\_\+th, occ\+\_\+th) ) = (0, 100) (linearly map in between values to (0,100) R\+AW -\/ value = value \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TRINARY@{TRINARY}!image\_loader.h@{image\_loader.h}}\index{image\_loader.h@{image\_loader.h}!TRINARY@{TRINARY}}}\mbox{\Hypertarget{image__loader_8h_aa17ca8c572605df6a7d49a362f6d7534ab64af7e0a4e27abbf70b948e37034594}\label{image__loader_8h_aa17ca8c572605df6a7d49a362f6d7534ab64af7e0a4e27abbf70b948e37034594}} 
+T\+R\+I\+N\+A\+RY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCALE@{SCALE}!image\_loader.h@{image\_loader.h}}\index{image\_loader.h@{image\_loader.h}!SCALE@{SCALE}}}\mbox{\Hypertarget{image__loader_8h_aa17ca8c572605df6a7d49a362f6d7534a593be05a10070b4e7e0856e20590eaaf}\label{image__loader_8h_aa17ca8c572605df6a7d49a362f6d7534a593be05a10070b4e7e0856e20590eaaf}} 
+S\+C\+A\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RAW@{RAW}!image\_loader.h@{image\_loader.h}}\index{image\_loader.h@{image\_loader.h}!RAW@{RAW}}}\mbox{\Hypertarget{image__loader_8h_aa17ca8c572605df6a7d49a362f6d7534abdeded99fe7d3f2773014a9a2cfb73d7}\label{image__loader_8h_aa17ca8c572605df6a7d49a362f6d7534abdeded99fe7d3f2773014a9a2cfb73d7}} 
+R\+AW&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 52 of file image\+\_\+loader.\+h.
+

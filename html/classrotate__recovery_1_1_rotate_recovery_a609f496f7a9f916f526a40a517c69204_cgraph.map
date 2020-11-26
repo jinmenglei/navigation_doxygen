@@ -1,0 +1,6 @@
+<map id="rotate_recovery::RotateRecovery::initialize" name="rotate_recovery::RotateRecovery::initialize">
+<area shape="rect" id="node1" title="Initialization function for the RotateRecovery recovery behavior." alt="" coords="5,39,215,80"/>
+<area shape="rect" id="node2" href="$classcostmap__2d_1_1_costmap2_d_r_o_s.html#ac1005008ad19c3734f0b5eafac2ff8ce" title="Return a pointer to the &quot;master&quot; costmap which receives updates from all the layers." alt="" coords="263,5,460,47"/>
+<area shape="rect" id="node4" href="$namespacenav__core.html#ac1bc19a8eabb092a097d54d334066814" title="Load a parameter from one of two namespaces. Complain if it uses the old name." alt="" coords="265,71,457,112"/>
+<area shape="rect" id="node3" href="$classcostmap__2d_1_1_layered_costmap.html#ae0c5b98322d3f62761418b895e2884b3" title=" " alt="" coords="508,5,707,47"/>
+</map>

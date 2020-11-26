@@ -1,0 +1,3 @@
+<map id="base_local_planner::PlanarLaserScan" name="base_local_planner::PlanarLaserScan">
+<area shape="rect" id="node1" title="Stores a scan from a planar laser that can be used to clear freespace." alt="" coords="5,5,147,156"/>
+</map>

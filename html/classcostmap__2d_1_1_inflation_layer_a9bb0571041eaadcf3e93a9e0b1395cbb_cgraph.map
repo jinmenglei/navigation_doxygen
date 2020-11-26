@@ -1,0 +1,10 @@
+<map id="costmap_2d::InflationLayer::setInflationParameters" name="costmap_2d::InflationLayer::setInflationParameters">
+<area shape="rect" id="node1" title="Change the values of the inflation radius parameters." alt="" coords="5,104,183,145"/>
+<area shape="rect" id="node2" href="$classcostmap__2d_1_1_inflation_layer.html#af8596c7a8c0ffc98da47cfc99854cdd0" title=" " alt="" coords="231,71,408,112"/>
+<area shape="rect" id="node5" href="$classcostmap__2d_1_1_inflation_layer.html#a05a6dbb2bb36948cdc9404f7480c5261" title=" " alt="" coords="231,136,408,177"/>
+<area shape="rect" id="node3" href="$classcostmap__2d_1_1_costmap2_d.html#abffbb5c7d49fae947d70c4e6d0fbeae9" title="Given distance in the world... convert it to cells." alt="" coords="471,5,640,47"/>
+<area shape="rect" id="node4" href="$classcostmap__2d_1_1_layered_costmap.html#ae0c5b98322d3f62761418b895e2884b3" title=" " alt="" coords="456,71,655,112"/>
+<area shape="rect" id="node6" href="$classcostmap__2d_1_1_inflation_layer.html#aded99a51737669d85ccc3f1b932061e5" title="Given a distance, compute a cost." alt="" coords="467,136,644,177"/>
+<area shape="rect" id="node8" href="$classcostmap__2d_1_1_inflation_layer.html#a8ca7ac87199c293c06fa5d068c855138" title=" " alt="" coords="467,201,644,243"/>
+<area shape="rect" id="node7" href="$costmap__math_8h.html#a98aba4ec7ccaf3b54f2a312e2db8ba98" title=" " alt="" coords="703,143,773,170"/>
+</map>

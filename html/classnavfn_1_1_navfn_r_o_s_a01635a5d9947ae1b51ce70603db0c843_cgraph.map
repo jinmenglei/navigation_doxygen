@@ -1,0 +1,7 @@
+<map id="navfn::NavfnROS::computePotential" name="navfn::NavfnROS::computePotential">
+<area shape="rect" id="node1" title="Computes the full navigation function for the map given a point in the world to start from." alt="" coords="5,104,181,145"/>
+<area shape="rect" id="node2" href="$classcostmap__2d_1_1_costmap2_d.html#a951c218252d6e66e23062a123dbde34d" title="Will return a pointer to the underlying unsigned char array used as the costmap." alt="" coords="229,5,399,47"/>
+<area shape="rect" id="node3" href="$classcostmap__2d_1_1_costmap2_d.html#a615a4186649d8970111f8a356906b320" title="Accessor for the x size of the costmap in cells." alt="" coords="229,71,399,112"/>
+<area shape="rect" id="node4" href="$classcostmap__2d_1_1_costmap2_d.html#a702f4ed109f94c8513500cf97ff066a4" title="Accessor for the y size of the costmap in cells." alt="" coords="229,136,399,177"/>
+<area shape="rect" id="node5" href="$classcostmap__2d_1_1_costmap2_d.html#a9a2c824d4cd3bcad3ac3435d81982986" title="Convert from world coordinates to map coordinates." alt="" coords="229,201,399,243"/>
+</map>

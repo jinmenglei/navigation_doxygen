@@ -1,0 +1,6 @@
+<map id="base_local_planner::SimpleTrajectoryGenerator::initialise" name="base_local_planner::SimpleTrajectoryGenerator::initialise">
+<area shape="rect" id="node1" title=" " alt="" coords="529,39,713,95"/>
+<area shape="rect" id="node2" href="$classdwa__local__planner_1_1_d_w_a_planner.html#a1200e7b997f2acd8c3b912bed37e69d5" title="Check if a trajectory is legal for a position/velocity pair." alt="" coords="284,13,481,54"/>
+<area shape="rect" id="node4" href="$classdwa__local__planner_1_1_d_w_a_planner.html#acf862f4cbfd701bacf1eb359cd05892f" title="Given the current position and velocity of the robot, find the best trajectory to exectue." alt="" coords="293,78,472,119"/>
+<area shape="rect" id="node3" href="$classdwa__local__planner_1_1_d_w_a_planner_r_o_s.html#a700178e32159b614d328326b6ba5f8b0" title="Given the current position, orientation, and velocity of the robot, compute velocity commands to send..." alt="" coords="5,5,236,61"/>
+</map>

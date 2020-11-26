@@ -1,0 +1,105 @@
+\hypertarget{point__grid__node_8cpp}{}\doxysection{E\+:/github/navigation/base\+\_\+local\+\_\+planner/src/point\+\_\+grid\+\_\+node.cpp File Reference}
+\label{point__grid__node_8cpp}\index{E:/github/navigation/base\_local\_planner/src/point\_grid\_node.cpp@{E:/github/navigation/base\_local\_planner/src/point\_grid\_node.cpp}}
+{\ttfamily \#include $<$base\+\_\+local\+\_\+planner/point\+\_\+grid.\+h$>$}\newline
+{\ttfamily \#include $<$ros/console.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$sensor\+\_\+msgs/point\+\_\+cloud2\+\_\+iterator.\+h$>$}\newline
+Include dependency graph for point\+\_\+grid\+\_\+node.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{point__grid__node_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{point__grid__node_8cpp_a199e43e09a40803381ae4f8798081250}{print\+Point}} (const geometry\+\_\+msgs\+::\+Point \&pt)
+\item 
+void \mbox{\hyperlink{point__grid__node_8cpp_a05c3d95c815b1443c5b7d7bf4fa4def3}{print\+P\+S\+Header}} ()
+\item 
+void \mbox{\hyperlink{point__grid__node_8cpp_adf610c05fd957ba8e8c427f46726c2ae}{print\+P\+S\+Footer}} ()
+\item 
+void \mbox{\hyperlink{point__grid__node_8cpp_ad5fe40a7507501b472bdebed9ef002b6}{print\+Polygon\+PS}} (const std\+::vector$<$ geometry\+\_\+msgs\+::\+Point32 $>$ \&poly, double line\+\_\+width)
+\item 
+int \mbox{\hyperlink{point__grid__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{point__grid__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{point__grid__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{point\_grid\_node.cpp@{point\_grid\_node.cpp}!main@{main}}
+\index{main@{main}!point\_grid\_node.cpp@{point\_grid\_node.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Definition at line 81 of file point\+\_\+grid\+\_\+node.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{point__grid__node_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{point__grid__node_8cpp_a199e43e09a40803381ae4f8798081250}\label{point__grid__node_8cpp_a199e43e09a40803381ae4f8798081250}} 
+\index{point\_grid\_node.cpp@{point\_grid\_node.cpp}!printPoint@{printPoint}}
+\index{printPoint@{printPoint}!point\_grid\_node.cpp@{point\_grid\_node.cpp}}
+\doxysubsubsection{\texorpdfstring{printPoint()}{printPoint()}}
+{\footnotesize\ttfamily void print\+Point (\begin{DoxyParamCaption}\item[{const geometry\+\_\+msgs\+::\+Point \&}]{pt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 51 of file point\+\_\+grid\+\_\+node.\+cpp.
+
+\mbox{\Hypertarget{point__grid__node_8cpp_ad5fe40a7507501b472bdebed9ef002b6}\label{point__grid__node_8cpp_ad5fe40a7507501b472bdebed9ef002b6}} 
+\index{point\_grid\_node.cpp@{point\_grid\_node.cpp}!printPolygonPS@{printPolygonPS}}
+\index{printPolygonPS@{printPolygonPS}!point\_grid\_node.cpp@{point\_grid\_node.cpp}}
+\doxysubsubsection{\texorpdfstring{printPolygonPS()}{printPolygonPS()}}
+{\footnotesize\ttfamily void print\+Polygon\+PS (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ geometry\+\_\+msgs\+::\+Point32 $>$ \&}]{poly,  }\item[{double}]{line\+\_\+width }\end{DoxyParamCaption})}
+
+
+
+Definition at line 65 of file point\+\_\+grid\+\_\+node.\+cpp.
+
+\mbox{\Hypertarget{point__grid__node_8cpp_adf610c05fd957ba8e8c427f46726c2ae}\label{point__grid__node_8cpp_adf610c05fd957ba8e8c427f46726c2ae}} 
+\index{point\_grid\_node.cpp@{point\_grid\_node.cpp}!printPSFooter@{printPSFooter}}
+\index{printPSFooter@{printPSFooter}!point\_grid\_node.cpp@{point\_grid\_node.cpp}}
+\doxysubsubsection{\texorpdfstring{printPSFooter()}{printPSFooter()}}
+{\footnotesize\ttfamily void print\+P\+S\+Footer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 61 of file point\+\_\+grid\+\_\+node.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{point__grid__node_8cpp_adf610c05fd957ba8e8c427f46726c2ae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{point__grid__node_8cpp_a05c3d95c815b1443c5b7d7bf4fa4def3}\label{point__grid__node_8cpp_a05c3d95c815b1443c5b7d7bf4fa4def3}} 
+\index{point\_grid\_node.cpp@{point\_grid\_node.cpp}!printPSHeader@{printPSHeader}}
+\index{printPSHeader@{printPSHeader}!point\_grid\_node.cpp@{point\_grid\_node.cpp}}
+\doxysubsubsection{\texorpdfstring{printPSHeader()}{printPSHeader()}}
+{\footnotesize\ttfamily void print\+P\+S\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 55 of file point\+\_\+grid\+\_\+node.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{point__grid__node_8cpp_a05c3d95c815b1443c5b7d7bf4fa4def3_icgraph}
+\end{center}
+\end{figure}

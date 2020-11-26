@@ -1,0 +1,174 @@
+\hypertarget{classbase__local__planner_1_1_footprint_helper}{}\doxysection{base\+\_\+local\+\_\+planner\+::Footprint\+Helper Class Reference}
+\label{classbase__local__planner_1_1_footprint_helper}\index{base\_local\_planner::FootprintHelper@{base\_local\_planner::FootprintHelper}}
+
+
+{\ttfamily \#include $<$footprint\+\_\+helper.\+h$>$}
+
+
+
+Collaboration diagram for base\+\_\+local\+\_\+planner\+::Footprint\+Helper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{classbase__local__planner_1_1_footprint_helper__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbase__local__planner_1_1_footprint_helper_a78960bd9bd3bd7fedfff09a7a9132e01}{Footprint\+Helper}} ()
+\item 
+virtual \mbox{\hyperlink{classbase__local__planner_1_1_footprint_helper_a829bdb95d065a62a70e1cbc57a828ab7}{$\sim$\+Footprint\+Helper}} ()
+\item 
+std\+::vector$<$ base\+\_\+local\+\_\+planner\+::\+Position2\+D\+Int $>$ \mbox{\hyperlink{classbase__local__planner_1_1_footprint_helper_ae808cb5daa8579714519073568709f15}{get\+Footprint\+Cells}} (Eigen\+::\+Vector3f pos, std\+::vector$<$ geometry\+\_\+msgs\+::\+Point $>$ footprint\+\_\+spec, const \mbox{\hyperlink{classcostmap__2d_1_1_costmap2_d}{costmap\+\_\+2d\+::\+Costmap2D}} \&, bool fill)
+\begin{DoxyCompactList}\small\item\em Used to get the cells that make up the footprint of the robot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbase__local__planner_1_1_footprint_helper_ab65128ff1acf0eb1d8b398ad0741ee55}{get\+Line\+Cells}} (int x0, int x1, int y0, int y1, std\+::vector$<$ base\+\_\+local\+\_\+planner\+::\+Position2\+D\+Int $>$ \&pts)
+\begin{DoxyCompactList}\small\item\em Use Bresenham\textquotesingle{}s algorithm to trace a line between two points in a grid. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbase__local__planner_1_1_footprint_helper_a6bb46e8dcf95d5694a1aa5b03ab83892}{get\+Fill\+Cells}} (std\+::vector$<$ base\+\_\+local\+\_\+planner\+::\+Position2\+D\+Int $>$ \&footprint)
+\begin{DoxyCompactList}\small\item\em Fill the outline of a polygon, in this case the robot footprint, in a grid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 50 of file footprint\+\_\+helper.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbase__local__planner_1_1_footprint_helper_a78960bd9bd3bd7fedfff09a7a9132e01}\label{classbase__local__planner_1_1_footprint_helper_a78960bd9bd3bd7fedfff09a7a9132e01}} 
+\index{base\_local\_planner::FootprintHelper@{base\_local\_planner::FootprintHelper}!FootprintHelper@{FootprintHelper}}
+\index{FootprintHelper@{FootprintHelper}!base\_local\_planner::FootprintHelper@{base\_local\_planner::FootprintHelper}}
+\doxysubsubsection{\texorpdfstring{FootprintHelper()}{FootprintHelper()}}
+{\footnotesize\ttfamily base\+\_\+local\+\_\+planner\+::\+Footprint\+Helper\+::\+Footprint\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 42 of file footprint\+\_\+helper.\+cpp.
+
+\mbox{\Hypertarget{classbase__local__planner_1_1_footprint_helper_a829bdb95d065a62a70e1cbc57a828ab7}\label{classbase__local__planner_1_1_footprint_helper_a829bdb95d065a62a70e1cbc57a828ab7}} 
+\index{base\_local\_planner::FootprintHelper@{base\_local\_planner::FootprintHelper}!````~FootprintHelper@{$\sim$FootprintHelper}}
+\index{````~FootprintHelper@{$\sim$FootprintHelper}!base\_local\_planner::FootprintHelper@{base\_local\_planner::FootprintHelper}}
+\doxysubsubsection{\texorpdfstring{$\sim$FootprintHelper()}{~FootprintHelper()}}
+{\footnotesize\ttfamily base\+\_\+local\+\_\+planner\+::\+Footprint\+Helper\+::$\sim$\+Footprint\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 47 of file footprint\+\_\+helper.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbase__local__planner_1_1_footprint_helper_a6bb46e8dcf95d5694a1aa5b03ab83892}\label{classbase__local__planner_1_1_footprint_helper_a6bb46e8dcf95d5694a1aa5b03ab83892}} 
+\index{base\_local\_planner::FootprintHelper@{base\_local\_planner::FootprintHelper}!getFillCells@{getFillCells}}
+\index{getFillCells@{getFillCells}!base\_local\_planner::FootprintHelper@{base\_local\_planner::FootprintHelper}}
+\doxysubsubsection{\texorpdfstring{getFillCells()}{getFillCells()}}
+{\footnotesize\ttfamily void base\+\_\+local\+\_\+planner\+::\+Footprint\+Helper\+::get\+Fill\+Cells (\begin{DoxyParamCaption}\item[{std\+::vector$<$ base\+\_\+local\+\_\+planner\+::\+Position2\+D\+Int $>$ \&}]{footprint }\end{DoxyParamCaption})}
+
+
+
+Fill the outline of a polygon, in this case the robot footprint, in a grid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em footprint} & The list of cells making up the footprint in the grid, will be modified to include all cells inside the footprint \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 123 of file footprint\+\_\+helper.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbase__local__planner_1_1_footprint_helper_a6bb46e8dcf95d5694a1aa5b03ab83892_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbase__local__planner_1_1_footprint_helper_ae808cb5daa8579714519073568709f15}\label{classbase__local__planner_1_1_footprint_helper_ae808cb5daa8579714519073568709f15}} 
+\index{base\_local\_planner::FootprintHelper@{base\_local\_planner::FootprintHelper}!getFootprintCells@{getFootprintCells}}
+\index{getFootprintCells@{getFootprintCells}!base\_local\_planner::FootprintHelper@{base\_local\_planner::FootprintHelper}}
+\doxysubsubsection{\texorpdfstring{getFootprintCells()}{getFootprintCells()}}
+{\footnotesize\ttfamily std\+::vector$<$ base\+\_\+local\+\_\+planner\+::\+Position2\+D\+Int $>$ base\+\_\+local\+\_\+planner\+::\+Footprint\+Helper\+::get\+Footprint\+Cells (\begin{DoxyParamCaption}\item[{Eigen\+::\+Vector3f}]{pos,  }\item[{std\+::vector$<$ geometry\+\_\+msgs\+::\+Point $>$}]{footprint\+\_\+spec,  }\item[{const \mbox{\hyperlink{classcostmap__2d_1_1_costmap2_d}{costmap\+\_\+2d\+::\+Costmap2D}} \&}]{costmap,  }\item[{bool}]{fill }\end{DoxyParamCaption})}
+
+
+
+Used to get the cells that make up the footprint of the robot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+i} & The x position of the robot \\
+\hline
+{\em y\+\_\+i} & The y position of the robot \\
+\hline
+{\em theta\+\_\+i} & The orientation of the robot \\
+\hline
+{\em fill} & If true\+: returns all cells in the footprint of the robot. If false\+: returns only the cells that make up the outline of the footprint. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cells that make up either the outline or entire footprint of the robot depending on fill
+\end{DoxyReturn}
+get the cellsof a footprint at a given position 
+
+Definition at line 180 of file footprint\+\_\+helper.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbase__local__planner_1_1_footprint_helper_ae808cb5daa8579714519073568709f15_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbase__local__planner_1_1_footprint_helper_ae808cb5daa8579714519073568709f15_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbase__local__planner_1_1_footprint_helper_ab65128ff1acf0eb1d8b398ad0741ee55}\label{classbase__local__planner_1_1_footprint_helper_ab65128ff1acf0eb1d8b398ad0741ee55}} 
+\index{base\_local\_planner::FootprintHelper@{base\_local\_planner::FootprintHelper}!getLineCells@{getLineCells}}
+\index{getLineCells@{getLineCells}!base\_local\_planner::FootprintHelper@{base\_local\_planner::FootprintHelper}}
+\doxysubsubsection{\texorpdfstring{getLineCells()}{getLineCells()}}
+{\footnotesize\ttfamily void base\+\_\+local\+\_\+planner\+::\+Footprint\+Helper\+::get\+Line\+Cells (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{x1,  }\item[{int}]{y0,  }\item[{int}]{y1,  }\item[{std\+::vector$<$ base\+\_\+local\+\_\+planner\+::\+Position2\+D\+Int $>$ \&}]{pts }\end{DoxyParamCaption})}
+
+
+
+Use Bresenham\textquotesingle{}s algorithm to trace a line between two points in a grid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & The x coordinate of the first point \\
+\hline
+{\em x1} & The x coordinate of the second point \\
+\hline
+{\em y0} & The y coordinate of the first point \\
+\hline
+{\em y1} & The y coordinate of the second point \\
+\hline
+{\em pts} & Will be filled with the cells that lie on the line in the grid \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 51 of file footprint\+\_\+helper.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbase__local__planner_1_1_footprint_helper_ab65128ff1acf0eb1d8b398ad0741ee55_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/github/navigation/base\+\_\+local\+\_\+planner/include/base\+\_\+local\+\_\+planner/\mbox{\hyperlink{footprint__helper_8h}{footprint\+\_\+helper.\+h}}\item 
+E\+:/github/navigation/base\+\_\+local\+\_\+planner/src/\mbox{\hyperlink{footprint__helper_8cpp}{footprint\+\_\+helper.\+cpp}}\end{DoxyCompactItemize}

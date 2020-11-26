@@ -1,0 +1,5 @@
+<map id="base_local_planner::PointGrid" name="base_local_planner::PointGrid">
+<area shape="rect" id="node1" title="A class that implements the WorldModel interface to provide free&#45;space collision checks for the traje..." alt="" coords="57,219,204,560"/>
+<area shape="rect" id="node2" href="$classbase__local__planner_1_1_world_model.html" title="An interface the trajectory controller uses to interact with the world regardless of the underlying w..." alt="" coords="5,5,139,156"/>
+<area shape="rect" id="node3" title=" " alt="" coords="163,42,215,119"/>
+</map>

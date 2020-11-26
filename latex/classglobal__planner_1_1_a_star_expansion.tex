@@ -1,0 +1,134 @@
+\hypertarget{classglobal__planner_1_1_a_star_expansion}{}\doxysection{global\+\_\+planner\+::A\+Star\+Expansion Class Reference}
+\label{classglobal__planner_1_1_a_star_expansion}\index{global\_planner::AStarExpansion@{global\_planner::AStarExpansion}}
+
+
+{\ttfamily \#include $<$astar.\+h$>$}
+
+
+
+Inheritance diagram for global\+\_\+planner\+::A\+Star\+Expansion\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classglobal__planner_1_1_a_star_expansion__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for global\+\_\+planner\+::A\+Star\+Expansion\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classglobal__planner_1_1_a_star_expansion__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classglobal__planner_1_1_a_star_expansion_a3a1f2f9b946d0e69afce5886cf7d56fa}{A\+Star\+Expansion}} (\mbox{\hyperlink{classglobal__planner_1_1_potential_calculator}{Potential\+Calculator}} $\ast$p\+\_\+calc, int nx, int ny)
+\item 
+bool \mbox{\hyperlink{classglobal__planner_1_1_a_star_expansion_a71ddf1440a2f487c6f10af7a25757371}{calculate\+Potentials}} (unsigned char $\ast$costs, double start\+\_\+x, double start\+\_\+y, double end\+\_\+x, double end\+\_\+y, int cycles, float $\ast$potential)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classglobal__planner_1_1_a_star_expansion_a14922f2bde1222050478a4c6289ea874}{add}} (unsigned char $\ast$costs, float $\ast$potential, float prev\+\_\+potential, int next\+\_\+i, int end\+\_\+x, int end\+\_\+y)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classglobal__planner_1_1_index}{Index}} $>$ \mbox{\hyperlink{classglobal__planner_1_1_a_star_expansion_acb298a6cba9ef7313eee585a7c5fdebc}{queue\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 63 of file astar.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classglobal__planner_1_1_a_star_expansion_a3a1f2f9b946d0e69afce5886cf7d56fa}\label{classglobal__planner_1_1_a_star_expansion_a3a1f2f9b946d0e69afce5886cf7d56fa}} 
+\index{global\_planner::AStarExpansion@{global\_planner::AStarExpansion}!AStarExpansion@{AStarExpansion}}
+\index{AStarExpansion@{AStarExpansion}!global\_planner::AStarExpansion@{global\_planner::AStarExpansion}}
+\doxysubsubsection{\texorpdfstring{AStarExpansion()}{AStarExpansion()}}
+{\footnotesize\ttfamily global\+\_\+planner\+::\+A\+Star\+Expansion\+::\+A\+Star\+Expansion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classglobal__planner_1_1_potential_calculator}{Potential\+Calculator}} $\ast$}]{p\+\_\+calc,  }\item[{int}]{nx,  }\item[{int}]{ny }\end{DoxyParamCaption})}
+
+
+
+Definition at line 43 of file astar.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classglobal__planner_1_1_a_star_expansion_a14922f2bde1222050478a4c6289ea874}\label{classglobal__planner_1_1_a_star_expansion_a14922f2bde1222050478a4c6289ea874}} 
+\index{global\_planner::AStarExpansion@{global\_planner::AStarExpansion}!add@{add}}
+\index{add@{add}!global\_planner::AStarExpansion@{global\_planner::AStarExpansion}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void global\+\_\+planner\+::\+A\+Star\+Expansion\+::add (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{costs,  }\item[{float $\ast$}]{potential,  }\item[{float}]{prev\+\_\+potential,  }\item[{int}]{next\+\_\+i,  }\item[{int}]{end\+\_\+x,  }\item[{int}]{end\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 79 of file astar.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classglobal__planner_1_1_a_star_expansion_a14922f2bde1222050478a4c6289ea874_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classglobal__planner_1_1_a_star_expansion_a14922f2bde1222050478a4c6289ea874_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classglobal__planner_1_1_a_star_expansion_a71ddf1440a2f487c6f10af7a25757371}\label{classglobal__planner_1_1_a_star_expansion_a71ddf1440a2f487c6f10af7a25757371}} 
+\index{global\_planner::AStarExpansion@{global\_planner::AStarExpansion}!calculatePotentials@{calculatePotentials}}
+\index{calculatePotentials@{calculatePotentials}!global\_planner::AStarExpansion@{global\_planner::AStarExpansion}}
+\doxysubsubsection{\texorpdfstring{calculatePotentials()}{calculatePotentials()}}
+{\footnotesize\ttfamily bool global\+\_\+planner\+::\+A\+Star\+Expansion\+::calculate\+Potentials (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{costs,  }\item[{double}]{start\+\_\+x,  }\item[{double}]{start\+\_\+y,  }\item[{double}]{end\+\_\+x,  }\item[{double}]{end\+\_\+y,  }\item[{int}]{cycles,  }\item[{float $\ast$}]{potential }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classglobal__planner_1_1_expander_a7c352121a2ea1e1b650b219004c98786}{global\+\_\+planner\+::\+Expander}}.
+
+
+
+Definition at line 47 of file astar.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classglobal__planner_1_1_a_star_expansion_a71ddf1440a2f487c6f10af7a25757371_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classglobal__planner_1_1_a_star_expansion_acb298a6cba9ef7313eee585a7c5fdebc}\label{classglobal__planner_1_1_a_star_expansion_acb298a6cba9ef7313eee585a7c5fdebc}} 
+\index{global\_planner::AStarExpansion@{global\_planner::AStarExpansion}!queue\_@{queue\_}}
+\index{queue\_@{queue\_}!global\_planner::AStarExpansion@{global\_planner::AStarExpansion}}
+\doxysubsubsection{\texorpdfstring{queue\_}{queue\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classglobal__planner_1_1_index}{Index}}$>$ global\+\_\+planner\+::\+A\+Star\+Expansion\+::queue\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 70 of file astar.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/github/navigation/global\+\_\+planner/include/global\+\_\+planner/\mbox{\hyperlink{astar_8h}{astar.\+h}}\item 
+E\+:/github/navigation/global\+\_\+planner/src/\mbox{\hyperlink{astar_8cpp}{astar.\+cpp}}\end{DoxyCompactItemize}

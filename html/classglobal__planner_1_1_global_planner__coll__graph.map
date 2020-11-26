@@ -1,0 +1,10 @@
+<map id="global_planner::GlobalPlanner" name="global_planner::GlobalPlanner">
+<area shape="rect" id="node1" title=" " alt="" coords="505,725,700,1272"/>
+<area shape="rect" id="node2" href="$classnav__core_1_1_base_global_planner.html" title="Provides an interface for global planners used in navigation. All global planners written as plugins ..." alt="" coords="5,380,197,516"/>
+<area shape="rect" id="node3" href="$classglobal__planner_1_1_orientation_filter.html" title=" " alt="" coords="221,351,469,545"/>
+<area shape="rect" id="node4" title=" " alt="" coords="494,409,549,487"/>
+<area shape="rect" id="node5" href="$classglobal__planner_1_1_potential_calculator.html" title=" " alt="" coords="682,5,846,171"/>
+<area shape="rect" id="node7" href="$classglobal__planner_1_1_expander.html" title=" " alt="" coords="680,299,848,597"/>
+<area shape="rect" id="node8" href="$classglobal__planner_1_1_traceback.html" title=" " alt="" coords="872,365,1045,531"/>
+<area shape="rect" id="node6" href="$classcostmap__2d_1_1_costmap2_d.html" title="A 2D costmap provides a mapping between points in the world and their associated &quot;costs&quot;." alt="" coords="1070,233,1239,663"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="base_local_planner::LocalPlannerUtil::getCostmap" name="base_local_planner::LocalPlannerUtil::getCostmap">
+<area shape="rect" id="node1" title=" " alt="" coords="460,63,593,119"/>
+<area shape="rect" id="node2" href="$classdwa__local__planner_1_1_d_w_a_planner.html#acf862f4cbfd701bacf1eb359cd05892f" title="Given the current position and velocity of the robot, find the best trajectory to exectue." alt="" coords="233,5,412,47"/>
+<area shape="rect" id="node3" href="$classdwa__local__planner_1_1_d_w_a_planner.html#ab62d6664d13e90e42327de34a2ed1cfb" title="Compute the components and total cost for a map grid cell." alt="" coords="233,71,412,112"/>
+<area shape="rect" id="node5" href="$classdwa__local__planner_1_1_d_w_a_planner.html#a9388b62309f6148c697aef4ebf5fe20a" title="Reconfigures the trajectory planner." alt="" coords="239,136,407,177"/>
+<area shape="rect" id="node4" href="$classdwa__local__planner_1_1_d_w_a_planner.html#ab2c1143a3a54638d0dc38f9b6fa16e53" title="Constructor for the planner." alt="" coords="5,71,185,112"/>
+</map>

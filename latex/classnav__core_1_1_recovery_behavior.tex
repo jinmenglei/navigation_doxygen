@@ -1,0 +1,124 @@
+\hypertarget{classnav__core_1_1_recovery_behavior}{}\doxysection{nav\+\_\+core\+::Recovery\+Behavior Class Reference}
+\label{classnav__core_1_1_recovery_behavior}\index{nav\_core::RecoveryBehavior@{nav\_core::RecoveryBehavior}}
+
+
+Provides an interface for recovery behaviors used in navigation. All recovery behaviors written as plugins for the navigation stack must adhere to this interface.  
+
+
+
+
+{\ttfamily \#include $<$recovery\+\_\+behavior.\+h$>$}
+
+
+
+Inheritance diagram for nav\+\_\+core\+::Recovery\+Behavior\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnav__core_1_1_recovery_behavior__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for nav\+\_\+core\+::Recovery\+Behavior\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classnav__core_1_1_recovery_behavior__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classnav__core_1_1_recovery_behavior_ab35332f465b3d2509c9e73d4d95c7b5d}{initialize}} (std\+::string name, tf2\+\_\+ros\+::\+Buffer $\ast$tf, \mbox{\hyperlink{classcostmap__2d_1_1_costmap2_d_r_o_s}{costmap\+\_\+2d\+::\+Costmap2\+D\+R\+OS}} $\ast$global\+\_\+costmap, \mbox{\hyperlink{classcostmap__2d_1_1_costmap2_d_r_o_s}{costmap\+\_\+2d\+::\+Costmap2\+D\+R\+OS}} $\ast$local\+\_\+costmap)=0
+\begin{DoxyCompactList}\small\item\em Initialization function for the \mbox{\hyperlink{classnav__core_1_1_recovery_behavior}{Recovery\+Behavior}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classnav__core_1_1_recovery_behavior_a6d8e1eec7a483e530e48b2593ea4fc03}{run\+Behavior}} ()=0
+\begin{DoxyCompactList}\small\item\em Runs the \mbox{\hyperlink{classnav__core_1_1_recovery_behavior}{Recovery\+Behavior}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classnav__core_1_1_recovery_behavior_add375f2ed722549afd00b7dae9874ac6}{$\sim$\+Recovery\+Behavior}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnav__core_1_1_recovery_behavior_a7518e621154c10ad9cc5a060af4fa81e}{Recovery\+Behavior}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides an interface for recovery behaviors used in navigation. All recovery behaviors written as plugins for the navigation stack must adhere to this interface. 
+
+Definition at line 48 of file recovery\+\_\+behavior.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnav__core_1_1_recovery_behavior_add375f2ed722549afd00b7dae9874ac6}\label{classnav__core_1_1_recovery_behavior_add375f2ed722549afd00b7dae9874ac6}} 
+\index{nav\_core::RecoveryBehavior@{nav\_core::RecoveryBehavior}!````~RecoveryBehavior@{$\sim$RecoveryBehavior}}
+\index{````~RecoveryBehavior@{$\sim$RecoveryBehavior}!nav\_core::RecoveryBehavior@{nav\_core::RecoveryBehavior}}
+\doxysubsubsection{\texorpdfstring{$\sim$RecoveryBehavior()}{~RecoveryBehavior()}}
+{\footnotesize\ttfamily virtual nav\+\_\+core\+::\+Recovery\+Behavior\+::$\sim$\+Recovery\+Behavior (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Virtual destructor for the interface. 
+
+
+
+Definition at line 66 of file recovery\+\_\+behavior.\+h.
+
+\mbox{\Hypertarget{classnav__core_1_1_recovery_behavior_a7518e621154c10ad9cc5a060af4fa81e}\label{classnav__core_1_1_recovery_behavior_a7518e621154c10ad9cc5a060af4fa81e}} 
+\index{nav\_core::RecoveryBehavior@{nav\_core::RecoveryBehavior}!RecoveryBehavior@{RecoveryBehavior}}
+\index{RecoveryBehavior@{RecoveryBehavior}!nav\_core::RecoveryBehavior@{nav\_core::RecoveryBehavior}}
+\doxysubsubsection{\texorpdfstring{RecoveryBehavior()}{RecoveryBehavior()}}
+{\footnotesize\ttfamily nav\+\_\+core\+::\+Recovery\+Behavior\+::\+Recovery\+Behavior (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 69 of file recovery\+\_\+behavior.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classnav__core_1_1_recovery_behavior_ab35332f465b3d2509c9e73d4d95c7b5d}\label{classnav__core_1_1_recovery_behavior_ab35332f465b3d2509c9e73d4d95c7b5d}} 
+\index{nav\_core::RecoveryBehavior@{nav\_core::RecoveryBehavior}!initialize@{initialize}}
+\index{initialize@{initialize}!nav\_core::RecoveryBehavior@{nav\_core::RecoveryBehavior}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily virtual void nav\+\_\+core\+::\+Recovery\+Behavior\+::initialize (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{tf2\+\_\+ros\+::\+Buffer $\ast$}]{tf,  }\item[{\mbox{\hyperlink{classcostmap__2d_1_1_costmap2_d_r_o_s}{costmap\+\_\+2d\+::\+Costmap2\+D\+R\+OS}} $\ast$}]{global\+\_\+costmap,  }\item[{\mbox{\hyperlink{classcostmap__2d_1_1_costmap2_d_r_o_s}{costmap\+\_\+2d\+::\+Costmap2\+D\+R\+OS}} $\ast$}]{local\+\_\+costmap }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Initialization function for the \mbox{\hyperlink{classnav__core_1_1_recovery_behavior}{Recovery\+Behavior}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tf} & A pointer to a transform listener \\
+\hline
+{\em global\+\_\+costmap} & A pointer to the global\+\_\+costmap used by the navigation stack \\
+\hline
+{\em local\+\_\+costmap} & A pointer to the local\+\_\+costmap used by the navigation stack \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classclear__costmap__recovery_1_1_clear_costmap_recovery_a5b0e81f3ad151bb9d4058a36c9411efd}{clear\+\_\+costmap\+\_\+recovery\+::\+Clear\+Costmap\+Recovery}}, \mbox{\hyperlink{classrotate__recovery_1_1_rotate_recovery_a609f496f7a9f916f526a40a517c69204}{rotate\+\_\+recovery\+::\+Rotate\+Recovery}}, and \mbox{\hyperlink{classmove__slow__and__clear_1_1_move_slow_and_clear_a8c3abf7314837b065c79f55947ebabf5}{move\+\_\+slow\+\_\+and\+\_\+clear\+::\+Move\+Slow\+And\+Clear}}.
+
+\mbox{\Hypertarget{classnav__core_1_1_recovery_behavior_a6d8e1eec7a483e530e48b2593ea4fc03}\label{classnav__core_1_1_recovery_behavior_a6d8e1eec7a483e530e48b2593ea4fc03}} 
+\index{nav\_core::RecoveryBehavior@{nav\_core::RecoveryBehavior}!runBehavior@{runBehavior}}
+\index{runBehavior@{runBehavior}!nav\_core::RecoveryBehavior@{nav\_core::RecoveryBehavior}}
+\doxysubsubsection{\texorpdfstring{runBehavior()}{runBehavior()}}
+{\footnotesize\ttfamily virtual void nav\+\_\+core\+::\+Recovery\+Behavior\+::run\+Behavior (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Runs the \mbox{\hyperlink{classnav__core_1_1_recovery_behavior}{Recovery\+Behavior}}. 
+
+
+
+Implemented in \mbox{\hyperlink{classrotate__recovery_1_1_rotate_recovery_a8a95adca66937ca4d01fb7a584b905f9}{rotate\+\_\+recovery\+::\+Rotate\+Recovery}}, \mbox{\hyperlink{classmove__slow__and__clear_1_1_move_slow_and_clear_abf32e06b525c141d8b7afcac857c241a}{move\+\_\+slow\+\_\+and\+\_\+clear\+::\+Move\+Slow\+And\+Clear}}, and \mbox{\hyperlink{classclear__costmap__recovery_1_1_clear_costmap_recovery_a7306f9a6b3db7e909e07e7fac7ee84a4}{clear\+\_\+costmap\+\_\+recovery\+::\+Clear\+Costmap\+Recovery}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/github/navigation/nav\+\_\+core/include/nav\+\_\+core/\mbox{\hyperlink{recovery__behavior_8h}{recovery\+\_\+behavior.\+h}}\end{DoxyCompactItemize}

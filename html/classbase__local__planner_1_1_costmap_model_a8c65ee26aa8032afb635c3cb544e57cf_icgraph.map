@@ -1,0 +1,5 @@
+<map id="base_local_planner::CostmapModel::lineCost" name="base_local_planner::CostmapModel::lineCost">
+<area shape="rect" id="node1" title="Rasterizes a line in the costmap grid and checks for collisions." alt="" coords="509,5,681,47"/>
+<area shape="rect" id="node2" href="$classbase__local__planner_1_1_costmap_model.html#a80d896d06af4f1c0bd5b61cd758743af" title="Checks if any obstacles in the costmap lie inside a convex footprint that is rasterized into the grid..." alt="" coords="263,5,461,47"/>
+<area shape="rect" id="node3" href="$classrotate__recovery_1_1_rotate_recovery.html#a8a95adca66937ca4d01fb7a584b905f9" title="Run the RotateRecovery recovery behavior." alt="" coords="5,5,215,47"/>
+</map>

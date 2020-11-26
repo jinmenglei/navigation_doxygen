@@ -1,0 +1,4 @@
+<map id="base_local_planner::TrajectoryPlannerROS" name="base_local_planner::TrajectoryPlannerROS">
+<area shape="rect" id="node1" title="A ROS wrapper for the trajectory controller that queries the param server to construct a controller." alt="" coords="5,204,211,663"/>
+<area shape="rect" id="node2" href="$classnav__core_1_1_base_local_planner.html" title="Provides an interface for local planners used in navigation. All local planners written as plugins fo..." alt="" coords="5,5,211,156"/>
+</map>

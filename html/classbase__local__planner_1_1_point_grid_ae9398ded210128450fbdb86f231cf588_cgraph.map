@@ -1,0 +1,8 @@
+<map id="base_local_planner::PointGrid::footprintCost" name="base_local_planner::PointGrid::footprintCost">
+<area shape="rect" id="node1" title="Checks if any points in the grid lie inside a convex footprint." alt="" coords="5,104,171,145"/>
+<area shape="rect" id="node2" href="$classbase__local__planner_1_1_point_grid.html#af222229f74f1bc4e14536548c316e755" title="Returns the points that lie within the cells contained in the specified range. Some of these points m..." alt="" coords="219,71,413,112"/>
+<area shape="rect" id="node5" href="$classbase__local__planner_1_1_point_grid.html#a7d813f2a10631747b458377fdd4a2a4f" title="Check if a point is in a polygon." alt="" coords="236,136,396,177"/>
+<area shape="rect" id="node3" href="$classbase__local__planner_1_1_point_grid.html#a85f9826c14353e9a75696be52d438554" title="Convert from world coordinates to grid coordinates." alt="" coords="461,5,616,47"/>
+<area shape="rect" id="node4" href="$classbase__local__planner_1_1_point_grid.html#a107ea768298e5560e962498692674d5a" title="Converts cell coordinates to an index value that can be used to look up the correct grid cell." alt="" coords="467,71,611,112"/>
+<area shape="rect" id="node6" href="$classbase__local__planner_1_1_point_grid.html#ab3604c15e0eebb45dcaf4ae5403c5f7e" title="Check the orientation of a pt c with respect to the vector a&#45;&gt;b." alt="" coords="472,136,605,177"/>
+</map>

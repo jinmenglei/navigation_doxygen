@@ -1,0 +1,8 @@
+<map id="dwa_local_planner::DWAPlannerROS::isInitialized" name="dwa_local_planner::DWAPlannerROS::isInitialized">
+<area shape="rect" id="node1" title=" " alt="" coords="587,119,784,161"/>
+<area shape="rect" id="node2" href="$classdwa__local__planner_1_1_d_w_a_planner_r_o_s.html#a6d5796c54a10c3e2c89ec9afb64e9b5e" title="Given the current position, orientation, and velocity of the robot, compute velocity commands to send..." alt="" coords="284,5,539,61"/>
+<area shape="rect" id="node4" href="$classdwa__local__planner_1_1_d_w_a_planner_r_o_s.html#a61c4737a8e5eb82f4c2407326e411d85" title="Constructs the ros wrapper." alt="" coords="321,86,501,127"/>
+<area shape="rect" id="node5" href="$classdwa__local__planner_1_1_d_w_a_planner_r_o_s.html#a847c1877d967acd515d7ddf1ac246941" title="Check if the goal pose has been achieved." alt="" coords="301,151,522,193"/>
+<area shape="rect" id="node6" href="$classdwa__local__planner_1_1_d_w_a_planner_r_o_s.html#a0cfcf517c3112678a7eabeb498d9b2ce" title="Set the plan that the controller is following." alt="" coords="323,217,500,258"/>
+<area shape="rect" id="node3" href="$classdwa__local__planner_1_1_d_w_a_planner_r_o_s.html#a700178e32159b614d328326b6ba5f8b0" title="Given the current position, orientation, and velocity of the robot, compute velocity commands to send..." alt="" coords="5,5,236,61"/>
+</map>

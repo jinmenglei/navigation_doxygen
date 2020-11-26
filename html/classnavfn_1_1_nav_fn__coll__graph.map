@@ -1,0 +1,3 @@
+<map id="navfn::NavFn" name="navfn::NavFn">
+<area shape="rect" id="node1" title="Navigation function class. Holds buffers for costmap, navfn map. Maps are pixel&#45;based...." alt="" coords="5,5,152,376"/>
+</map>

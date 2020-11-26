@@ -1,0 +1,6 @@
+<map id="base_local_planner::MapGridCostFunction" name="base_local_planner::MapGridCostFunction">
+<area shape="rect" id="node1" title=" " alt="" coords="208,497,384,809"/>
+<area shape="rect" id="node2" href="$classbase__local__planner_1_1_trajectory_cost_function.html" title="Provides an interface for critics of trajectories During each sampling run, a batch of many trajector..." alt="" coords="5,137,189,303"/>
+<area shape="rect" id="node3" href="$classbase__local__planner_1_1_map_grid.html" title="A grid of MapCell cells that is used to propagate path and goal distances for the trajectory controll..." alt="" coords="214,64,378,376"/>
+<area shape="rect" id="node4" href="$classcostmap__2d_1_1_costmap2_d.html" title="A 2D costmap provides a mapping between points in the world and their associated &quot;costs&quot;." alt="" coords="402,5,571,435"/>
+</map>

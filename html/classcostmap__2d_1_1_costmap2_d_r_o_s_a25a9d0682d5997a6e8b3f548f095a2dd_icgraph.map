@@ -1,0 +1,11 @@
+<map id="costmap_2d::Costmap2DROS::getName" name="costmap_2d::Costmap2DROS::getName">
+<area shape="rect" id="node1" title="Returns costmap name." alt="" coords="824,93,1021,135"/>
+<area shape="rect" id="node2" href="$classmove__base_1_1_move_base.html#ab267e8cd4697812fde4df300cb5902ac" title=" " alt="" coords="621,93,776,135"/>
+<area shape="rect" id="node3" href="$classmove__base_1_1_move_base.html#ac3ec5faa6a11697af52c061fd90907d2" title="Clears obstacles within a window around the robot." alt="" coords="411,5,573,47"/>
+<area shape="rect" id="node4" href="$classmove__base_1_1_move_base.html#a02b97ca12b73c0caf06aaafde2c930e7" title="A service call that can be made when the action is inactive that will return a plan." alt="" coords="208,57,363,99"/>
+<area shape="rect" id="node6" href="$classmove__base_1_1_move_base.html#a4cde906bc7b501d5918f8482da5fbabe" title="Performs a control cycle." alt="" coords="415,123,569,164"/>
+<area shape="rect" id="node8" href="$classmove__base_1_1_move_base.html#af48f0d98ba773f9799e0a970bf092089" title="Make a new global plan." alt="" coords="415,188,569,229"/>
+<area shape="rect" id="node5" href="$classmove__base_1_1_move_base.html#a1132ccb47b3c514d52be347805eb31f5" title="Constructor for the actions." alt="" coords="5,123,160,164"/>
+<area shape="rect" id="node7" href="$classmove__base_1_1_move_base.html#a02ac84b1ead88c0b9b0f361475c90401" title=" " alt="" coords="208,123,363,164"/>
+<area shape="rect" id="node9" href="$classmove__base_1_1_move_base.html#a12b28ebdf00058e1ffc8b29ec92c320a" title=" " alt="" coords="208,188,363,229"/>
+</map>

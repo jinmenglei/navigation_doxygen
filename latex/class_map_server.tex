@@ -1,0 +1,166 @@
+\hypertarget{class_map_server}{}\doxysection{Map\+Server Class Reference}
+\label{class_map_server}\index{MapServer@{MapServer}}
+
+
+Collaboration diagram for Map\+Server\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_map_server__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_map_server_ae1c28a36205ae2d7fc2faa7e9d53b3e9}{Map\+Server}} (const std\+::string \&fname, double res)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_map_server_adb1ee040f9e2eaf855ba4f76bfc10260}{map\+Callback}} (nav\+\_\+msgs\+::\+Get\+Map\+::\+Request \&req, nav\+\_\+msgs\+::\+Get\+Map\+::\+Response \&res)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ros\+::\+Node\+Handle \mbox{\hyperlink{class_map_server_a1c344815b4e16b3eec3a3ab6861254b2}{nh\+\_\+}}
+\item 
+ros\+::\+Publisher \mbox{\hyperlink{class_map_server_a953adff66910267ca470e341e810abd7}{map\+\_\+pub\+\_\+}}
+\item 
+ros\+::\+Publisher \mbox{\hyperlink{class_map_server_a259d9f9b6c76f1ed7aeb819776c1d2fc}{metadata\+\_\+pub\+\_\+}}
+\item 
+ros\+::\+Service\+Server \mbox{\hyperlink{class_map_server_a004a9bcfd9f1ce649f8099cf75580d42}{get\+\_\+map\+\_\+service\+\_\+}}
+\item 
+bool \mbox{\hyperlink{class_map_server_a70e827021556d06bcf6939816fe84ffb}{deprecated\+\_\+}}
+\item 
+nav\+\_\+msgs\+::\+Map\+Meta\+Data \mbox{\hyperlink{class_map_server_a5aca513fe2a230e89e41f700703ee477}{meta\+\_\+data\+\_\+message\+\_\+}}
+\item 
+nav\+\_\+msgs\+::\+Get\+Map\+::\+Response \mbox{\hyperlink{class_map_server_ac1be64f4c32a295b8a0bd09e716aeb42}{map\+\_\+resp\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 59 of file main.\+cpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_map_server_ae1c28a36205ae2d7fc2faa7e9d53b3e9}\label{class_map_server_ae1c28a36205ae2d7fc2faa7e9d53b3e9}} 
+\index{MapServer@{MapServer}!MapServer@{MapServer}}
+\index{MapServer@{MapServer}!MapServer@{MapServer}}
+\doxysubsubsection{\texorpdfstring{MapServer()}{MapServer()}}
+{\footnotesize\ttfamily Map\+Server\+::\+Map\+Server (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{fname,  }\item[{double}]{res }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Trivial constructor 
+
+Definition at line 63 of file main.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_server_ae1c28a36205ae2d7fc2faa7e9d53b3e9_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_map_server_adb1ee040f9e2eaf855ba4f76bfc10260}\label{class_map_server_adb1ee040f9e2eaf855ba4f76bfc10260}} 
+\index{MapServer@{MapServer}!mapCallback@{mapCallback}}
+\index{mapCallback@{mapCallback}!MapServer@{MapServer}}
+\doxysubsubsection{\texorpdfstring{mapCallback()}{mapCallback()}}
+{\footnotesize\ttfamily bool Map\+Server\+::map\+Callback (\begin{DoxyParamCaption}\item[{nav\+\_\+msgs\+::\+Get\+Map\+::\+Request \&}]{req,  }\item[{nav\+\_\+msgs\+::\+Get\+Map\+::\+Response \&}]{res }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Callback invoked when someone requests our service 
+
+Definition at line 210 of file main.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_map_server_adb1ee040f9e2eaf855ba4f76bfc10260_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_map_server_a70e827021556d06bcf6939816fe84ffb}\label{class_map_server_a70e827021556d06bcf6939816fe84ffb}} 
+\index{MapServer@{MapServer}!deprecated\_@{deprecated\_}}
+\index{deprecated\_@{deprecated\_}!MapServer@{MapServer}}
+\doxysubsubsection{\texorpdfstring{deprecated\_}{deprecated\_}}
+{\footnotesize\ttfamily bool Map\+Server\+::deprecated\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 207 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_map_server_a004a9bcfd9f1ce649f8099cf75580d42}\label{class_map_server_a004a9bcfd9f1ce649f8099cf75580d42}} 
+\index{MapServer@{MapServer}!get\_map\_service\_@{get\_map\_service\_}}
+\index{get\_map\_service\_@{get\_map\_service\_}!MapServer@{MapServer}}
+\doxysubsubsection{\texorpdfstring{get\_map\_service\_}{get\_map\_service\_}}
+{\footnotesize\ttfamily ros\+::\+Service\+Server Map\+Server\+::get\+\_\+map\+\_\+service\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 206 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_map_server_a953adff66910267ca470e341e810abd7}\label{class_map_server_a953adff66910267ca470e341e810abd7}} 
+\index{MapServer@{MapServer}!map\_pub\_@{map\_pub\_}}
+\index{map\_pub\_@{map\_pub\_}!MapServer@{MapServer}}
+\doxysubsubsection{\texorpdfstring{map\_pub\_}{map\_pub\_}}
+{\footnotesize\ttfamily ros\+::\+Publisher Map\+Server\+::map\+\_\+pub\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 204 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_map_server_ac1be64f4c32a295b8a0bd09e716aeb42}\label{class_map_server_ac1be64f4c32a295b8a0bd09e716aeb42}} 
+\index{MapServer@{MapServer}!map\_resp\_@{map\_resp\_}}
+\index{map\_resp\_@{map\_resp\_}!MapServer@{MapServer}}
+\doxysubsubsection{\texorpdfstring{map\_resp\_}{map\_resp\_}}
+{\footnotesize\ttfamily nav\+\_\+msgs\+::\+Get\+Map\+::\+Response Map\+Server\+::map\+\_\+resp\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 225 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_map_server_a5aca513fe2a230e89e41f700703ee477}\label{class_map_server_a5aca513fe2a230e89e41f700703ee477}} 
+\index{MapServer@{MapServer}!meta\_data\_message\_@{meta\_data\_message\_}}
+\index{meta\_data\_message\_@{meta\_data\_message\_}!MapServer@{MapServer}}
+\doxysubsubsection{\texorpdfstring{meta\_data\_message\_}{meta\_data\_message\_}}
+{\footnotesize\ttfamily nav\+\_\+msgs\+::\+Map\+Meta\+Data Map\+Server\+::meta\+\_\+data\+\_\+message\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+The map data is cached here, to be sent out to service callers 
+
+Definition at line 224 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_map_server_a259d9f9b6c76f1ed7aeb819776c1d2fc}\label{class_map_server_a259d9f9b6c76f1ed7aeb819776c1d2fc}} 
+\index{MapServer@{MapServer}!metadata\_pub\_@{metadata\_pub\_}}
+\index{metadata\_pub\_@{metadata\_pub\_}!MapServer@{MapServer}}
+\doxysubsubsection{\texorpdfstring{metadata\_pub\_}{metadata\_pub\_}}
+{\footnotesize\ttfamily ros\+::\+Publisher Map\+Server\+::metadata\+\_\+pub\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 205 of file main.\+cpp.
+
+\mbox{\Hypertarget{class_map_server_a1c344815b4e16b3eec3a3ab6861254b2}\label{class_map_server_a1c344815b4e16b3eec3a3ab6861254b2}} 
+\index{MapServer@{MapServer}!nh\_@{nh\_}}
+\index{nh\_@{nh\_}!MapServer@{MapServer}}
+\doxysubsubsection{\texorpdfstring{nh\_}{nh\_}}
+{\footnotesize\ttfamily ros\+::\+Node\+Handle Map\+Server\+::nh\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 203 of file main.\+cpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/github/navigation/map\+\_\+server/src/\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

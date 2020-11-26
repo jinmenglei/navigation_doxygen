@@ -1,0 +1,7 @@
+<map id="costmap_2d::ObstacleLayer::addStaticObservation" name="costmap_2d::ObstacleLayer::addStaticObservation">
+<area shape="rect" id="node1" title=" " alt="" coords="428,23,613,65"/>
+<area shape="rect" id="node2" href="$testing__helper_8h.html#a043c2232e047ce2a6c03a493e5e31ee9" title=" " alt="" coords="269,31,380,57"/>
+<area shape="rect" id="node3" href="$inflation__tests_8cpp.html#ad4ae0b82faed5db2b710a038b9cf895f" title=" " alt="" coords="137,5,192,32"/>
+<area shape="rect" id="node4" href="$clear__tester_8cpp.html#ae52f25afda509d6ef50c32f8feaae444" title=" " alt="" coords="108,56,221,83"/>
+<area shape="rect" id="node5" href="$clear__tester_8cpp.html#abafd3249b8a1dc81312408e67fec172a" title=" " alt="" coords="5,56,60,83"/>
+</map>

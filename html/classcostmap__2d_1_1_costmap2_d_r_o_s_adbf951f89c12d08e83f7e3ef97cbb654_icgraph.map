@@ -1,0 +1,7 @@
+<map id="costmap_2d::Costmap2DROS::getBaseFrameID" name="costmap_2d::Costmap2DROS::getBaseFrameID">
+<area shape="rect" id="node1" title="Returns the local frame of the costmap." alt="" coords="587,53,784,94"/>
+<area shape="rect" id="node2" href="$classdwa__local__planner_1_1_d_w_a_planner_r_o_s.html#a6d5796c54a10c3e2c89ec9afb64e9b5e" title="Given the current position, orientation, and velocity of the robot, compute velocity commands to send..." alt="" coords="284,5,539,61"/>
+<area shape="rect" id="node4" href="$classbase__local__planner_1_1_trajectory_planner_r_o_s.html#a9a758c9bd9cb0202ed06c07c5aa49c03" title="Constructs the ros wrapper." alt="" coords="332,85,491,141"/>
+<area shape="rect" id="node3" href="$classdwa__local__planner_1_1_d_w_a_planner_r_o_s.html#a700178e32159b614d328326b6ba5f8b0" title="Given the current position, orientation, and velocity of the robot, compute velocity commands to send..." alt="" coords="5,5,236,61"/>
+<area shape="rect" id="node5" href="$classbase__local__planner_1_1_trajectory_planner_r_o_s.html#a0ea81ba7bfd31aaa999477ae8f9e0d0f" title="Constructs the ros wrapper." alt="" coords="41,85,200,141"/>
+</map>

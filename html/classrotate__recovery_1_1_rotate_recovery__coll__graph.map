@@ -1,0 +1,11 @@
+<map id="rotate_recovery::RotateRecovery" name="rotate_recovery::RotateRecovery">
+<area shape="rect" id="node1" title="A recovery behavior that rotates the robot in&#45;place to attempt to clear out space." alt="" coords="132,1511,341,1720"/>
+<area shape="rect" id="node2" href="$classnav__core_1_1_recovery_behavior.html" title="Provides an interface for recovery behaviors used in navigation. All recovery behaviors written as pl..." alt="" coords="5,1129,188,1250"/>
+<area shape="rect" id="node3" href="$classbase__local__planner_1_1_costmap_model.html" title="A class that implements the WorldModel interface to provide grid based collision checks for the traje..." alt="" coords="95,585,232,780"/>
+<area shape="rect" id="node4" href="$classbase__local__planner_1_1_world_model.html" title="An interface the trajectory controller uses to interact with the world regardless of the underlying w..." alt="" coords="91,145,225,295"/>
+<area shape="rect" id="node5" href="$classcostmap__2d_1_1_costmap2_d.html" title="A 2D costmap provides a mapping between points in the world and their associated &quot;costs&quot;." alt="" coords="249,5,419,435"/>
+<area shape="rect" id="node7" href="$classcostmap__2d_1_1_layered_costmap.html" title="Instantiates different layer plugins and aggregates them into one score." alt="" coords="256,497,455,868"/>
+<area shape="rect" id="node9" href="$classcostmap__2d_1_1_costmap2_d_publisher.html" title="A tool to periodically publish visualization data from a Costmap2D." alt="" coords="479,512,701,853"/>
+<area shape="rect" id="node6" href="$classcostmap__2d_1_1_costmap2_d_r_o_s.html" title="A ROS wrapper for a 2D Costmap. Handles subscribing to topics that provide observations about obstacl..." alt="" coords="403,931,617,1448"/>
+<area shape="rect" id="node8" title=" " alt="" coords="613,181,668,259"/>
+</map>

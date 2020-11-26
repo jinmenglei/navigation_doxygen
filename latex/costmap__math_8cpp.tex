@@ -1,0 +1,113 @@
+\hypertarget{costmap__math_8cpp}{}\doxysection{E\+:/github/navigation/costmap\+\_\+2d/src/costmap\+\_\+math.cpp File Reference}
+\label{costmap__math_8cpp}\index{E:/github/navigation/costmap\_2d/src/costmap\_math.cpp@{E:/github/navigation/costmap\_2d/src/costmap\_math.cpp}}
+{\ttfamily \#include $<$costmap\+\_\+2d/costmap\+\_\+math.\+h$>$}\newline
+Include dependency graph for costmap\+\_\+math.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{costmap__math_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{costmap__math_8cpp_a31fe9c9633687b41b7c65a18dcab85f9}{distance\+To\+Line}} (double pX, double pY, double x0, double y0, double x1, double y1)
+\item 
+bool \mbox{\hyperlink{costmap__math_8cpp_a567784da85da753bdd72f7faf2bdf7b6}{intersects}} (std\+::vector$<$ geometry\+\_\+msgs\+::\+Point $>$ \&polygon, float testx, float testy)
+\item 
+bool \mbox{\hyperlink{costmap__math_8cpp_a928b4806dccd621d58057981b5ab5eb7}{intersects\+\_\+helper}} (std\+::vector$<$ geometry\+\_\+msgs\+::\+Point $>$ \&polygon1, std\+::vector$<$ geometry\+\_\+msgs\+::\+Point $>$ \&polygon2)
+\item 
+bool \mbox{\hyperlink{costmap__math_8cpp_a73fceb516298f9b095d8ee0a61957695}{intersects}} (std\+::vector$<$ geometry\+\_\+msgs\+::\+Point $>$ \&polygon1, std\+::vector$<$ geometry\+\_\+msgs\+::\+Point $>$ \&polygon2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{costmap__math_8cpp_a31fe9c9633687b41b7c65a18dcab85f9}\label{costmap__math_8cpp_a31fe9c9633687b41b7c65a18dcab85f9}} 
+\index{costmap\_math.cpp@{costmap\_math.cpp}!distanceToLine@{distanceToLine}}
+\index{distanceToLine@{distanceToLine}!costmap\_math.cpp@{costmap\_math.cpp}}
+\doxysubsubsection{\texorpdfstring{distanceToLine()}{distanceToLine()}}
+{\footnotesize\ttfamily double distance\+To\+Line (\begin{DoxyParamCaption}\item[{double}]{pX,  }\item[{double}]{pY,  }\item[{double}]{x0,  }\item[{double}]{y0,  }\item[{double}]{x1,  }\item[{double}]{y1 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 32 of file costmap\+\_\+math.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{costmap__math_8cpp_a31fe9c9633687b41b7c65a18dcab85f9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{costmap__math_8cpp_a31fe9c9633687b41b7c65a18dcab85f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{costmap__math_8cpp_a567784da85da753bdd72f7faf2bdf7b6}\label{costmap__math_8cpp_a567784da85da753bdd72f7faf2bdf7b6}} 
+\index{costmap\_math.cpp@{costmap\_math.cpp}!intersects@{intersects}}
+\index{intersects@{intersects}!costmap\_math.cpp@{costmap\_math.cpp}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool intersects (\begin{DoxyParamCaption}\item[{std\+::vector$<$ geometry\+\_\+msgs\+::\+Point $>$ \&}]{polygon,  }\item[{float}]{testx,  }\item[{float}]{testy }\end{DoxyParamCaption})}
+
+
+
+Definition at line 64 of file costmap\+\_\+math.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{costmap__math_8cpp_a567784da85da753bdd72f7faf2bdf7b6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{costmap__math_8cpp_a73fceb516298f9b095d8ee0a61957695}\label{costmap__math_8cpp_a73fceb516298f9b095d8ee0a61957695}} 
+\index{costmap\_math.cpp@{costmap\_math.cpp}!intersects@{intersects}}
+\index{intersects@{intersects}!costmap\_math.cpp@{costmap\_math.cpp}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool intersects (\begin{DoxyParamCaption}\item[{std\+::vector$<$ geometry\+\_\+msgs\+::\+Point $>$ \&}]{polygon1,  }\item[{std\+::vector$<$ geometry\+\_\+msgs\+::\+Point $>$ \&}]{polygon2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 86 of file costmap\+\_\+math.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{costmap__math_8cpp_a73fceb516298f9b095d8ee0a61957695_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{costmap__math_8cpp_a928b4806dccd621d58057981b5ab5eb7}\label{costmap__math_8cpp_a928b4806dccd621d58057981b5ab5eb7}} 
+\index{costmap\_math.cpp@{costmap\_math.cpp}!intersects\_helper@{intersects\_helper}}
+\index{intersects\_helper@{intersects\_helper}!costmap\_math.cpp@{costmap\_math.cpp}}
+\doxysubsubsection{\texorpdfstring{intersects\_helper()}{intersects\_helper()}}
+{\footnotesize\ttfamily bool intersects\+\_\+helper (\begin{DoxyParamCaption}\item[{std\+::vector$<$ geometry\+\_\+msgs\+::\+Point $>$ \&}]{polygon1,  }\item[{std\+::vector$<$ geometry\+\_\+msgs\+::\+Point $>$ \&}]{polygon2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 78 of file costmap\+\_\+math.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{costmap__math_8cpp_a928b4806dccd621d58057981b5ab5eb7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{costmap__math_8cpp_a928b4806dccd621d58057981b5ab5eb7_icgraph}
+\end{center}
+\end{figure}

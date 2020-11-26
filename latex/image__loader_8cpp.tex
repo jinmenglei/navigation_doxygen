@@ -1,0 +1,45 @@
+\hypertarget{image__loader_8cpp}{}\doxysection{E\+:/github/navigation/map\+\_\+server/src/image\+\_\+loader.cpp File Reference}
+\label{image__loader_8cpp}\index{E:/github/navigation/map\_server/src/image\_loader.cpp@{E:/github/navigation/map\_server/src/image\_loader.cpp}}
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$Linear\+Math/bt\+Quaternion.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}map\+\_\+server/image\+\_\+loader.\+h\char`\"{}}\newline
+Include dependency graph for image\+\_\+loader.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{image__loader_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacemap__server}{map\+\_\+server}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{image__loader_8cpp_a2388723427585df03b86ed963c9de575}{M\+A\+P\+\_\+\+I\+DX}}(sx,  i,  j)~((sx) $\ast$ (j) + (i))
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacemap__server_a9a1424290b6d4d4806dfb7621cab693d}{map\+\_\+server\+::load\+Map\+From\+File}} (nav\+\_\+msgs\+::\+Get\+Map\+::\+Response $\ast$resp, const char $\ast$fname, double res, bool negate, double occ\+\_\+th, double free\+\_\+th, double $\ast$origin, \mbox{\hyperlink{image__loader_8h_aa17ca8c572605df6a7d49a362f6d7534}{Map\+Mode}} mode=\mbox{\hyperlink{image__loader_8h_aa17ca8c572605df6a7d49a362f6d7534ab64af7e0a4e27abbf70b948e37034594}{T\+R\+I\+N\+A\+RY}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{image__loader_8cpp_a2388723427585df03b86ed963c9de575}\label{image__loader_8cpp_a2388723427585df03b86ed963c9de575}} 
+\index{image\_loader.cpp@{image\_loader.cpp}!MAP\_IDX@{MAP\_IDX}}
+\index{MAP\_IDX@{MAP\_IDX}!image\_loader.cpp@{image\_loader.cpp}}
+\doxysubsubsection{\texorpdfstring{MAP\_IDX}{MAP\_IDX}}
+{\footnotesize\ttfamily \#define M\+A\+P\+\_\+\+I\+DX(\begin{DoxyParamCaption}\item[{}]{sx,  }\item[{}]{i,  }\item[{}]{j }\end{DoxyParamCaption})~((sx) $\ast$ (j) + (i))}
+
+
+
+Definition at line 51 of file image\+\_\+loader.\+cpp.
+

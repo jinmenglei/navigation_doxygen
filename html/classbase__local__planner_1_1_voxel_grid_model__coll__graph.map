@@ -1,0 +1,5 @@
+<map id="base_local_planner::VoxelGridModel" name="base_local_planner::VoxelGridModel">
+<area shape="rect" id="node1" title="A class that implements the WorldModel interface to provide grid based collision checks for the traje..." alt="" coords="51,424,255,839"/>
+<area shape="rect" id="node2" href="$classbase__local__planner_1_1_world_model.html" title="An interface the trajectory controller uses to interact with the world regardless of the underlying w..." alt="" coords="5,108,139,259"/>
+<area shape="rect" id="node3" href="$classvoxel__grid_1_1_voxel_grid.html" title=" " alt="" coords="163,5,309,361"/>
+</map>

@@ -1,0 +1,3 @@
+<map id="costmap_2d::CellData" name="costmap_2d::CellData">
+<area shape="rect" id="node1" title="Storage for cell information used during obstacle inflation." alt="" coords="5,5,156,141"/>
+</map>

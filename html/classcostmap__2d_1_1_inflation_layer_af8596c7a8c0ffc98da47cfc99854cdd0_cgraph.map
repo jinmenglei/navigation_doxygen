@@ -1,0 +1,5 @@
+<map id="costmap_2d::InflationLayer::cellDistance" name="costmap_2d::InflationLayer::cellDistance">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,183,80"/>
+<area shape="rect" id="node2" href="$classcostmap__2d_1_1_costmap2_d.html#abffbb5c7d49fae947d70c4e6d0fbeae9" title="Given distance in the world... convert it to cells." alt="" coords="245,5,415,47"/>
+<area shape="rect" id="node3" href="$classcostmap__2d_1_1_layered_costmap.html#ae0c5b98322d3f62761418b895e2884b3" title=" " alt="" coords="231,71,429,112"/>
+</map>

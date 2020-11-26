@@ -1,0 +1,52 @@
+\hypertarget{map__server_2_c_make_lists_8txt}{}\doxysection{E\+:/github/navigation/map\+\_\+server/\+C\+Make\+Lists.txt File Reference}
+\label{map__server_2_c_make_lists_8txt}\index{E:/github/navigation/map\_server/CMakeLists.txt@{E:/github/navigation/map\_server/CMakeLists.txt}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{map__server_2_c_make_lists_8txt_ae11c27a32f2c731e092cc2e11c8a6dd2}{cmake\+\_\+minimum\+\_\+required}} (V\+E\+R\+S\+I\+ON 3.\+0.\+2) project(map\+\_\+server) find\+\_\+package(catkin R\+E\+Q\+U\+I\+R\+ED C\+O\+M\+P\+O\+N\+E\+N\+TS roscpp nav\+\_\+msgs tf2) find\+\_\+package(Bullet R\+E\+Q\+U\+I\+R\+ED) find\+\_\+package(S\+DL R\+E\+Q\+U\+I\+R\+ED) find\+\_\+package(S\+D\+L\+\_\+image R\+E\+Q\+U\+I\+R\+ED) find\+\_\+package(Boost R\+E\+Q\+U\+I\+R\+ED C\+O\+M\+P\+O\+N\+E\+N\+TS filesystem) find\+\_\+package(Pkg\+Config R\+E\+Q\+U\+I\+R\+ED) pkg\+\_\+check\+\_\+modules(Y\+A\+M\+L\+C\+PP yaml-\/cpp Q\+U\+I\+ET) if(N\+OT Y\+A\+M\+L\+C\+P\+P\+\_\+\+F\+O\+U\+ND) find\+\_\+package(yaml-\/cpp 0.\+6 R\+E\+Q\+U\+I\+R\+ED) \mbox{\hyperlink{map__server_2_c_make_lists_8txt_ab3db57d102bacfbe8c26ae329388a758}{set}}(Y\+A\+M\+L\+C\+P\+P\+\_\+\+I\+N\+C\+L\+U\+D\+E\+\_\+\+D\+I\+RS \$
+\item 
+\mbox{\hyperlink{map__server_2_c_make_lists_8txt_ab3db57d102bacfbe8c26ae329388a758}{set}} (Y\+A\+M\+L\+C\+P\+P\+\_\+\+L\+I\+B\+R\+A\+R\+I\+ES \$\{Y\+A\+M\+L\+\_\+\+C\+P\+P\+\_\+\+L\+I\+B\+R\+A\+R\+I\+ES\}) \mbox{\hyperlink{carrot__planner_2_c_make_lists_8txt_a9fd0bfe32b4a357593e2ed6281b94ea6}{add\+\_\+definitions}}(-\/D\+H\+A\+V\+E\+\_\+\+Y\+A\+M\+L\+C\+P\+P\+\_\+\+G\+T\+\_\+0\+\_\+5\+\_\+0) else() if(Y\+A\+M\+L\+C\+P\+P\+\_\+\+V\+E\+R\+S\+I\+ON V\+E\+R\+S\+I\+O\+N\+\_\+\+G\+R\+E\+A\+T\+ER \char`\"{}0.\+5.\+0\char`\"{}) \mbox{\hyperlink{carrot__planner_2_c_make_lists_8txt_a9fd0bfe32b4a357593e2ed6281b94ea6}{add\+\_\+definitions}}(-\/D\+H\+A\+V\+E\+\_\+\+Y\+A\+M\+L\+C\+P\+P\+\_\+\+G\+T\+\_\+0\+\_\+5\+\_\+0) \mbox{\hyperlink{map__server_2_c_make_lists_8txt_ad5c77df9a175560927f01b035a1b24c8}{endif}}() link\+\_\+directories(\$
+\item 
+\mbox{\hyperlink{map__server_2_c_make_lists_8txt_ad5c77df9a175560927f01b035a1b24c8}{endif}} () catkin\+\_\+package(I\+N\+C\+L\+U\+D\+E\+\_\+\+D\+I\+RS include L\+I\+B\+R\+A\+R\+I\+ES map\+\_\+server\+\_\+image\+\_\+loader C\+A\+T\+K\+I\+N\+\_\+\+D\+E\+P\+E\+N\+DS roscpp nav\+\_\+msgs tf2) \mbox{\hyperlink{global__planner_2_c_make_lists_8txt_a427264a8ac112b32b741f240dacc7066}{include\+\_\+directories}}(include \$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{map__server_2_c_make_lists_8txt_ae11c27a32f2c731e092cc2e11c8a6dd2}\label{map__server_2_c_make_lists_8txt_ae11c27a32f2c731e092cc2e11c8a6dd2}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!cmake\_minimum\_required@{cmake\_minimum\_required}}
+\index{cmake\_minimum\_required@{cmake\_minimum\_required}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{cmake\_minimum\_required()}{cmake\_minimum\_required()}}
+{\footnotesize\ttfamily cmake\+\_\+minimum\+\_\+required (\begin{DoxyParamCaption}\item[{V\+E\+R\+S\+I\+ON 3.\+0.}]{2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1 of file C\+Make\+Lists.\+txt.
+
+\mbox{\Hypertarget{map__server_2_c_make_lists_8txt_ad5c77df9a175560927f01b035a1b24c8}\label{map__server_2_c_make_lists_8txt_ad5c77df9a175560927f01b035a1b24c8}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!endif@{endif}}
+\index{endif@{endif}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{endif()}{endif()}}
+{\footnotesize\ttfamily endif (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 28 of file C\+Make\+Lists.\+txt.
+
+\mbox{\Hypertarget{map__server_2_c_make_lists_8txt_ab3db57d102bacfbe8c26ae329388a758}\label{map__server_2_c_make_lists_8txt_ab3db57d102bacfbe8c26ae329388a758}} 
+\index{CMakeLists.txt@{CMakeLists.txt}!set@{set}}
+\index{set@{set}!CMakeLists.txt@{CMakeLists.txt}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{Y\+A\+M\+L\+C\+P\+P\+\_\+\+L\+I\+B\+R\+A\+R\+I\+ES \$\{Y\+A\+M\+L\+\_\+\+C\+P\+P\+\_\+\+L\+I\+B\+R\+A\+R\+I\+ES\}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 21 of file C\+Make\+Lists.\+txt.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map__server_2_c_make_lists_8txt_ab3db57d102bacfbe8c26ae329388a758_icgraph}
+\end{center}
+\end{figure}

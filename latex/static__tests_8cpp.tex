@@ -1,0 +1,134 @@
+\hypertarget{static__tests_8cpp}{}\doxysection{E\+:/github/navigation/costmap\+\_\+2d/test/static\+\_\+tests.cpp File Reference}
+\label{static__tests_8cpp}\index{E:/github/navigation/costmap\_2d/test/static\_tests.cpp@{E:/github/navigation/costmap\_2d/test/static\_tests.cpp}}
+{\ttfamily \#include $<$costmap\+\_\+2d/costmap\+\_\+2d.\+h$>$}\newline
+{\ttfamily \#include $<$costmap\+\_\+2d/layered\+\_\+costmap.\+h$>$}\newline
+{\ttfamily \#include $<$costmap\+\_\+2d/obstacle\+\_\+layer.\+h$>$}\newline
+{\ttfamily \#include $<$costmap\+\_\+2d/static\+\_\+layer.\+h$>$}\newline
+{\ttfamily \#include $<$costmap\+\_\+2d/observation\+\_\+buffer.\+h$>$}\newline
+{\ttfamily \#include $<$costmap\+\_\+2d/testing\+\_\+helper.\+h$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+Include dependency graph for static\+\_\+tests.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{static__tests_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{static__tests_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{static__tests_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{static__tests_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{static\_tests.cpp@{static\_tests.cpp}!main@{main}}
+\index{main@{main}!static\_tests.cpp@{static\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+Tests the reset method
+
+\mbox{\hyperlink{module__tests_8cpp_ad60e6773a46c10dda1470224e1f13f21}{T\+E\+S\+T(costmap, test\+Reset\+For\+Static\+Map)}}\{ Define a static map with a large object in the center std\+::vector$<$unsigned char$>$ static\+Map; for(unsigned int i=0; i$<$10; i++)\{ for(unsigned int j=0; j$<$10; j++)\{ static\+Map.\+push\+\_\+back(costmap\+\_\+2d\+::\+L\+E\+T\+H\+A\+L\+\_\+\+O\+B\+S\+T\+A\+C\+L\+E); \} \}
+
+Allocate the cost map, with a inflation to 3 cells all around Costmap2D map(10, 10, R\+E\+S\+O\+L\+U\+T\+I\+ON, 0.\+0, 0.\+0, 3, 3, 3, O\+B\+S\+T\+A\+C\+L\+E\+\_\+\+R\+A\+N\+GE, M\+A\+X\+\_\+Z, R\+A\+Y\+T\+R\+A\+C\+E\+\_\+\+R\+A\+N\+GE, 25, static\+Map, T\+H\+R\+E\+S\+H\+O\+LD);
+
+Populate the cost map with a wall around the perimeter. Free space should clear out the room. pcl\+::\+Point\+Cloud$<$pcl\+::\+Point\+X\+Y\+Z$>$ cloud; cloud.\+points.\+resize(40);
+
+Left wall unsigned int ind = 0; for (unsigned int i = 0; i $<$ 10; i++)\{ Left cloud.\+points\mbox{[}ind\mbox{]}.x = 0; cloud.\+points\mbox{[}ind\mbox{]}.y = i; cloud.\+points\mbox{[}ind\mbox{]}.z = M\+A\+X\+\_\+Z; ind++;
+
+Top cloud.\+points\mbox{[}ind\mbox{]}.x = i; cloud.\+points\mbox{[}ind\mbox{]}.y = 0; cloud.\+points\mbox{[}ind\mbox{]}.z = M\+A\+X\+\_\+Z; ind++;
+
+Right cloud.\+points\mbox{[}ind\mbox{]}.x = 9; cloud.\+points\mbox{[}ind\mbox{]}.y = i; cloud.\+points\mbox{[}ind\mbox{]}.z = M\+A\+X\+\_\+Z; ind++;
+
+Bottom cloud.\+points\mbox{[}ind\mbox{]}.x = i; cloud.\+points\mbox{[}ind\mbox{]}.y = 9; cloud.\+points\mbox{[}ind\mbox{]}.z = M\+A\+X\+\_\+Z; ind++; \}
+
+double wx = 5.\+0, wy = 5.\+0; geometry\+\_\+msgs\+::\+Point p; p.\+x = wx; p.\+y = wy; p.\+z = M\+A\+X\+\_\+Z; Observation obs(p, cloud, O\+B\+S\+T\+A\+C\+L\+E\+\_\+\+R\+A\+N\+G\+E, R\+A\+Y\+T\+R\+A\+C\+E\+\_\+\+R\+A\+N\+G\+E); std\+::vector$<$\+Observation$>$ obs\+Buf; obs\+Buf.\+push\+\_\+back(obs);
+
+Update the cost map for this observation map.\+update\+World(wx, wy, obs\+Buf, obs\+Buf);
+
+Verify that we now have only 36 cells with lethal cost, thus provong that we have correctly cleared free space int hit\+Count = 0; for(unsigned int i=0; i $<$ 10; ++i)\{ for(unsigned int j=0; j $<$ 10; ++j)\{ if(map.\+get\+Cost(i, j) == \mbox{\hyperlink{namespacecostmap__2d_aab110f187082d88d103ee84c8e420872}{costmap\+\_\+2d\+::\+L\+E\+T\+H\+A\+L\+\_\+\+O\+B\+S\+T\+A\+C\+LE}})\{ hit\+Count++; \} \} \} A\+S\+S\+E\+R\+T\+\_\+\+E\+Q(hit\+Count, 36);
+
+Veriy that we have 64 non-\/leathal hit\+Count = 0; for(unsigned int i=0; i $<$ 10; ++i)\{ for(unsigned int j=0; j $<$ 10; ++j)\{ if(map.\+get\+Cost(i, j) != \mbox{\hyperlink{namespacecostmap__2d_aab110f187082d88d103ee84c8e420872}{costmap\+\_\+2d\+::\+L\+E\+T\+H\+A\+L\+\_\+\+O\+B\+S\+T\+A\+C\+LE}}) hit\+Count++; \} \} A\+S\+S\+E\+R\+T\+\_\+\+E\+Q(hit\+Count, 64);
+
+Now if we reset the cost map, we should have our map go back to being completely occupied map.\+reset\+Map\+Outside\+Window(wx, wy, 0.\+0, 0.\+0);
+
+We should now go back to everything being occupied hit\+Count = 0; for(unsigned int i=0; i $<$ 10; ++i)\{ for(unsigned int j=0; j $<$ 10; ++j)\{ if(map.\+get\+Cost(i, j) == \mbox{\hyperlink{namespacecostmap__2d_aab110f187082d88d103ee84c8e420872}{costmap\+\_\+2d\+::\+L\+E\+T\+H\+A\+L\+\_\+\+O\+B\+S\+T\+A\+C\+LE}}) hit\+Count++; \} \} A\+S\+S\+E\+R\+T\+\_\+\+E\+Q(hit\+Count, 100);
+
+\}
+
+/$\ast$$\ast$ Test for copying a window of a costmap $\ast$ \mbox{\hyperlink{module__tests_8cpp_a4d5daedd5dde37cf984f593d5c719e92}{T\+E\+S\+T(costmap, test\+Window\+Copy)}}\{ Costmap2D map(G\+R\+I\+D\+\_\+\+W\+I\+D\+TH, G\+R\+I\+D\+\_\+\+H\+E\+I\+G\+HT, R\+E\+S\+O\+L\+U\+T\+I\+ON, 0.\+0, 0.\+0, R\+O\+B\+O\+T\+\_\+\+R\+A\+D\+I\+US, R\+O\+B\+O\+T\+\_\+\+R\+A\+D\+I\+US, R\+O\+B\+O\+T\+\_\+\+R\+A\+D\+I\+US, 10.\+0, M\+A\+X\+\_\+Z, 10.\+0, 25, M\+A\+P\+\_\+10\+\_\+\+B\+Y\+\_\+10, T\+H\+R\+E\+S\+H\+O\+LD);
+
+/$\ast$ for(unsigned int i = 0; i $<$ 10; ++i)\{ for(unsigned int j = 0; j $<$ 10; ++j)\{ printf(\char`\"{}\%3d \char`\"{}, map.\+get\+Cost(i, j)); \} printf(\char`\"{}\textbackslash{}n\char`\"{}); \} printf(\char`\"{}\textbackslash{}n\char`\"{});
+
+Costmap2D window\+Copy;
+
+first test that if we try to make a window that is too big, things fail window\+Copy.\+copy\+Costmap\+Window(map, 2.\+0, 2.\+0, 6.\+0, 12.\+0); A\+S\+S\+E\+R\+T\+\_\+\+EQ(window\+Copy.\+get\+Size\+In\+Cells\+X(), (unsigned int)0); A\+S\+S\+E\+R\+T\+\_\+\+EQ(window\+Copy.\+get\+Size\+In\+Cells\+Y(), (unsigned int)0);
+
+Next, test that trying to make a map window itself fails map.\+copy\+Costmap\+Window(map, 2.\+0, 2.\+0, 6.\+0, 6.\+0); A\+S\+S\+E\+R\+T\+\_\+\+EQ(map.\+get\+Size\+In\+Cells\+X(), (unsigned int)10); A\+S\+S\+E\+R\+T\+\_\+\+EQ(map.\+get\+Size\+In\+Cells\+Y(), (unsigned int)10);
+
+Next, test that legal input generates the result that we expect window\+Copy.\+copy\+Costmap\+Window(map, 2.\+0, 2.\+0, 6.\+0, 6.\+0); A\+S\+S\+E\+R\+T\+\_\+\+EQ(window\+Copy.\+get\+Size\+In\+Cells\+X(), (unsigned int)6); A\+S\+S\+E\+R\+T\+\_\+\+EQ(window\+Copy.\+get\+Size\+In\+Cells\+Y(), (unsigned int)6);
+
+check that we actually get the windo that we expect for(unsigned int i = 0; i $<$ window\+Copy.\+get\+Size\+In\+Cells\+X(); ++i)\{ for(unsigned int j = 0; j $<$ window\+Copy.\+get\+Size\+In\+Cells\+Y(); ++j)\{ A\+S\+S\+E\+R\+T\+\_\+\+EQ(window\+Copy.\+get\+Cost(i, j), map.\+get\+Cost(i + 2, j + 2)); printf(\char`\"{}\%3d \char`\"{}, window\+Copy.\+get\+Cost(i, j)); \} printf(\char`\"{}\textbackslash{}n\char`\"{}); \}
+
+\}
+
+test for updating costmaps with static data \mbox{\hyperlink{module__tests_8cpp_a81989f28bba6fb2f0503b643903a72cd}{T\+E\+S\+T(costmap, test\+Fully\+Contained\+Static\+Map\+Update)}}\{ Costmap2D map(5, 5, R\+E\+S\+O\+L\+U\+T\+I\+ON, 0.\+0, 0.\+0, R\+O\+B\+O\+T\+\_\+\+R\+A\+D\+I\+US, R\+O\+B\+O\+T\+\_\+\+R\+A\+D\+I\+US, R\+O\+B\+O\+T\+\_\+\+R\+A\+D\+I\+US, 10.\+0, M\+A\+X\+\_\+Z, 10.\+0, 25, M\+A\+P\+\_\+5\+\_\+\+B\+Y\+\_\+5, T\+H\+R\+E\+S\+H\+O\+LD);
+
+Costmap2D static\+\_\+map(G\+R\+I\+D\+\_\+\+W\+I\+D\+TH, G\+R\+I\+D\+\_\+\+H\+E\+I\+G\+HT, R\+E\+S\+O\+L\+U\+T\+I\+ON, 0.\+0, 0.\+0, R\+O\+B\+O\+T\+\_\+\+R\+A\+D\+I\+US, R\+O\+B\+O\+T\+\_\+\+R\+A\+D\+I\+US, R\+O\+B\+O\+T\+\_\+\+R\+A\+D\+I\+US, 10.\+0, M\+A\+X\+\_\+Z, 10.\+0, 25, M\+A\+P\+\_\+10\+\_\+\+B\+Y\+\_\+10, T\+H\+R\+E\+S\+H\+O\+LD);
+
+map.\+update\+Static\+Map\+Window(0, 0, 10, 10, M\+A\+P\+\_\+10\+\_\+\+B\+Y\+\_\+10);
+
+for(unsigned int i = 0; i $<$ map.\+get\+Size\+In\+Cells\+X(); ++i)\{ for(unsigned int j = 0; j $<$ map.\+get\+Size\+In\+Cells\+Y(); ++j)\{ A\+S\+S\+E\+R\+T\+\_\+\+EQ(map.\+get\+Cost(i, j), static\+\_\+map.\+get\+Cost(i, j)); \} \} \}
+
+\mbox{\hyperlink{module__tests_8cpp_ac9fc7e80b7d8b53b7aafb59c12c4e32c}{T\+E\+S\+T(costmap, test\+Overlap\+Static\+Map\+Update)}}\{ Costmap2D map(5, 5, R\+E\+S\+O\+L\+U\+T\+I\+ON, 0.\+0, 0.\+0, R\+O\+B\+O\+T\+\_\+\+R\+A\+D\+I\+US, R\+O\+B\+O\+T\+\_\+\+R\+A\+D\+I\+US, R\+O\+B\+O\+T\+\_\+\+R\+A\+D\+I\+US, 10.\+0, M\+A\+X\+\_\+Z, 10.\+0, 25, M\+A\+P\+\_\+5\+\_\+\+B\+Y\+\_\+5, T\+H\+R\+E\+S\+H\+O\+LD);
+
+Costmap2D static\+\_\+map(G\+R\+I\+D\+\_\+\+W\+I\+D\+TH, G\+R\+I\+D\+\_\+\+H\+E\+I\+G\+HT, R\+E\+S\+O\+L\+U\+T\+I\+ON, 0.\+0, 0.\+0, R\+O\+B\+O\+T\+\_\+\+R\+A\+D\+I\+US, R\+O\+B\+O\+T\+\_\+\+R\+A\+D\+I\+US, R\+O\+B\+O\+T\+\_\+\+R\+A\+D\+I\+US, 10.\+0, M\+A\+X\+\_\+Z, 10.\+0, 25, M\+A\+P\+\_\+10\+\_\+\+B\+Y\+\_\+10, T\+H\+R\+E\+S\+H\+O\+LD);
+
+map.\+update\+Static\+Map\+Window(-\/10, -\/10, 10, 10, M\+A\+P\+\_\+10\+\_\+\+B\+Y\+\_\+10);
+
+A\+S\+S\+E\+R\+T\+\_\+\+F\+L\+O\+A\+T\+\_\+\+EQ(map.\+get\+Origin\+X(), -\/10); A\+S\+S\+E\+R\+T\+\_\+\+F\+L\+O\+A\+T\+\_\+\+EQ(map.\+get\+Origin\+X(), -\/10); A\+S\+S\+E\+R\+T\+\_\+\+EQ(map.\+get\+Size\+In\+Cells\+X(), (unsigned int)15); A\+S\+S\+E\+R\+T\+\_\+\+EQ(map.\+get\+Size\+In\+Cells\+Y(), (unsigned int)15); for(unsigned int i = 0; i $<$ 10; ++i)\{ for(unsigned int j = 0; j $<$ 10; ++j)\{ A\+S\+S\+E\+R\+T\+\_\+\+EQ(map.\+get\+Cost(i, j), static\+\_\+map.\+get\+Cost(i, j)); \} \}
+
+std\+::vector$<$unsigned char$>$ blank(100);
+
+check to make sure that inflation on updates are being done correctly map.\+update\+Static\+Map\+Window(-\/10, -\/10, 10, 10, blank);
+
+for(unsigned int i = 0; i $<$ map.\+get\+Size\+In\+Cells\+X(); ++i)\{ for(unsigned int j = 0; j $<$ map.\+get\+Size\+In\+Cells\+Y(); ++j)\{ A\+S\+S\+E\+R\+T\+\_\+\+EQ(map.\+get\+Cost(i, j), 0); \} \}
+
+std\+::vector$<$unsigned char$>$ fully\+\_\+contained(25); fully\+\_\+contained\mbox{[}0\mbox{]} = 254; fully\+\_\+contained\mbox{[}4\mbox{]} = 254; fully\+\_\+contained\mbox{[}5\mbox{]} = 254; fully\+\_\+contained\mbox{[}9\mbox{]} = 254;
+
+Costmap2D small\+\_\+static\+\_\+map(5, 5, R\+E\+S\+O\+L\+U\+T\+I\+ON, 0.\+0, 0.\+0, R\+O\+B\+O\+T\+\_\+\+R\+A\+D\+I\+US, R\+O\+B\+O\+T\+\_\+\+R\+A\+D\+I\+US, R\+O\+B\+O\+T\+\_\+\+R\+A\+D\+I\+US, 10.\+0, M\+A\+X\+\_\+Z, 10.\+0, 25, fully\+\_\+contained, T\+H\+R\+E\+S\+H\+O\+LD);
+
+map.\+update\+Static\+Map\+Window(0, 0, 5, 5, fully\+\_\+contained);
+
+A\+S\+S\+E\+R\+T\+\_\+\+F\+L\+O\+A\+T\+\_\+\+EQ(map.\+get\+Origin\+X(), -\/10); A\+S\+S\+E\+R\+T\+\_\+\+F\+L\+O\+A\+T\+\_\+\+EQ(map.\+get\+Origin\+X(), -\/10); A\+S\+S\+E\+R\+T\+\_\+\+EQ(map.\+get\+Size\+In\+Cells\+X(), (unsigned int)15); A\+S\+S\+E\+R\+T\+\_\+\+EQ(map.\+get\+Size\+In\+Cells\+Y(), (unsigned int)15); for(unsigned int j = 0; j $<$ 5; ++j)\{ for(unsigned int i = 0; i $<$ 5; ++i)\{ A\+S\+S\+E\+R\+T\+\_\+\+EQ(map.\+get\+Cost(i + 10, j + 10), small\+\_\+static\+\_\+map.\+get\+Cost(i, j)); \} \}
+
+\}
+
+\mbox{\hyperlink{module__tests_8cpp_a0e9c8b5f0a3eba4d6e0db102be312cfa}{T\+E\+S\+T(costmap, test\+Static\+Map)}}\{ Costmap2D map(G\+R\+I\+D\+\_\+\+W\+I\+D\+TH, G\+R\+I\+D\+\_\+\+H\+E\+I\+G\+HT, R\+E\+S\+O\+L\+U\+T\+I\+ON, 0.\+0, 0.\+0, R\+O\+B\+O\+T\+\_\+\+R\+A\+D\+I\+US, R\+O\+B\+O\+T\+\_\+\+R\+A\+D\+I\+US, R\+O\+B\+O\+T\+\_\+\+R\+A\+D\+I\+US, 10.\+0, M\+A\+X\+\_\+Z, 10.\+0, 25, M\+A\+P\+\_\+10\+\_\+\+B\+Y\+\_\+10, T\+H\+R\+E\+S\+H\+O\+LD);
+
+A\+S\+S\+E\+R\+T\+\_\+\+EQ(map.\+get\+Size\+In\+Cells\+X(), (unsigned int)10); A\+S\+S\+E\+R\+T\+\_\+\+EQ(map.\+get\+Size\+In\+Cells\+Y(), (unsigned int)10);
+
+Verify that obstacles correctly identified from the static map. std\+::vector$<$unsigned int$>$ occupied\+Cells;
+
+for(unsigned int i = 0; i $<$ 10; ++i)\{ for(unsigned int j = 0; j $<$ 10; ++j)\{ if(map.\+get\+Cost(i, j) == \mbox{\hyperlink{namespacecostmap__2d_aab110f187082d88d103ee84c8e420872}{costmap\+\_\+2d\+::\+L\+E\+T\+H\+A\+L\+\_\+\+O\+B\+S\+T\+A\+C\+LE}})\{ occupied\+Cells.\+push\+\_\+back(map.\+get\+Index(i, j)); \} \} \}
+
+A\+S\+S\+E\+R\+T\+\_\+\+EQ(occupied\+Cells.\+size(), (unsigned int)20);
+
+Iterate over all id\textquotesingle{}s and verify that they are present according to their for(std\+::vector$<$unsigned int$>$\+::const\+\_\+iterator it = occupied\+Cells.\+begin(); it != occupied\+Cells.\+end(); ++it)\{ unsigned int ind = $\ast$it; unsigned int x, y; map.\+index\+To\+Cells(ind, x, y); A\+S\+S\+E\+R\+T\+\_\+\+EQ(find(occupied\+Cells, map.\+get\+Index(x, y)), true); A\+S\+S\+E\+R\+T\+\_\+\+EQ(M\+A\+P\+\_\+10\+\_\+\+B\+Y\+\_\+10\mbox{[}ind\mbox{]} $>$= 100, true); A\+S\+S\+E\+R\+T\+\_\+\+EQ(map.\+get\+Cost(x, y) $>$= 100, true); \}
+
+Block of 200 A\+S\+S\+E\+R\+T\+\_\+\+EQ(find(occupied\+Cells, map.\+get\+Index(7, 2)), true); A\+S\+S\+E\+R\+T\+\_\+\+EQ(find(occupied\+Cells, map.\+get\+Index(8, 2)), true); A\+S\+S\+E\+R\+T\+\_\+\+EQ(find(occupied\+Cells, map.\+get\+Index(9, 2)), true); A\+S\+S\+E\+R\+T\+\_\+\+EQ(find(occupied\+Cells, map.\+get\+Index(7, 3)), true); A\+S\+S\+E\+R\+T\+\_\+\+EQ(find(occupied\+Cells, map.\+get\+Index(8, 3)), true); A\+S\+S\+E\+R\+T\+\_\+\+EQ(find(occupied\+Cells, map.\+get\+Index(9, 3)), true); A\+S\+S\+E\+R\+T\+\_\+\+EQ(find(occupied\+Cells, map.\+get\+Index(7, 4)), true); A\+S\+S\+E\+R\+T\+\_\+\+EQ(find(occupied\+Cells, map.\+get\+Index(8, 4)), true); A\+S\+S\+E\+R\+T\+\_\+\+EQ(find(occupied\+Cells, map.\+get\+Index(9, 4)), true);
+
+Block of 100 A\+S\+S\+E\+R\+T\+\_\+\+EQ(find(occupied\+Cells, map.\+get\+Index(4, 3)), true); A\+S\+S\+E\+R\+T\+\_\+\+EQ(find(occupied\+Cells, map.\+get\+Index(4, 4)), true);
+
+Block of 200 A\+S\+S\+E\+R\+T\+\_\+\+EQ(find(occupied\+Cells, map.\+get\+Index(3, 7)), true); A\+S\+S\+E\+R\+T\+\_\+\+EQ(find(occupied\+Cells, map.\+get\+Index(4, 7)), true); A\+S\+S\+E\+R\+T\+\_\+\+EQ(find(occupied\+Cells, map.\+get\+Index(5, 7)), true);
+
+Verify Coordinate Transformations, R\+OW M\+A\+J\+OR O\+R\+D\+ER A\+S\+S\+E\+R\+T\+\_\+\+EQ(world\+To\+Index(map, 0.\+0, 0.\+0), (unsigned int)0); A\+S\+S\+E\+R\+T\+\_\+\+EQ(world\+To\+Index(map, 0.\+0, 0.\+99), (unsigned int)0); A\+S\+S\+E\+R\+T\+\_\+\+EQ(world\+To\+Index(map, 0.\+0, 1.\+0), (unsigned int)10); A\+S\+S\+E\+R\+T\+\_\+\+EQ(world\+To\+Index(map, 1.\+0, 0.\+99), (unsigned int)1); A\+S\+S\+E\+R\+T\+\_\+\+EQ(world\+To\+Index(map, 9.\+99, 9.\+99), (unsigned int)99); A\+S\+S\+E\+R\+T\+\_\+\+EQ(world\+To\+Index(map, 8.\+2, 3.\+4), (unsigned int)38);
+
+Ensure we hit the middle of the cell for world co-\/ordinates double wx, wy; index\+To\+World(map, 99, wx, wy); A\+S\+S\+E\+R\+T\+\_\+\+EQ(wx, 9.\+5); A\+S\+S\+E\+R\+T\+\_\+\+EQ(wy, 9.\+5); \} 
+
+Definition at line 326 of file static\+\_\+tests.\+cpp.
+

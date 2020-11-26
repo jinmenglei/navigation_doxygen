@@ -1,0 +1,80 @@
+\hypertarget{namespacenav__core}{}\doxysection{nav\+\_\+core Namespace Reference}
+\label{namespacenav__core}\index{nav\_core@{nav\_core}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnav__core_1_1_base_global_planner}{Base\+Global\+Planner}}
+\begin{DoxyCompactList}\small\item\em Provides an interface for global planners used in navigation. All global planners written as plugins for the navigation stack must adhere to this interface. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classnav__core_1_1_base_local_planner}{Base\+Local\+Planner}}
+\begin{DoxyCompactList}\small\item\em Provides an interface for local planners used in navigation. All local planners written as plugins for the navigation stack must adhere to this interface. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classnav__core_1_1_recovery_behavior}{Recovery\+Behavior}}
+\begin{DoxyCompactList}\small\item\em Provides an interface for recovery behaviors used in navigation. All recovery behaviors written as plugins for the navigation stack must adhere to this interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class param\+\_\+t $>$ }\\param\+\_\+t \mbox{\hyperlink{namespacenav__core_ac1bc19a8eabb092a097d54d334066814}{load\+Parameter\+With\+Deprecation}} (const ros\+::\+Node\+Handle \&nh, const std\+::string current\+\_\+name, const std\+::string old\+\_\+name, const param\+\_\+t \&default\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Load a parameter from one of two namespaces. Complain if it uses the old name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacenav__core_a6ae2b94985fa0d1a0f4c9269ba073327}{warn\+Renamed\+Parameter}} (const ros\+::\+Node\+Handle \&nh, const std\+::string current\+\_\+name, const std\+::string old\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Warn if a parameter exists under a deprecated (and unsupported) name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacenav__core_ac1bc19a8eabb092a097d54d334066814}\label{namespacenav__core_ac1bc19a8eabb092a097d54d334066814}} 
+\index{nav\_core@{nav\_core}!loadParameterWithDeprecation@{loadParameterWithDeprecation}}
+\index{loadParameterWithDeprecation@{loadParameterWithDeprecation}!nav\_core@{nav\_core}}
+\doxysubsubsection{\texorpdfstring{loadParameterWithDeprecation()}{loadParameterWithDeprecation()}}
+{\footnotesize\ttfamily template$<$class param\+\_\+t $>$ \\
+param\+\_\+t nav\+\_\+core\+::load\+Parameter\+With\+Deprecation (\begin{DoxyParamCaption}\item[{const ros\+::\+Node\+Handle \&}]{nh,  }\item[{const std\+::string}]{current\+\_\+name,  }\item[{const std\+::string}]{old\+\_\+name,  }\item[{const param\+\_\+t \&}]{default\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+Load a parameter from one of two namespaces. Complain if it uses the old name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nh} & Node\+Handle to look for the parameter in \\
+\hline
+{\em current\+\_\+name} & Parameter name that is current, i.\+e. not deprecated \\
+\hline
+{\em old\+\_\+name} & Deprecated parameter name \\
+\hline
+{\em default\+\_\+value} & If neither parameter is present, return this value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the parameter or the default value 
+\end{DoxyReturn}
+
+
+Definition at line 53 of file parameter\+\_\+magic.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenav__core_ac1bc19a8eabb092a097d54d334066814_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenav__core_a6ae2b94985fa0d1a0f4c9269ba073327}\label{namespacenav__core_a6ae2b94985fa0d1a0f4c9269ba073327}} 
+\index{nav\_core@{nav\_core}!warnRenamedParameter@{warnRenamedParameter}}
+\index{warnRenamedParameter@{warnRenamedParameter}!nav\_core@{nav\_core}}
+\doxysubsubsection{\texorpdfstring{warnRenamedParameter()}{warnRenamedParameter()}}
+{\footnotesize\ttfamily void nav\+\_\+core\+::warn\+Renamed\+Parameter (\begin{DoxyParamCaption}\item[{const ros\+::\+Node\+Handle \&}]{nh,  }\item[{const std\+::string}]{current\+\_\+name,  }\item[{const std\+::string}]{old\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Warn if a parameter exists under a deprecated (and unsupported) name. 
+
+Parameters loaded exclusively through dynamic reconfigure can\textquotesingle{}t really use load\+Param\+With\+Deprecation. 
+
+Definition at line 76 of file parameter\+\_\+magic.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenav__core_a6ae2b94985fa0d1a0f4c9269ba073327_icgraph}
+\end{center}
+\end{figure}

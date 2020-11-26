@@ -1,0 +1,100 @@
+\hypertarget{classbase__local__planner_1_1_trajectory_search}{}\doxysection{base\+\_\+local\+\_\+planner\+::Trajectory\+Search Class Reference}
+\label{classbase__local__planner_1_1_trajectory_search}\index{base\_local\_planner::TrajectorySearch@{base\_local\_planner::TrajectorySearch}}
+
+
+Interface for modules finding a trajectory to use for navigation commands next.  
+
+
+
+
+{\ttfamily \#include $<$trajectory\+\_\+search.\+h$>$}
+
+
+
+Inheritance diagram for base\+\_\+local\+\_\+planner\+::Trajectory\+Search\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classbase__local__planner_1_1_trajectory_search__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for base\+\_\+local\+\_\+planner\+::Trajectory\+Search\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{classbase__local__planner_1_1_trajectory_search__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classbase__local__planner_1_1_trajectory_search_a75fd0f1e0c72b6ba6f6edabe569e8271}{find\+Best\+Trajectory}} (\mbox{\hyperlink{classbase__local__planner_1_1_trajectory}{Trajectory}} \&traj, std\+::vector$<$ \mbox{\hyperlink{classbase__local__planner_1_1_trajectory}{Trajectory}} $>$ $\ast$all\+\_\+explored)=0
+\item 
+virtual \mbox{\hyperlink{classbase__local__planner_1_1_trajectory_search_aff40ef5d337f537fd4997e60e010f15b}{$\sim$\+Trajectory\+Search}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbase__local__planner_1_1_trajectory_search_a841ca025afcb9e199074c60167f0f0dd}{Trajectory\+Search}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for modules finding a trajectory to use for navigation commands next. 
+
+Definition at line 49 of file trajectory\+\_\+search.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbase__local__planner_1_1_trajectory_search_aff40ef5d337f537fd4997e60e010f15b}\label{classbase__local__planner_1_1_trajectory_search_aff40ef5d337f537fd4997e60e010f15b}} 
+\index{base\_local\_planner::TrajectorySearch@{base\_local\_planner::TrajectorySearch}!````~TrajectorySearch@{$\sim$TrajectorySearch}}
+\index{````~TrajectorySearch@{$\sim$TrajectorySearch}!base\_local\_planner::TrajectorySearch@{base\_local\_planner::TrajectorySearch}}
+\doxysubsubsection{\texorpdfstring{$\sim$TrajectorySearch()}{~TrajectorySearch()}}
+{\footnotesize\ttfamily virtual base\+\_\+local\+\_\+planner\+::\+Trajectory\+Search\+::$\sim$\+Trajectory\+Search (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 61 of file trajectory\+\_\+search.\+h.
+
+\mbox{\Hypertarget{classbase__local__planner_1_1_trajectory_search_a841ca025afcb9e199074c60167f0f0dd}\label{classbase__local__planner_1_1_trajectory_search_a841ca025afcb9e199074c60167f0f0dd}} 
+\index{base\_local\_planner::TrajectorySearch@{base\_local\_planner::TrajectorySearch}!TrajectorySearch@{TrajectorySearch}}
+\index{TrajectorySearch@{TrajectorySearch}!base\_local\_planner::TrajectorySearch@{base\_local\_planner::TrajectorySearch}}
+\doxysubsubsection{\texorpdfstring{TrajectorySearch()}{TrajectorySearch()}}
+{\footnotesize\ttfamily base\+\_\+local\+\_\+planner\+::\+Trajectory\+Search\+::\+Trajectory\+Search (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 64 of file trajectory\+\_\+search.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbase__local__planner_1_1_trajectory_search_a75fd0f1e0c72b6ba6f6edabe569e8271}\label{classbase__local__planner_1_1_trajectory_search_a75fd0f1e0c72b6ba6f6edabe569e8271}} 
+\index{base\_local\_planner::TrajectorySearch@{base\_local\_planner::TrajectorySearch}!findBestTrajectory@{findBestTrajectory}}
+\index{findBestTrajectory@{findBestTrajectory}!base\_local\_planner::TrajectorySearch@{base\_local\_planner::TrajectorySearch}}
+\doxysubsubsection{\texorpdfstring{findBestTrajectory()}{findBestTrajectory()}}
+{\footnotesize\ttfamily virtual bool base\+\_\+local\+\_\+planner\+::\+Trajectory\+Search\+::find\+Best\+Trajectory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbase__local__planner_1_1_trajectory}{Trajectory}} \&}]{traj,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classbase__local__planner_1_1_trajectory}{Trajectory}} $>$ $\ast$}]{all\+\_\+explored }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+searches the space of allowed trajectory and returns one considered the optimal given the constraints of the particular search.
+
+
+\begin{DoxyParams}{Parameters}
+{\em traj} & The container to write the result to \\
+\hline
+{\em all\+\_\+explored} & pass N\+U\+LL or a container to collect all trajectories for debugging (has a penalty) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classbase__local__planner_1_1_simple_scored_sampling_planner_ad1a365b0504879a2e57f1a9d713acdc4}{base\+\_\+local\+\_\+planner\+::\+Simple\+Scored\+Sampling\+Planner}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/github/navigation/base\+\_\+local\+\_\+planner/include/base\+\_\+local\+\_\+planner/\mbox{\hyperlink{trajectory__search_8h}{trajectory\+\_\+search.\+h}}\end{DoxyCompactItemize}

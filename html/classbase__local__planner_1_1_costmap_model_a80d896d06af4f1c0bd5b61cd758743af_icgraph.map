@@ -1,0 +1,4 @@
+<map id="base_local_planner::CostmapModel::footprintCost" name="base_local_planner::CostmapModel::footprintCost">
+<area shape="rect" id="node1" title="Checks if any obstacles in the costmap lie inside a convex footprint that is rasterized into the grid..." alt="" coords="263,5,461,47"/>
+<area shape="rect" id="node2" href="$classrotate__recovery_1_1_rotate_recovery.html#a8a95adca66937ca4d01fb7a584b905f9" title="Run the RotateRecovery recovery behavior." alt="" coords="5,5,215,47"/>
+</map>
